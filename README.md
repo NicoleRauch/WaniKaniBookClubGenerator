@@ -61,7 +61,7 @@ If you want some part of the template to appear only under certain conditions, y
 Text Text Text
 ::endif
 ```
-If the expression `condition` evaluates to `true` after all variables have been replaced with their configured values,
+If `condition` evaluates to `true` after all variables have been replaced with their configured values,
 `Text Text Text` will appear in the template, otherwise not.
 
 ```
@@ -72,7 +72,7 @@ Other Other Other
 ::endif
 ```
 
-If the expression `condition` evaluates to `true` after all variables have been replaced with their configured values,
+If `condition` evaluates to `true` after all variables have been replaced with their configured values,
 `Text Text Text` will appear in the template, otherwise `Other Other Other`.
 
 *Note:* This construction cannot be nested.
