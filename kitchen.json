@@ -1,0 +1,124 @@
+{
+  "template": "template.md",
+  "bookClubName": "Intermediate",
+  "bookClubURL": "18908",
+  "bookName": "キッチン",
+  "bookImage": "![image|351x500,50%](upload://yEhtHwcf7XO5Dhs2GE2CwsswuRm.jpeg)",
+  "bookHomeThreadURL": "https://community.wanikani.com/t/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3-home-thread-intermediate-book-club/38539",
+  "numberOfTheLastWeek": 10,
+  "isOnFloFlo": true,
+  "hasReadAlongSession": true,
+  "readAlongWeekday": "Sunday",
+  "readAlongJSTHuman": "9:30pm",
+  "readAlongJSTComputer": "21:30:00",
+  "weeks": [
+    {
+      "week": 1,
+      "weekStartDate": "October 5th",
+      "bookNextWeekURL": "",
+      "readingEndPage": 18,
+      "readingEndPercent": 7,
+      "readingEndPhrase": "それほど驚いた出会いだったのだ。",
+      "readingPages": 12,
+      "readAlongNextDate": "2019-10-13"
+    },
+    {
+      "week": 2,
+      "weekStartDate": "October 12th",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 32,
+      "readingEndPercent": 14,
+      "readingEndPhrase": "神に心から感謝していた。",
+      "readingPages": 13,
+      "readAlongNextDate": "2019-10-20"
+    },
+    {
+      "week": 3,
+      "weekStartDate": "October 19th",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 43,
+      "readingEndPercent": 19,
+      "readingEndPhrase": "出なくては。",
+      "readingPages": 12,
+      "readAlongNextDate": "2019-10-27"
+    },
+    {
+      "week": 4,
+      "weekStartDate": "October 26th",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 57,
+      "readingEndPercent": 26,
+      "readingEndPhrase": "素足がふるえた。",
+      "readingPages": 13,
+      "readAlongNextDate": "2019-11-03"
+    },
+    {
+      "week": 5,
+      "weekStartDate": "November 2nd",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 73,
+      "readingEndPercent": 33,
+      "readingEndPhrase": "「お電話ありがとう。」と言った。",
+      "readingPages": 14,
+      "readAlongNextDate": "2019-11-10"
+    },
+    {
+      "week": 6,
+      "weekStartDate": "November 9th",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 86,
+      "readingEndPercent": 40,
+      "readingEndPhrase": "心に満ちてしまう。",
+      "readingPages": 12.5,
+      "readAlongNextDate": "2019-11-17"
+    },
+    {
+      "week": 7,
+      "weekStartDate": "November 16th",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 101,
+      "readingEndPercent": 48,
+      "readingEndPhrase": "いやな悲しさでいっぱいになっていった。",
+      "readingPages": 15,
+      "readAlongNextDate": "2019-11-24"
+    },
+    {
+      "week": 8,
+      "weekStartDate": "November 23rd",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 115,
+      "readingEndPercent": 55,
+      "readingEndPhrase": "きしめんを食べながら私は切り出した。",
+      "readingPages": 14.5,
+      "readAlongNextDate": "2019-12-01"
+    },
+    {
+      "week": 9,
+      "weekStartDate": "November 30th",
+      "bookPreviousWeekURL": "",
+      "bookNextWeekURL": "",
+      "readingEndPage": 131,
+      "readingEndPercent": 63,
+      "readingEndPhrase": "私は上っていった。",
+      "readingPages": 15,
+      "readAlongNextDate": "2019-12-08"
+    },
+    {
+      "week": 10,
+      "weekStartDate": "December 7th",
+      "bookPreviousWeekURL": "",
+      "readingEndPage": 145,
+      "readingEndPercent": 70,
+      "readingEndPhrase": "説明をはじめた。",
+      "readingPages": 14,
+      "readAlongNextDate": "2019-12-15"
+    }
+  ]
+}
