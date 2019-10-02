@@ -38,8 +38,30 @@ template = template.replace(/\$previousWeek\$/g, config.week - 1);
 template = template.replace(/\$nextWeek\$/g, config.week + 1);
 
 // conditionals:
-// TODO
+const templateLines = template.split("\n");
+
+const reducer = (acc, current) => {
+    if(current.startsWith("::if")){
+        const condition = eval(current.substring(4));
+        return {...acc, removeLines: !condition}; // ignore ::if line, set whether to remove lines or not
+    }
+    if(current.startsWith("::endif")){
+        return {...acc, removeLines: false}; // ignore ::endif line, reset back to normal
+    }
+    if(acc.removeLines) {
+        return acc; // ignore current line
+    }
+    return {...acc, resultLines: acc.resultLines.concat(current)}; // add current line
+};
+
+const result = templateLines.reduce(
+    reducer,
+    {
+        removeLines: false,
+        resultLines: []
+    }
+);
 
 const resultFileName = configFileName.replace(".json", ".md");
-fs.writeFileSync("./" + resultFileName, template, {encoding: "utf8"});
+fs.writeFileSync("./" + resultFileName, result.resultLines.join("\n"), {encoding: "utf8"});
 

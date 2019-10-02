@@ -84,5 +84,5 @@ forum post with the result.
 ## References
 
 * [CommonSpec Markdown Documentation](https://spec.commonmark.org/0.29/)
-* Syntax and implementation inspired by https://github.com/andreagentili/markdown-it-condition
+* Syntax inspired by https://github.com/andreagentili/markdown-it-condition
 

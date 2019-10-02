@@ -8,7 +8,7 @@ $bookImage$
 ::if $week$ > 1 && "$bookPreviousWeekURL$"
 **Previous Part:** [Week $previousWeek$]($bookPreviousWeekURL$)
 ::endif
-:if $week$ < $numberOfTheLastWeek$ && "$bookNextWeekURL$"
+::if $week$ < $numberOfTheLastWeek$ && "$bookNextWeekURL$"
 **Next Part:**  [Week $nextWeek$]($bookNextWeekURL$)
 ::endif
 
