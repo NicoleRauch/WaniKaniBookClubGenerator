@@ -8,9 +8,24 @@ You need to install node.js (at least version 8) [which can be downloaded here](
 
 ## Configuration
 
-In order to get the result you want, you need to create a configuration file (see the provided example file `kitchen.json`).
+### Generating a Configuration Stub
+In order to get the result you want, you need to create a configuration file. A template for this file can be
+generated from the WK forum breakdown. Just copy the breakdown table to a `.md` file and run the config generator on it:
 
-It contains the following variables:
+```
+node config_generator <book_name.md>
+```
+
+It will generate a `book_name.json` file that contains all information that can be extracted from the breakdown table.
+If you rerun the generator and there is already an edited JSON file in place, the newly generated information will
+be merged with the edited data, so nothing should be lost. (We still advise to create a backup copy just in case!)
+
+
+### Editing the Configuration 
+To generate the weekly thread files from the generated JSON file, more information must be specified.
+Just fill in the empty strings and adjust any boolean values (for a fully edited file see the provided example file `kitchen.json`).
+
+The configuration file contains the following variables:
 
 |Name|Type|Explanation|
 |----|----|-----------|
@@ -28,7 +43,7 @@ It contains the following variables:
 |`readAlongJSTComputer`|String; optional|The time of the read-along session in JST, in computer-readable format (e.g. `21:30:00`). Only required when the read-along session should be shown.|
 |`weeks`|Array|The list of the configurations for each week (see below).|
 
-The configurations for each week contain the following variables:
+The configurations for each week contains the following variables:
 
 |Name|Type|Explanation|
 |----|----|-----------|
@@ -88,7 +103,20 @@ If `condition` evaluates to `true` after all variables have been replaced with t
 
 ## Running
 
-In order to run the generator, type
+### Step 1: Generating the Initial Configuration
+
+In order to generate the initial config file, type
+
+`node config_generator <breakdown.md>`
+
+in the current directory.
+
+If you want to update the initial configuration (e.g. because the breakdown changed) and an edited
+config file is already in place, the generator will merge the information so nothing should be lost.
+
+### Step 2: Generating the Weekly Thread Files
+
+In order to generate the weekly thread files from the edited config file, type
 
 `node weeks_generator <config-file.json>`
 
