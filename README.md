@@ -8,7 +8,7 @@ You need to install node.js (at least version 8) [which can be downloaded here](
 
 ## Configuration
 
-In order to get the result you want, you need to create a configuration file (see the provided example file `kitchen_week1.json`).
+In order to get the result you want, you need to create a configuration file (see the provided example file `kitchen.json`).
 
 It contains the following variables:
 
