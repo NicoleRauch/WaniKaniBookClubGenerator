@@ -11,6 +11,10 @@ const urlSnippetOf = (url) => {
 const configFileName = process.argv[2];
 const config = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
 
+const weekURLs = config.weeks.reduce(
+    (acc, current) => ({...acc, [current.week]: current.weekURL}),
+    {}
+);
 
 config.weeks.map(weekConfig => {
 
@@ -32,8 +36,6 @@ config.weeks.map(weekConfig => {
 
     template = template.replace(/\$week\$/g, weekConfig.week);
     template = template.replace(/\$weekStartDate\$/g, weekConfig.weekStartDate);
-    template = template.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weekConfig.bookPreviousWeekURL));
-    template = template.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weekConfig.bokNextWeekURL));
     template = template.replace(/\$readingEndPage\$/g, weekConfig.readingEndPage);
     template = template.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent);
     template = template.replace(/\$readingEndPhrase\$/g, weekConfig.readingEndPhrase);
@@ -42,6 +44,8 @@ config.weeks.map(weekConfig => {
     // generated values:
     template = template.replace(/\$previousWeek\$/g, weekConfig.week - 1);
     template = template.replace(/\$nextWeek\$/g, weekConfig.week + 1);
+    template = template.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week - 1]));
+    template = template.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week + 1]));
 
     // conditionals:
     const reducer = (acc, current) => {

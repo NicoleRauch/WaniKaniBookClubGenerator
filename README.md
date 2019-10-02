@@ -34,14 +34,14 @@ The configurations for each week contain the following variables:
 |----|----|-----------|
 |`week`|Number|The number of the week that this post is for|
 |`weekStartDate`|String|When does this part's reading start, in human-readable format (e.g. "June 3rd")|
-|`bookPreviousWeekURL`|String; optional|The URL of the previous week's thread (if this is not applicable, it can be left out or left empty).|
-|`bookNextWeekURL`|String; optional|The URL of the next week's thread (if this is not yet known, it can be left out or left empty).|
+|`weekURL`|String; optional|The URL of the week's WK thread (To be added after posting. Initially it can be left out or left empty).|
 |`readingEndPage`|Number|The end page of this week's reading, in the paper book.| 
 |`readingEndPercent`|Number|The percentage of the last sentence of this week's reading.| 
 |`readingEndPhrase`|String|The last phrase of this week's reading.| 
 |`readingPages`|Number|The number of pages that this week's reading covers.| 
 |`readAlongNextDate`|String; optional|The date of the next read-along session, in computer-readable format (e.g. `2019-03-15`). Only required when the read-along session should be shown.|
 
+*Note:* For all URLs, the full forum thread URL or only its last part can be specified. (A robust URL will be generated from either information.)
 
 You also need a template file (see the provided example file `template.md`).
 
@@ -57,6 +57,9 @@ You can use the following variables in the template as well, but you need not se
 |----|-----------|
 |`previousWeek`|The number of the previous week, e.g. for the "previous week" link|
 |`nextWeek`|The number of the subsequent week, e.g. for the "next week" link|
+|`bookPreviousWeekURL`|The URL of the preceding week|
+|`bookNextWeekURL`|The URL of the following week|
+
 
 ### Conditional Generation
 

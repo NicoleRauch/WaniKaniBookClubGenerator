@@ -15,7 +15,7 @@
     {
       "week": 1,
       "weekStartDate": "October 5th",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 18,
       "readingEndPercent": 7,
       "readingEndPhrase": "それほど驚いた出会いだったのだ。",
@@ -25,8 +25,7 @@
     {
       "week": 2,
       "weekStartDate": "October 12th",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 32,
       "readingEndPercent": 14,
       "readingEndPhrase": "神に心から感謝していた。",
@@ -36,8 +35,7 @@
     {
       "week": 3,
       "weekStartDate": "October 19th",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 43,
       "readingEndPercent": 19,
       "readingEndPhrase": "出なくては。",
@@ -47,8 +45,7 @@
     {
       "week": 4,
       "weekStartDate": "October 26th",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 57,
       "readingEndPercent": 26,
       "readingEndPhrase": "素足がふるえた。",
@@ -58,8 +55,7 @@
     {
       "week": 5,
       "weekStartDate": "November 2nd",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 73,
       "readingEndPercent": 33,
       "readingEndPhrase": "「お電話ありがとう。」と言った。",
@@ -69,8 +65,7 @@
     {
       "week": 6,
       "weekStartDate": "November 9th",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 86,
       "readingEndPercent": 40,
       "readingEndPhrase": "心に満ちてしまう。",
@@ -80,8 +75,7 @@
     {
       "week": 7,
       "weekStartDate": "November 16th",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 101,
       "readingEndPercent": 48,
       "readingEndPhrase": "いやな悲しさでいっぱいになっていった。",
@@ -91,8 +85,7 @@
     {
       "week": 8,
       "weekStartDate": "November 23rd",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 115,
       "readingEndPercent": 55,
       "readingEndPhrase": "きしめんを食べながら私は切り出した。",
@@ -102,8 +95,7 @@
     {
       "week": 9,
       "weekStartDate": "November 30th",
-      "bookPreviousWeekURL": "",
-      "bookNextWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 131,
       "readingEndPercent": 63,
       "readingEndPhrase": "私は上っていった。",
@@ -113,7 +105,7 @@
     {
       "week": 10,
       "weekStartDate": "December 7th",
-      "bookPreviousWeekURL": "",
+      "weekURL": "",
       "readingEndPage": 145,
       "readingEndPercent": 70,
       "readingEndPhrase": "説明をはじめた。",
