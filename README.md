@@ -4,7 +4,7 @@ This project will allow you to generate the weekly topics for the WaniKani Book 
 
 ## Requirements
 
-You need to install node.js (at least v.10) [which can be downloaded here](https://nodejs.org/en/download/).
+You need to install node.js (at least version 8) [which can be downloaded here](https://nodejs.org/en/download/).
 
 ## Configuration
 
