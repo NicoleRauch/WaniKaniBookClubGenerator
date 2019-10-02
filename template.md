@@ -1,7 +1,6 @@
 ::if $week$ < $numberOfTheLastWeek$
 $bookName$: Week $week$ Discussion
-::endif
-::if $week$ === $numberOfTheLastWeek$
+::else
 $bookName$: Week $week$ Discussion [END]
 ::endif
 
@@ -58,8 +57,7 @@ Mark your participation status by voting in this poll.
 *  I have finished this part
 ::if $week$ === 1
 *  I'm planning to catch up later
-::endif
-::if $week$ > 1
+::else
 *  I'm still reading the book but I haven't reached this part yet
 *  I am no longer reading the book
 ::endif

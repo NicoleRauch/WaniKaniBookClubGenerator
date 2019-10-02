@@ -54,16 +54,27 @@ You can use the following variables in the template as well, but you need not se
 
 ### Conditional Generation
 
-If you want some part of the template to appear only under certain conditions, you can use the following construction:
+If you want some part of the template to appear only under certain conditions, you can use the following constructions:
 
 ```
 ::if condition
 Text Text Text
 ::endif
 ```
+If the expression `condition` evaluates to `true` after all variables have been replaced with their configured values,
+`Text Text Text` will appear in the template, otherwise not.
+
+```
+::if condition
+Text Text Text
+::else
+Other Other Other
+::endif
+```
 
 If the expression `condition` evaluates to `true` after all variables have been replaced with their configured values,
-the enclosed text will appear in the template, otherwise not.
+`Text Text Text` will appear in the template, otherwise `Other Other Other`.
+
 *Note:* This construction cannot be nested.
 
 ## Running

@@ -43,6 +43,9 @@ const reducer = (acc, current) => {
         const condition = eval(current.substring(4));
         return {...acc, removeLines: !condition}; // ignore ::if line, set whether to remove lines or not
     }
+    if(current.startsWith("::else")){
+        return {...acc, removeLines: !acc.removeLines}; // ignore ::else line, invert the removeLines condition
+    }
     if(current.startsWith("::endif")){
         return {...acc, removeLines: false}; // ignore ::endif line, reset back to normal
     }
