@@ -37,7 +37,7 @@ $bookImage$
 
 * Please use spoiler tags for  ***major***  events in the current chapter(s) and  ***any***  content in future chapters.
 * When asking for help, please mention the chapter and page number. Also mention what version of the book you are reading.
-* Don’t be afraid of asking questions, even if they seem embarassing at first. All of us are here to learn.
+* Don’t be afraid of asking questions, even if they seem embarrassing at first. All of us are here to learn.
 * To you lurkers out there: Join the conversation, it’s fun! :durtle:
 
 ::if $hasReadAlongSession$
