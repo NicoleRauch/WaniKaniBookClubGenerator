@@ -38,8 +38,6 @@ template = template.replace(/\$previousWeek\$/g, config.week - 1);
 template = template.replace(/\$nextWeek\$/g, config.week + 1);
 
 // conditionals:
-const templateLines = template.split("\n");
-
 const reducer = (acc, current) => {
     if(current.startsWith("::if")){
         const condition = eval(current.substring(4));
@@ -54,6 +52,7 @@ const reducer = (acc, current) => {
     return {...acc, resultLines: acc.resultLines.concat(current)}; // add current line
 };
 
+const templateLines = template.split("\n");
 const result = templateLines.reduce(
     reducer,
     {
