@@ -1,0 +1,22 @@
+{
+  "template": "template.md",
+  "bookClubName": "Intermediate",
+  "bookClubURL": "18908",
+  "bookName": "キッチン",
+  "bookImage": "![image|351x500,50%](upload://yEhtHwcf7XO5Dhs2GE2CwsswuRm.jpeg)",
+  "bookHomeThreadURL": "https://community.wanikani.com/t/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3-home-thread-intermediate-book-club/38539",
+  "week": 1,
+  "weekStartDate": "November 16th",
+  "bookNextWeekURL": "",
+  "numberOfTheLastWeek": 10,
+  "readingEndPage": 101,
+  "readingEndPercent": 48,
+  "readingEndPhrase": "いやな悲しさでいっぱいになっていった。",
+  "readingPages": 15,
+  "isOnFloFlo": true,
+  "hasReadAlongSession": true,
+  "readAlongWeekday": "Sunday",
+  "readAlongJSTHuman": "9:30pm",
+  "readAlongJSTComputer": "21:30:00",
+  "readAlongNextDate": "2019-11-24"
+}
