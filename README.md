@@ -90,7 +90,7 @@ If `condition` evaluates to `true` after all variables have been replaced with t
 
 In order to run the generator, type
 
-`node generator <config-file.json>`
+`node weeks_generator <config-file.json>`
 
 in the current directory. It will read the config file and produce a markdown file for each week.
 The markdown files will have the same name, but with the ending `_weekN.md`, e.g. for the config file `config-file.json` 
