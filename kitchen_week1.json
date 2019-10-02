@@ -3,5 +3,21 @@
   "bookClubName": "Intermediate",
   "bookClubURL": "",
   "bookName": "キッチン",
-  "week": 1
+  "bookImage": "![image|351x500,50%](upload://yEhtHwcf7XO5Dhs2GE2CwsswuRm.jpeg)",
+  "bookHomeThreadURL": "",
+  "week": 1,
+  "weekStartDate": "October 5th",
+  "bookPreviousWeekURL": "",
+  "bookNextWeekURL": "",
+  "numberOfTheLastWeek": 10,
+  "readingEndPage": 18,
+  "readingEndPercent": 7,
+  "readingEndPhrase": "それほど驚いた出会いだったのだ。",
+  "readingPages": 12,
+  "isOnFloFlo": true,
+  "hasReadAlongSession": true,
+  "readAlongWeekday": "Sunday",
+  "readAlongJSTHuman": "9:30pm",
+  "readAlongJSTComputer": "21:30:00",
+  "readAlongNextDate": "2019-10-13"
 }
