@@ -36,6 +36,7 @@ The configuration file contains the following variables:
 |`bookImage`|String|The full image descriptor (you can usually steal this from the book's home thread).|
 |`bookHomeThreadURL`|String|The URL of the book's home thread (or the last part of the URL)|
 |`numberOfTheLastWeek`|Number|The number of the last week for this book (so that the last week does not get a "next week" link).|
+|`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|
 |`hasReadAlongSession`|Boolean|Set this to `true` if you want information about a Read-Along session to appear, `false` if not.|
 |`readAlongWeekday`|String; optional|The weekday of the read-along session. Only required when the read-along session should be shown.|
@@ -50,7 +51,7 @@ The configurations for each week contains the following variables:
 |`week`|Number|The number of the week that this post is for|
 |`weekStartDate`|String|When does this part's reading start, in human-readable format (e.g. "June 3rd")|
 |`weekURL`|String; optional|The URL of the week's WK thread (To be added after posting. Initially it can be left out or left empty).|
-|`readingEndPage`|Number|The end page of this week's reading, in the paper book.| 
+|`readingPageInfo`|String|Some indication of this week's reading, e.g. the last page or the pages, in the paper book.| 
 |`readingEndPercent`|Number|The percentage of the last sentence of this week's reading.| 
 |`readingEndPhrase`|String|The last phrase of this week's reading.| 
 |`readingPageCount`|Number|The number of pages that this week's reading covers.| 

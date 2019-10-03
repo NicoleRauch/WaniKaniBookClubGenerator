@@ -28,6 +28,7 @@ config.weeks.map(weekConfig => {
     template = template.replace(/\$bookImage\$/g, config.bookImage);
     template = template.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(config.bookHomeThreadURL));
     template = template.replace(/\$numberOfTheLastWeek\$/g, config.numberOfTheLastWeek);
+    template = template.replace(/\$readingPageInfoTitle\$/g, config.readingPageInfoTitle);
     template = template.replace(/\$isOnFloFlo\$/g, config.isOnFloFlo);
     template = template.replace(/\$hasReadAlongSession\$/g, config.hasReadAlongSession);
     template = template.replace(/\$readAlongWeekday\$/g, config.readAlongWeekday);
@@ -36,7 +37,7 @@ config.weeks.map(weekConfig => {
 
     template = template.replace(/\$week\$/g, weekConfig.week);
     template = template.replace(/\$weekStartDate\$/g, weekConfig.weekStartDate);
-    template = template.replace(/\$readingEndPage\$/g, weekConfig.readingEndPage);
+    template = template.replace(/\$readingPageInfo\$/g, weekConfig.readingPageInfo);
     template = template.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent);
     template = template.replace(/\$readingEndPhrase\$/g, weekConfig.readingEndPhrase);
     template = template.replace(/\$readingPageCount\$/g, weekConfig.readingPageCount);
