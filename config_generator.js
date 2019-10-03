@@ -69,7 +69,7 @@ const weeksConfig = tableBody.map(row => {
         week,
         weekStartDate: fields[columns.weekStartDate],
         weekURL: existingWeeksConfig[week] ? existingWeeksConfig[week].weekURL || "" : "",
-        readingPageInfo: parseInt(fields[columns.readingPageInfo], 10),
+        readingPageInfo: fields[columns.readingPageInfo],
         readingEndPercent: parseInt(fields[columns.readingEndPercent], 10),
         readingRange: fields[columns.readingRange],
         readingPageCount: parseFloat(fields[columns.readingPageCount]),
