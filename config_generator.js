@@ -87,7 +87,7 @@ const dummyConfig = {
     readingPageInfoTitle: columns.readingPageInfoTitle,
     readingRangeTitle: columns.readingRangeTitle,
     isOnFloFlo: false,
-    hasReadAlongSession: true,
+    hasReadAlongSession: false,
     readAlongWeekday: "Sunday",
     readAlongJSTHuman: "9:30pm",
     readAlongJSTComputer: "21:30:00",
