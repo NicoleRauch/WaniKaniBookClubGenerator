@@ -53,7 +53,7 @@ The configurations for each week contains the following variables:
 |`readingEndPage`|Number|The end page of this week's reading, in the paper book.| 
 |`readingEndPercent`|Number|The percentage of the last sentence of this week's reading.| 
 |`readingEndPhrase`|String|The last phrase of this week's reading.| 
-|`readingPages`|Number|The number of pages that this week's reading covers.| 
+|`readingPageCount`|Number|The number of pages that this week's reading covers.| 
 |`readAlongNextDate`|String; optional|The date of the next read-along session, in computer-readable format (e.g. `2019-03-15`). Only required when the read-along session should be shown.|
 
 *Note:* For all URLs, the full forum thread URL or only its last part can be specified. (A robust URL will be generated from either information.)

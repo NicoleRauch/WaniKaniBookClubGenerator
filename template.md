@@ -22,9 +22,9 @@ $bookImage$
 
 ## Reading:
 
-| End Page | End % | End Phrase | Pages |
+| End Page | End % | End Phrase | Page Count |
 | --- | --- | --- | --- |
-|$readingEndPage$|$readingEndPercent$%|$readingEndPhrase$|$readingPages$|
+|$readingEndPage$|$readingEndPercent$%|$readingEndPhrase$|$readingPageCount$|
 
 
 ::if $isOnFloFlo$

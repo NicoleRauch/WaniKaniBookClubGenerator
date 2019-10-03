@@ -39,7 +39,7 @@ config.weeks.map(weekConfig => {
     template = template.replace(/\$readingEndPage\$/g, weekConfig.readingEndPage);
     template = template.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent);
     template = template.replace(/\$readingEndPhrase\$/g, weekConfig.readingEndPhrase);
-    template = template.replace(/\$readingPages\$/g, weekConfig.readingPages);
+    template = template.replace(/\$readingPageCount\$/g, weekConfig.readingPageCount);
     template = template.replace(/\$readAlongNextDate\$/g, weekConfig.readAlongNextDate);
     // generated values:
     template = template.replace(/\$previousWeek\$/g, weekConfig.week - 1);

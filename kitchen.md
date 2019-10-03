@@ -1,4 +1,4 @@
-|Week|Start Date|End Page|End Percentage|End Phrase|Pages|
+|Week|Start Date|End Page|End Percentage|End Phrase|Page Count|
 | --- | --- | --- | --- | --- | --- |
 |Week 1|Oct 5th|18|7%|それほど驚いた出会いだったのだ。|12|
 |Week 2|Oct 12th|32|14%|神に心から感謝していた。|13|
