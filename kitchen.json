@@ -6,6 +6,7 @@
     "bookImage": "![image|351x500,50%](upload://yEhtHwcf7XO5Dhs2GE2CwsswuRm.jpeg)",
     "bookHomeThreadURL": "https://community.wanikani.com/t/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3-home-thread-intermediate-book-club/38539",
     "readingPageInfoTitle": "End Page",
+    "readingRangeTitle": "End Phrase",
     "isOnFloFlo": true,
     "hasReadAlongSession": true,
     "readAlongWeekday": "Sunday",
@@ -19,7 +20,7 @@
             "weekURL": "",
             "readingPageInfo": 18,
             "readingEndPercent": 7,
-            "readingEndPhrase": "それほど驚いた出会いだったのだ。",
+            "readingRange": "それほど驚いた出会いだったのだ。",
             "readingPageCount": 12,
             "readAlongNextDate": "2019-10-13"
         },
@@ -29,7 +30,7 @@
             "weekURL": "",
             "readingPageInfo": 32,
             "readingEndPercent": 14,
-            "readingEndPhrase": "神に心から感謝していた。",
+            "readingRange": "神に心から感謝していた。",
             "readingPageCount": 13,
             "readAlongNextDate": "2019-10-20"
         },
@@ -39,7 +40,7 @@
             "weekURL": "",
             "readingPageInfo": 43,
             "readingEndPercent": 19,
-            "readingEndPhrase": "出なくては。",
+            "readingRange": "出なくては。",
             "readingPageCount": 12,
             "readAlongNextDate": "2019-10-27"
         },
@@ -49,7 +50,7 @@
             "weekURL": "",
             "readingPageInfo": 57,
             "readingEndPercent": 26,
-            "readingEndPhrase": "素足がふるえた。",
+            "readingRange": "素足がふるえた。",
             "readingPageCount": 13,
             "readAlongNextDate": "2019-11-03"
         },
@@ -59,7 +60,7 @@
             "weekURL": "",
             "readingPageInfo": 73,
             "readingEndPercent": 33,
-            "readingEndPhrase": "「お電話ありがとう。」と言った。",
+            "readingRange": "「お電話ありがとう。」と言った。",
             "readingPageCount": 14,
             "readAlongNextDate": "2019-11-10"
         },
@@ -69,7 +70,7 @@
             "weekURL": "",
             "readingPageInfo": 86,
             "readingEndPercent": 40,
-            "readingEndPhrase": "心に満ちてしまう。",
+            "readingRange": "心に満ちてしまう。",
             "readingPageCount": 12.5,
             "readAlongNextDate": "2019-11-17"
         },
@@ -79,7 +80,7 @@
             "weekURL": "",
             "readingPageInfo": 101,
             "readingEndPercent": 48,
-            "readingEndPhrase": "いやな悲しさでいっぱいになっていった。",
+            "readingRange": "いやな悲しさでいっぱいになっていった。",
             "readingPageCount": 15,
             "readAlongNextDate": "2019-11-24"
         },
@@ -89,7 +90,7 @@
             "weekURL": "",
             "readingPageInfo": 115,
             "readingEndPercent": 55,
-            "readingEndPhrase": "きしめんを食べながら私は切り出した。",
+            "readingRange": "きしめんを食べながら私は切り出した。",
             "readingPageCount": 14.5,
             "readAlongNextDate": "2019-12-01"
         },
@@ -99,7 +100,7 @@
             "weekURL": "",
             "readingPageInfo": 131,
             "readingEndPercent": 63,
-            "readingEndPhrase": "私は上っていった。",
+            "readingRange": "私は上っていった。",
             "readingPageCount": 15,
             "readAlongNextDate": "2019-12-08"
         },
@@ -109,7 +110,7 @@
             "weekURL": "",
             "readingPageInfo": 145,
             "readingEndPercent": 70,
-            "readingEndPhrase": "説明をはじめた。",
+            "readingRange": "説明をはじめた。",
             "readingPageCount": 14,
             "readAlongNextDate": "2019-12-15"
         }

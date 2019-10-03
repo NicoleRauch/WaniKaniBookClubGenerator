@@ -35,7 +35,7 @@ const weeksConfig = tableBody.map(row => {
         weekURL: existingWeeksConfig[week] ? existingWeeksConfig[week].weekURL || "" : "",
         readingPageInfo: parseInt(fields[3], 10),
         readingEndPercent: parseInt(fields[4], 10),
-        readingEndPhrase: fields[5],
+        readingRange: fields[5],
         readingPageCount: parseFloat(fields[6]),
         readAlongNextDate: existingWeeksConfig[week] ? existingWeeksConfig[week].readAlongNextDate || "" : ""
     };
@@ -49,6 +49,7 @@ const dummyConfig = {
     bookImage: "",
     bookHomeThreadURL: "",
     readingPageInfoTitle: "End Page",
+    readingRangeTitle: "End Phrase",
     isOnFloFlo: false,
     hasReadAlongSession: true,
     readAlongWeekday: "Sunday",
