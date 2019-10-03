@@ -7,7 +7,7 @@ const tableRows = fs.readFileSync("./" + tableFileName, {encoding: "utf8"}).spli
 const configFileName = tableFileName.replace(".md", ".json");
 const existingConfig = fs.existsSync(configFileName) ? JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"})) : {};
 
-const existingWeeksInfo = existingConfig.weeks ?
+const existingWeeksConfig = existingConfig.weeks ?
     existingConfig.weeks.reduce(
         (acc, current) => ({...acc, [current.week]: current}),
         {}
@@ -37,12 +37,12 @@ const weeksConfig = tableBody.map(row => {
     return {
         week,
         weekStartDate: fields[2],
-        weekURL: existingWeeksInfo[week] ? existingWeeksInfo[week].weekURL || "" : "",
+        weekURL: existingWeeksConfig[week] ? existingWeeksConfig[week].weekURL || "" : "",
         readingEndPage: parseInt(fields[3], 10),
         readingEndPercent: parseInt(fields[4], 10),
         readingEndPhrase: fields[5],
         readingPages: parseFloat(fields[6]),
-        readAlongNextDate: existingWeeksInfo[week] ? existingWeeksInfo[week].readAlongNextDate || "" : ""
+        readAlongNextDate: existingWeeksConfig[week] ? existingWeeksConfig[week].readAlongNextDate || "" : ""
     };
 });
 
