@@ -14,18 +14,13 @@ const existingWeeksConfig = existingConfig.weeks ?
     )
     : {};
 
-const row1 = "|Week|Start Date|End Page|End Percentage|End Phrase|Pages|";
-const row2 = "| --- | --- | --- | --- | --- | --- |";
 
 const isUnderline = str => str.replace(/\|/g, "").replace(/-/g, "").replace(/ /g, "") === "";
 
-if(tableRows[0] !== row1 || !isUnderline(tableRows[1])){
-    console.log("The table header must look like this:");
-    console.log(row1);
-    console.log(row2);
-    console.log("But it looks like this:");
-    console.log(tableRows[0], "is of the correct shape:", tableRows[0] === row1);
-    console.log(tableRows[1], "is of the correct shape:", isUnderline(tableRows[1]));
+if(!isUnderline(tableRows[1])){
+    console.log("The table header underline must only contain | - and whitespace");
+    console.log("But its second row looks like this:");
+    console.log(tableRows[1]);
     process.exit(0);
 }
 
