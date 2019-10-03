@@ -37,11 +37,11 @@ config.weeks.map(weekConfig => {
     template = template.replace(/\$readAlongJSTComputer\$/g, config.readAlongJSTComputer); // TODO
 
     template = template.replace(/\$week\$/g, weekConfig.week);
-    template = template.replace(/\$weekStartDate\$/g, weekConfig.weekStartDate);
-    template = template.replace(/\$readingPageInfo\$/g, weekConfig.readingPageInfo);
-    template = template.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent);
-    template = template.replace(/\$readingRange\$/g, weekConfig.readingRange);
-    template = template.replace(/\$readingPageCount\$/g, weekConfig.readingPageCount);
+    template = template.replace(/\$weekStartDate\$/g, weekConfig.weekStartDate || "");
+    template = template.replace(/\$readingPageInfo\$/g, weekConfig.readingPageInfo || "");
+    template = template.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent ? weekConfig.readingEndPercent + "%" : "");
+    template = template.replace(/\$readingRange\$/g, weekConfig.readingRange || "");
+    template = template.replace(/\$readingPageCount\$/g, weekConfig.readingPageCount || "");
     template = template.replace(/\$readAlongNextDate\$/g, weekConfig.readAlongNextDate);
     // generated values:
     template = template.replace(/\$previousWeek\$/g, weekConfig.week - 1);

@@ -24,7 +24,7 @@ $bookImage$
 
 | $readingPageInfoTitle$ | End % | $readingRangeTitle$ | Page Count |
 | --- | --- | --- | --- |
-|$readingPageInfo$|$readingEndPercent$%|$readingRange$|$readingPageCount$|
+|$readingPageInfo$|$readingEndPercent$|$readingRange$|$readingPageCount$|
 
 
 ::if $isOnFloFlo$
