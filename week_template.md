@@ -1,10 +1,12 @@
+<!-- 
 ::if $week$ < $numberOfTheLastWeek$
 $bookName$: Week $week$ Discussion
 ::else
 $bookName$: Week $week$ Discussion [END]
 ::endif
 
-<!-- ^^^^^^^^^^^^^^^ Use this for the thread title! And delete this line :-) -->
+^^^^^^^^^^^^^^^ Use this for the thread title!
+-->
 
 [Join the $bookClubName$ Book Club here!]($bookClubURL$) 
 
