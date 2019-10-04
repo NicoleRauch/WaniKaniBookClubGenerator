@@ -2,6 +2,17 @@
 
 This project will allow you to generate the weekly topics for the WaniKani Book Clubs!
 
+## TL;DR
+
+This is a two-phase generator:
+
+Book Breakdown -> Configuration -> Weekly Topics
+
+The configuration is pre-filled from the book club's weekly breakdown. More information needs 
+to be added manually to get a good result.
+
+Uses node.js.
+
 ## Requirements
 
 You need to install node.js (at least version 8) [which can be downloaded here](https://nodejs.org/en/download/).
