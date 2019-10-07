@@ -101,6 +101,19 @@ var homeTemplate = fs.readFileSync("./" + config.homeTemplate, {encoding: "utf8"
 homeTemplate = replaceGlobalVariables(homeTemplate, config, weeks);
 homeTemplate = replaceConditionals(homeTemplate);
 
+// next week for reading session information:
+const nextReadings =
+    config.hasReadAlongSession ?
+        Object.values(weeks)
+            .map(week => ({week: week.week, millisInFuture: Date.parse(week.readAlongNextDate) - Date.now()})) // future readings are positive
+            .filter(({millisInFuture}) => millisInFuture >= 0) // remove all past readings
+            .sort((a, b) => b - a)
+        : [];
+
+if(nextReadings.length) {
+    homeTemplate = replaceWeeklyVariables(homeTemplate, weeks[nextReadings[0].week]);
+}
+
 writeFile("_home.md", homeTemplate);
 
 

@@ -21,7 +21,7 @@ Come and read from the previous week's section, join in the chat about this book
 
 Starting date: One week after we started reading the book, i.e. $readAlongFirstDate$.
 
-Next session (in your timezone): [date=2019-10-13 time=21:30:00 format="LLLL \T\Z " timezone="Japan" recurring="1.weeks"] 
+Next session (in your timezone): [date=$readAlongNextDate$ time=$readAlongJSTComputer$ format="LLLL \T\Z " timezone="Japan" recurring="1.weeks"]
 https://discord.gg/cuV52Bs 
 ::endif
 
