@@ -8,48 +8,40 @@ const urlSnippetOf = (url) => {
     return "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1);
 };
 
-const configFileName = process.argv[2];
-const config = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
+function replaceGlobalVariables(theTemplate, theConfig) {
+    theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
+    theTemplate = theTemplate.replace(/\$bookClubURL\$/g, urlSnippetOf(theConfig.bookClubURL));
+    theTemplate = theTemplate.replace(/\$bookName\$/g, theConfig.bookName);
+    theTemplate = theTemplate.replace(/\$bookImage\$/g, theConfig.bookImage);
+    theTemplate = theTemplate.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(theConfig.bookHomeThreadURL));
+    theTemplate = theTemplate.replace(/\$numberOfTheLastWeek\$/g, theConfig.numberOfTheLastWeek);
+    theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle);
+    theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
+    theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
+    theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
+    theTemplate = theTemplate.replace(/\$readAlongWeekday\$/g, theConfig.readAlongWeekday);
+    theTemplate = theTemplate.replace(/\$readAlongJSTHuman\$/g, theConfig.readAlongJSTHuman);
+    theTemplate = theTemplate.replace(/\$readAlongJSTComputer\$/g, theConfig.readAlongJSTComputer); // TODO
+    return theTemplate;
+}
 
-const weekURLs = config.weeks.reduce(
-    (acc, current) => ({...acc, [current.week]: current.weekURL}),
-    {}
-);
-
-config.weeks.map(weekConfig => {
-
-    // reload the template for each week!
-    var weekTemplate = fs.readFileSync("./" + config.weekTemplate, {encoding: "utf8"});
-    // Replacements:
-    // configured values:
-    weekTemplate = weekTemplate.replace(/\$bookClubName\$/g, config.bookClubName);
-    weekTemplate = weekTemplate.replace(/\$bookClubURL\$/g, urlSnippetOf(config.bookClubURL));
-    weekTemplate = weekTemplate.replace(/\$bookName\$/g, config.bookName);
-    weekTemplate = weekTemplate.replace(/\$bookImage\$/g, config.bookImage);
-    weekTemplate = weekTemplate.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(config.bookHomeThreadURL));
-    weekTemplate = weekTemplate.replace(/\$numberOfTheLastWeek\$/g, config.numberOfTheLastWeek);
-    weekTemplate = weekTemplate.replace(/\$readingPageInfoTitle\$/g, config.readingPageInfoTitle);
-    weekTemplate = weekTemplate.replace(/\$readingRangeTitle\$/g, config.readingRangeTitle);
-    weekTemplate = weekTemplate.replace(/\$isOnFloFlo\$/g, config.isOnFloFlo);
-    weekTemplate = weekTemplate.replace(/\$hasReadAlongSession\$/g, config.hasReadAlongSession);
-    weekTemplate = weekTemplate.replace(/\$readAlongWeekday\$/g, config.readAlongWeekday);
-    weekTemplate = weekTemplate.replace(/\$readAlongJSTHuman\$/g, config.readAlongJSTHuman);
-    weekTemplate = weekTemplate.replace(/\$readAlongJSTComputer\$/g, config.readAlongJSTComputer); // TODO
-
-    weekTemplate = weekTemplate.replace(/\$week\$/g, weekConfig.week);
-    weekTemplate = weekTemplate.replace(/\$weekStartDate\$/g, weekConfig.weekStartDate || "");
-    weekTemplate = weekTemplate.replace(/\$readingPageInfo\$/g, weekConfig.readingPageInfo || "");
-    weekTemplate = weekTemplate.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent ? weekConfig.readingEndPercent + "%" : "");
-    weekTemplate = weekTemplate.replace(/\$readingRange\$/g, weekConfig.readingRange || "");
-    weekTemplate = weekTemplate.replace(/\$readingPageCount\$/g, weekConfig.readingPageCount || "");
-    weekTemplate = weekTemplate.replace(/\$readAlongNextDate\$/g, weekConfig.readAlongNextDate);
+function replaceWeeklyVariables(theWeekTemplate, theWeekConfig) {
+    theWeekTemplate = theWeekTemplate.replace(/\$week\$/g, theWeekConfig.week);
+    theWeekTemplate = theWeekTemplate.replace(/\$weekStartDate\$/g, theWeekConfig.weekStartDate || "");
+    theWeekTemplate = theWeekTemplate.replace(/\$readingPageInfo\$/g, theWeekConfig.readingPageInfo || "");
+    theWeekTemplate = theWeekTemplate.replace(/\$readingEndPercent\$/g, theWeekConfig.readingEndPercent ? theWeekConfig.readingEndPercent + "%" : "");
+    theWeekTemplate = theWeekTemplate.replace(/\$readingRange\$/g, theWeekConfig.readingRange || "");
+    theWeekTemplate = theWeekTemplate.replace(/\$readingPageCount\$/g, theWeekConfig.readingPageCount || "");
+    theWeekTemplate = theWeekTemplate.replace(/\$readAlongNextDate\$/g, theWeekConfig.readAlongNextDate);
     // generated values:
-    weekTemplate = weekTemplate.replace(/\$previousWeek\$/g, weekConfig.week - 1);
-    weekTemplate = weekTemplate.replace(/\$nextWeek\$/g, weekConfig.week + 1);
-    weekTemplate = weekTemplate.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week - 1]));
-    weekTemplate = weekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week + 1]));
+    theWeekTemplate = theWeekTemplate.replace(/\$previousWeek\$/g, theWeekConfig.week - 1);
+    theWeekTemplate = theWeekTemplate.replace(/\$nextWeek\$/g, theWeekConfig.week + 1);
+    theWeekTemplate = theWeekTemplate.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week - 1] ? weeks[theWeekConfig.week - 1].weekURL : undefined));
+    theWeekTemplate = theWeekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week + 1] ? weeks[theWeekConfig.week + 1].weekURL : undefined));
+    return theWeekTemplate;
+}
 
-    // conditionals:
+function replaceConditionals(theTemplate) {
     const reducer = (acc, current) => {
         if (current.startsWith("::if")) {
             const condition = eval(current.substring(4));
@@ -67,15 +59,40 @@ config.weeks.map(weekConfig => {
         return {...acc, resultLines: acc.resultLines.concat(current)}; // add current line
     };
 
-    const templateLines = weekTemplate.split("\n");
-    const result = templateLines.reduce(
+    return theTemplate.split("\n").reduce(
         reducer,
         {
             removeLines: false,
             resultLines: []
         }
-    );
+    ).resultLines.join("\n");
+}
 
-    const resultFileName = configFileName.replace(".json", "_week" + weekConfig.week + ".md");
-    fs.writeFileSync("./" + resultFileName, result.resultLines.join("\n"), {encoding: "utf8"});
+function writeFile(fileExtension, theTemplate) {
+    const resultFileName = configFileName.replace(".json", fileExtension);
+    fs.writeFileSync("./" + resultFileName, theTemplate, {encoding: "utf8"});
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+
+const configFileName = process.argv[2];
+const config = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
+
+const weeks = config.weeks.reduce(
+    (acc, current) => ({...acc, [current.week]: current}),
+    {}
+);
+
+/////////// generating the weekly threads /////////////////////////////////////////
+
+config.weeks.map(weekConfig => {
+
+    // reload the template for each week!
+    var weekTemplate = fs.readFileSync("./" + config.weekTemplate, {encoding: "utf8"});
+
+    weekTemplate = replaceGlobalVariables(weekTemplate, config);
+    weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig);
+    weekTemplate = replaceConditionals(weekTemplate);
+
+    writeFile("_week" + weekConfig.week + ".md", weekTemplate);
 });
