@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const tableFileName = process.argv[2];
-const tableRows = fs.readFileSync("./" + tableFileName, {encoding: "utf8"}).split("\n").map(x => x.trim());
+const weeklyBreakdownFile = process.argv[2];
+const tableRows = fs.readFileSync("./" + weeklyBreakdownFile, {encoding: "utf8"}).split("\n").map(x => x.trim());
 
-const configFileName = tableFileName.replace(".md", ".json");
+const configFileName = weeklyBreakdownFile.replace(".md", ".json");
 const existingConfig = fs.existsSync(configFileName) ? JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"})) : {};
 
 const existingWeeksConfig = existingConfig.weeks ?
@@ -89,6 +89,7 @@ const dummyConfig = {
     readingFirstDateWithYear: "",
     readingPageInfoTitle: columns.readingPageInfoTitle,
     readingRangeTitle: columns.readingRangeTitle,
+    weeklyBreakdownFile,
     isOnFloFlo: false,
     hasReadAlongSession: false,
     readAlongFirstDate: "",

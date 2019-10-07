@@ -52,6 +52,7 @@ The configuration file contains the following variables:
 |`readingFirstDateWithYear`|When this book's reading will start, as a full date with year (e.g. "October 5th, 2019").|
 |`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
+|`weeklyBreakdownFile`|String|The name of the file that contains the weekly breakdown. If you start out by running the config_generator on the breakdown file, this variable is filled automatically.|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|
 |`hasReadAlongSession`|Boolean|Set this to `true` if you want information about a Read-Along session to appear, `false` if not.|
 |`readAlongFirstDate`|String; optional|The date of the first reading session, to be announced in the home thread.|
@@ -92,7 +93,7 @@ You can use the following variables in the template file as well, but you need n
 |`bookPreviousWeekURL`|The URL of the preceding week|
 |`bookNextWeekURL`|The URL of the following week|
 |`discussionThreadLinks`|A list of links to each week's discussion thread, to be displayed in the home thread.|
-
+|`weeklyBreakdown`|The weekly breakdown that is contained in the weekly breakdown file.|
 
 ### Conditional Generation
 

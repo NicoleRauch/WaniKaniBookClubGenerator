@@ -21,6 +21,7 @@ function replaceGlobalVariables(theTemplate, theConfig, weeksLinks) {
     theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
     theTemplate = theTemplate.replace(/\$discussionThreadLinks\$/g, weeksLinks);
+    theTemplate = theTemplate.replace(/\$weeklyBreakdown\$/g, fs.readFileSync("./" + config.weeklyBreakdownFile, {encoding: "utf8"}));
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
     theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
     theTemplate = theTemplate.replace(/\$readAlongFirstDate\$/g, theConfig.readAlongFirstDate);
