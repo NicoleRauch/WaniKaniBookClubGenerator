@@ -85,6 +85,7 @@ const dummyConfig = {
     bookName: "",
     bookImage: "",
     bookHomeThreadURL: "",
+    whereToBuy: [],
     readingFirstDateWithYear: "",
     readingPageInfoTitle: columns.readingPageInfoTitle,
     readingRangeTitle: columns.readingRangeTitle,

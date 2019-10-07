@@ -21,6 +21,7 @@ function replaceGlobalVariables(theTemplate, theConfig, weeks) {
     theTemplate = theTemplate.replace(/\$bookName\$/g, theConfig.bookName);
     theTemplate = theTemplate.replace(/\$bookImage\$/g, theConfig.bookImage);
     theTemplate = theTemplate.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(theConfig.bookHomeThreadURL));
+    theTemplate = theTemplate.replace(/\$whereToBuy\$/g, theConfig.whereToBuy.map(({name, url}) => "[" + name + "](" + url + ")").join(" | "));
     theTemplate = theTemplate.replace(/\$numberOfTheLastWeek\$/g, theConfig.numberOfTheLastWeek);
     theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);

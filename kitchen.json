@@ -6,6 +6,24 @@
     "bookName": "キッチン",
     "bookImage": "![image|351x500,50%](upload://yEhtHwcf7XO5Dhs2GE2CwsswuRm.jpeg)",
     "bookHomeThreadURL": "https://community.wanikani.com/t/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3-home-thread-intermediate-book-club/38539",
+    "whereToBuy": [
+        {
+            "name": "Amazon JP",
+            "url": "https://www.amazon.co.jp/dp/4041800080/"
+        },
+        {
+            "name": "CDJapan",
+            "url": "http://www.cdjapan.co.jp/product/NEODAI-33121"
+        },
+        {
+            "name": "eBookJapan",
+            "url": "https://ebookjapan.yahoo.co.jp/books/196398/A000196230/"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de1d095c90-dbbc-4134-9389-dbdac023ae10/"
+        }
+    ],
     "readingFirstDateWithYear": "October 5th, 2019",
     "readingPageInfoTitle": "End Page",
     "readingRangeTitle": "End Phrase",

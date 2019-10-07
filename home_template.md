@@ -2,8 +2,9 @@
 
 ## Welcome to $bookName$
 $bookImage$
+
  ## Where to buy 
-[Amazon JP](https://www.amazon.co.jp/dp/4041800080/) | [CDJapan](http://www.cdjapan.co.jp/product/NEODAI-33121) | [eBookJapan](https://ebookjapan.yahoo.co.jp/books/196398/A000196230/) | [Bookwalker](https://bookwalker.jp/de1d095c90-dbbc-4134-9389-dbdac023ae10/)
+$whereToBuy$ 
 
 **Note:** There are two different versions available: The Kadokawa Bunko edition (beige-coloured with bananas), 200 pages, published in 1998, and the Shinchou Bunko edition (grey with tulips), 197 pages, published in 2002.
 I compared the first few paragraphs of both and could not find any differences text-wise, but they might differ wrt. page breaks. This will be pointed out in the reading schedule.

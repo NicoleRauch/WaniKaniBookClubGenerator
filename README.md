@@ -47,6 +47,7 @@ The configuration file contains the following variables:
 |`bookName`|String|The name of the book that this post is for|
 |`bookImage`|String|The full image descriptor (you can usually steal this from the book's home thread).|
 |`bookHomeThreadURL`|String|The URL of the book's home thread (or the last part of the URL)|
+|`whereToBuy`|List of { name, url }|A list of objects containing name and URL of one source of acquisition each.|
 |`numberOfTheLastWeek`|Number|The number of the last week for this book (so that the last week does not get a "next week" link).|
 |`readingFirstDateWithYear`|When this book's reading will start, as a full date with year (e.g. "October 5th, 2019").|
 |`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
