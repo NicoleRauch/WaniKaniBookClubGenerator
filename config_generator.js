@@ -99,5 +99,5 @@ const dummyConfig = {
 
 const fullConfig = {...dummyConfig, ...existingConfig, numberOfTheLastWeek: weeksConfig.length, weeks: weeksConfig};
 
-fs.writeFileSync("./" + configFileName, JSON.stringify(fullConfig, null, 4), {encoding: "utf8"});
+fs.writeFileSync("./" + configFileName, JSON.stringify(fullConfig, null, 4) + "\n", {encoding: "utf8"});
 
