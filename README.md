@@ -40,6 +40,7 @@ The configuration file contains the following variables:
 
 |Name|Type|Explanation|
 |----|----|-----------|
+|`homeTemplate`|String|The name of the template file for the home thread, including file name extension (relative to the current directory)|
 |`weekTemplate`|String|The name of the template file for the weekly threads, including file name extension (relative to the current directory)|
 |`bookClubName`|String|The name of the book club, e.g. "Beginner"|
 |`bookClubURL`|String|The URL of the book club thread (or the last part of the URL)|

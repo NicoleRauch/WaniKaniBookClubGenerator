@@ -78,6 +78,7 @@ const weeksConfig = tableBody.map(row => {
 });
 
 const dummyConfig = {
+    homeTemplate: "home_template.md",
     weekTemplate: "week_template.md",
     bookClubName: "",
     bookClubURL: "",
