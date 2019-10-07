@@ -128,24 +128,25 @@ in the current directory.
 If you want to update the initial configuration (e.g. because the breakdown changed) and an edited
 config file is already in place, the generator will merge the information so nothing should be lost.
 
-### Step 2: Generating the Weekly Thread Files
+### Step 2: Generating the Home Thread File and the Weekly Thread Files
 
-In order to generate the weekly thread files from the edited config file, type
+In order to generate the home thread file and the weekly thread files from the edited config file, type
 
-`node weeks_generator <config-file.json>`
+`node threads_generator <config-file.json>`
 
-in the current directory. It will read the config file and produce a markdown file for each week.
-The markdown files will have the same name, but with the ending `_weekN.md`, e.g. for the config file `config-file.json` 
-you will get `config-file_week1.md` to `config-file_week123.md` (one for each entry in the `weeks` array).
+in the current directory. It will read the config file and produce a markdown file for the home thread 
+as well as for each week.
+The markdown files will have the same name, but with the ending `_home.md` and `_weekN.md`, e.g. for the config file `config-file.json` 
+you will get `config-file_home.md` and `config-file_week1.md` to `config-file_week123.md` (one for each entry in the `weeks` array).
 You can then copy and paste the resulting `.md` files into WaniKani's forum.
 
-If you want to update the forum post at a later stage (e.g. because you now know the next week's URL),
-simply update the configuration file with the new information, run the generator again and update the
-forum post with the result.
+If you want to update one of the forum posts at a later stage (e.g. because you now know the next week's URL),
+simply update the configuration file with the new information, run the generator again and update the appropriate
+forum posts with the result.
 
 
 ## References
 
 * [CommonSpec Markdown Documentation](https://spec.commonmark.org/0.29/)
-* Syntax inspired by https://github.com/andreagentili/markdown-it-condition
+* Conditional Syntax inspired by https://github.com/andreagentili/markdown-it-condition
 
