@@ -83,6 +83,16 @@ const weeks = config.weeks.reduce(
     {}
 );
 
+/////////// generating the home thread /////////////////////////////////////////
+
+var homeTemplate = fs.readFileSync("./" + config.homeTemplate, {encoding: "utf8"});
+
+homeTemplate = replaceGlobalVariables(homeTemplate, config);
+homeTemplate = replaceConditionals(homeTemplate);
+
+writeFile("_home.md", homeTemplate);
+
+
 /////////// generating the weekly threads /////////////////////////////////////////
 
 config.weeks.map(weekConfig => {
