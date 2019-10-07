@@ -11,6 +11,8 @@ I compared the first few paragraphs of both and could not find any differences t
 ## Discussion Threads 
 We will start reading on $readingFirstDateWithYear$.
 
+$discussionThreadLinks$
+
 ::if $hasReadAlongSession$
 ## Read-along Sessions
 
