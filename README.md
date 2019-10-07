@@ -48,6 +48,7 @@ The configuration file contains the following variables:
 |`bookImage`|String|The full image descriptor (you can usually steal this from the book's home thread).|
 |`bookHomeThreadURL`|String|The URL of the book's home thread (or the last part of the URL)|
 |`numberOfTheLastWeek`|Number|The number of the last week for this book (so that the last week does not get a "next week" link).|
+|`readingFirstDateWithYear`|When this book's reading will start, as a full date with year (e.g. "October 5th, 2019").|
 |`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|

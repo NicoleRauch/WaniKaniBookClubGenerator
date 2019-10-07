@@ -9,7 +9,7 @@ $bookImage$
 I compared the first few paragraphs of both and could not find any differences text-wise, but they might differ wrt. page breaks. This will be pointed out in the reading schedule.
 
 ## Discussion Threads 
-We will start reading on October 5th, 2019.
+We will start reading on $readingFirstDateWithYear$.
 
 ::if $hasReadAlongSession$
 ## Read-along Sessions

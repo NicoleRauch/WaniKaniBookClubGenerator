@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const NEWLINE = "\n";
+
 const urlSnippetOf = (url) => {
     if (!url) {
         return "";
@@ -22,6 +24,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readAlongWeekday\$/g, theConfig.readAlongWeekday);
     theTemplate = theTemplate.replace(/\$readAlongJSTHuman\$/g, theConfig.readAlongJSTHuman);
     theTemplate = theTemplate.replace(/\$readAlongJSTComputer\$/g, theConfig.readAlongJSTComputer); // TODO
+    theTemplate = theTemplate.replace(/\$readingFirstDateWithYear\$/g, theConfig.readingFirstDateWithYear);
     return theTemplate;
 }
 
@@ -59,13 +62,13 @@ function replaceConditionals(theTemplate) {
         return {...acc, resultLines: acc.resultLines.concat(current)}; // add current line
     };
 
-    return theTemplate.split("\n").reduce(
+    return theTemplate.split(NEWLINE).reduce(
         reducer,
         {
             removeLines: false,
             resultLines: []
         }
-    ).resultLines.join("\n");
+    ).resultLines.join(NEWLINE);
 }
 
 function writeFile(fileExtension, theTemplate) {
