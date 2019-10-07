@@ -20,7 +20,7 @@ You need to install node.js (at least version 8) [which can be downloaded here](
 ## Configuration
 
 ### Generating a Configuration Stub
-In order to get the result you want, you need to create a configuration file. A template for this file can be
+In order to get the result you want, you need to create a configuration file. A stub for this file can be
 generated from the WK forum breakdown. Just copy the breakdown table to a `.md` file and run the config generator on it:
 
 ```
@@ -40,7 +40,7 @@ The configuration file contains the following variables:
 
 |Name|Type|Explanation|
 |----|----|-----------|
-|`template`|String|The name of the template file including extension (relative to the current directory)|
+|`weekTemplate`|String|The name of the template file for the weekly threads, including file name extension (relative to the current directory)|
 |`bookClubName`|String|The name of the book club, e.g. "Beginner"|
 |`bookClubURL`|String|The URL of the book club thread (or the last part of the URL)|
 |`bookName`|String|The name of the book that this post is for|
@@ -71,14 +71,14 @@ The configurations for each week contains the following variables:
 
 *Note:* For all URLs, the full forum thread URL or only its last part can be specified. (A robust URL will be generated from either information.)
 
-You also need a template file (see the provided example file `template.md`).
+You also need a template file for the weekly threads (see the provided example file `week_template.md`).
 
-You can use all variable names from the template file, included in `$`, e.g. `$week$`, and
-those will get replaced by the values in the configuration file.
+You can use all variable names in the template file, included in `$`, e.g. `$week$`, and
+those will get replaced by the values from the configuration file.
 
 ### Additional Variables
 
-You can use the following variables in the template as well, but you need not set them in the configuration
+You can use the following variables in the template file as well, but you need not set them in the configuration
 (they will be ignored if you set them there):
 
 |Name|Explanation|

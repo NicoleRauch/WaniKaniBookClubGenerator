@@ -4,7 +4,7 @@ const path = require('path');
 const urlSnippetOf = (url) => {
     if (!url) {
         return "";
-    } // safety measurement: should be caught in template already
+    } // safety measurement: should be caught in weekTemplate already
     return "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1);
 };
 
@@ -19,35 +19,35 @@ const weekURLs = config.weeks.reduce(
 config.weeks.map(weekConfig => {
 
     // reload the template for each week!
-    var template = fs.readFileSync("./" + config.template, {encoding: "utf8"});
+    var weekTemplate = fs.readFileSync("./" + config.weekTemplate, {encoding: "utf8"});
     // Replacements:
     // configured values:
-    template = template.replace(/\$bookClubName\$/g, config.bookClubName);
-    template = template.replace(/\$bookClubURL\$/g, urlSnippetOf(config.bookClubURL));
-    template = template.replace(/\$bookName\$/g, config.bookName);
-    template = template.replace(/\$bookImage\$/g, config.bookImage);
-    template = template.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(config.bookHomeThreadURL));
-    template = template.replace(/\$numberOfTheLastWeek\$/g, config.numberOfTheLastWeek);
-    template = template.replace(/\$readingPageInfoTitle\$/g, config.readingPageInfoTitle);
-    template = template.replace(/\$readingRangeTitle\$/g, config.readingRangeTitle);
-    template = template.replace(/\$isOnFloFlo\$/g, config.isOnFloFlo);
-    template = template.replace(/\$hasReadAlongSession\$/g, config.hasReadAlongSession);
-    template = template.replace(/\$readAlongWeekday\$/g, config.readAlongWeekday);
-    template = template.replace(/\$readAlongJSTHuman\$/g, config.readAlongJSTHuman);
-    template = template.replace(/\$readAlongJSTComputer\$/g, config.readAlongJSTComputer); // TODO
+    weekTemplate = weekTemplate.replace(/\$bookClubName\$/g, config.bookClubName);
+    weekTemplate = weekTemplate.replace(/\$bookClubURL\$/g, urlSnippetOf(config.bookClubURL));
+    weekTemplate = weekTemplate.replace(/\$bookName\$/g, config.bookName);
+    weekTemplate = weekTemplate.replace(/\$bookImage\$/g, config.bookImage);
+    weekTemplate = weekTemplate.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(config.bookHomeThreadURL));
+    weekTemplate = weekTemplate.replace(/\$numberOfTheLastWeek\$/g, config.numberOfTheLastWeek);
+    weekTemplate = weekTemplate.replace(/\$readingPageInfoTitle\$/g, config.readingPageInfoTitle);
+    weekTemplate = weekTemplate.replace(/\$readingRangeTitle\$/g, config.readingRangeTitle);
+    weekTemplate = weekTemplate.replace(/\$isOnFloFlo\$/g, config.isOnFloFlo);
+    weekTemplate = weekTemplate.replace(/\$hasReadAlongSession\$/g, config.hasReadAlongSession);
+    weekTemplate = weekTemplate.replace(/\$readAlongWeekday\$/g, config.readAlongWeekday);
+    weekTemplate = weekTemplate.replace(/\$readAlongJSTHuman\$/g, config.readAlongJSTHuman);
+    weekTemplate = weekTemplate.replace(/\$readAlongJSTComputer\$/g, config.readAlongJSTComputer); // TODO
 
-    template = template.replace(/\$week\$/g, weekConfig.week);
-    template = template.replace(/\$weekStartDate\$/g, weekConfig.weekStartDate || "");
-    template = template.replace(/\$readingPageInfo\$/g, weekConfig.readingPageInfo || "");
-    template = template.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent ? weekConfig.readingEndPercent + "%" : "");
-    template = template.replace(/\$readingRange\$/g, weekConfig.readingRange || "");
-    template = template.replace(/\$readingPageCount\$/g, weekConfig.readingPageCount || "");
-    template = template.replace(/\$readAlongNextDate\$/g, weekConfig.readAlongNextDate);
+    weekTemplate = weekTemplate.replace(/\$week\$/g, weekConfig.week);
+    weekTemplate = weekTemplate.replace(/\$weekStartDate\$/g, weekConfig.weekStartDate || "");
+    weekTemplate = weekTemplate.replace(/\$readingPageInfo\$/g, weekConfig.readingPageInfo || "");
+    weekTemplate = weekTemplate.replace(/\$readingEndPercent\$/g, weekConfig.readingEndPercent ? weekConfig.readingEndPercent + "%" : "");
+    weekTemplate = weekTemplate.replace(/\$readingRange\$/g, weekConfig.readingRange || "");
+    weekTemplate = weekTemplate.replace(/\$readingPageCount\$/g, weekConfig.readingPageCount || "");
+    weekTemplate = weekTemplate.replace(/\$readAlongNextDate\$/g, weekConfig.readAlongNextDate);
     // generated values:
-    template = template.replace(/\$previousWeek\$/g, weekConfig.week - 1);
-    template = template.replace(/\$nextWeek\$/g, weekConfig.week + 1);
-    template = template.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week - 1]));
-    template = template.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week + 1]));
+    weekTemplate = weekTemplate.replace(/\$previousWeek\$/g, weekConfig.week - 1);
+    weekTemplate = weekTemplate.replace(/\$nextWeek\$/g, weekConfig.week + 1);
+    weekTemplate = weekTemplate.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week - 1]));
+    weekTemplate = weekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weekURLs[weekConfig.week + 1]));
 
     // conditionals:
     const reducer = (acc, current) => {
@@ -67,7 +67,7 @@ config.weeks.map(weekConfig => {
         return {...acc, resultLines: acc.resultLines.concat(current)}; // add current line
     };
 
-    const templateLines = template.split("\n");
+    const templateLines = weekTemplate.split("\n");
     const result = templateLines.reduce(
         reducer,
         {
