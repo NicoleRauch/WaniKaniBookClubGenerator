@@ -6,9 +6,6 @@ $bookImage$
  ## Where to buy 
 $whereToBuy$ 
 
-**Note:** There are two different versions available: The Kadokawa Bunko edition (beige-coloured with bananas), 200 pages, published in 1998, and the Shinchou Bunko edition (grey with tulips), 197 pages, published in 2002.
-I compared the first few paragraphs of both and could not find any differences text-wise, but they might differ wrt. page breaks. This will be pointed out in the reading schedule.
-
 ## Discussion Threads 
 We will start reading on $readingFirstDateWithYear$.
 
@@ -27,42 +24,8 @@ https://discord.gg/cuV52Bs
 
  ## Reading Schedule 
 
-#### Kitchen
-
-This is the main story of the book. It is split into two parts. Thanks to @catbus for the breakdown: 
-
 $weeklyBreakdown$
 
-*break in middle of conversation
-
-#### Moonlight Shadow
-
-The book contains a second (totally unrelated) story called "Moonlight Shadow" which is 49 pages long.
-We might also read it with the book club while we're at it.
-Here are two possible reading schedules for it (thanks to @Belerith):
-
-**Version 1!** We go full throttle and increase the pace just a tad!
-
-|Week|Start Date|End Page|End Phrase|Pages|
-| --- | --- | --- | --- | --- |
-|Week 11|Dec 14|160|スカートのすそをおぼえている。|16|
-|Week 12|Dec 21|177|あんまりだと思う。|16|
-|Week 13|Dec 28|193|The End|17|
-
-Advantage: We’ll be done before the New Year and go into it with a ‘clean slate’. (Possibly. The last week will end in January. Last Discord session will also be in the New Year.)
-Disadvantage: We’ll be increasing the pace -> People who celebrate the holidays might have less time to read and not be able to keep up.
-
-**Version 2!** We… dont!
-
-|Week|Start Date|End Page|End Phrase|Pages|
-| --- | --- | --- | --- | --- |
-|Week 11|Dec 14|159|年相応の顔をする。|14|
-|Week 12|Dec 21|171|私は笑った。|12|
-|Week 13|Dec 28|181|そして眠りについた。|11|
-|Week 14|Jan 5|193|The End|12|
-
-Advantage: We relax the pace a bit -> More time to prepare and enjoy the holidays for the people who celebrate.
-Disadvantage: It’ll take longer to read. :man_shrugging:
 
 ## Discussion Rules
  * Please use spoiler tags for **_major_** events in the current chapter(s) and **_any_** content in future chapters. 
