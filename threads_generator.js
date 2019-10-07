@@ -10,12 +10,7 @@ const urlSnippetOf = (url) => {
     return "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1);
 };
 
-function replaceGlobalVariables(theTemplate, theConfig, weeks) {
-    let weeksLinks = "";
-    for (i = 1; i <= theConfig.numberOfTheLastWeek; i++) {
-        weeksLinks += weeks[i].weekURL ? "* [Week " + i + "](" + urlSnippetOf(weeks[i].weekURL) + ")" + NEWLINE : "";
-    }
-
+function replaceGlobalVariables(theTemplate, theConfig, weeksLinks) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
     theTemplate = theTemplate.replace(/\$bookClubURL\$/g, urlSnippetOf(theConfig.bookClubURL));
     theTemplate = theTemplate.replace(/\$bookName\$/g, theConfig.bookName);
@@ -94,11 +89,16 @@ const weeks = config.weeks.reduce(
     {}
 );
 
+let weeksLinks = "";
+for (i = 1; i <= config.numberOfTheLastWeek; i++) {
+    weeksLinks += weeks[i].weekURL ? "* [Week " + i + "](" + urlSnippetOf(weeks[i].weekURL) + ")" + NEWLINE : "";
+}
+
 /////////// generating the home thread /////////////////////////////////////////
 
 var homeTemplate = fs.readFileSync("./" + config.homeTemplate, {encoding: "utf8"});
 
-homeTemplate = replaceGlobalVariables(homeTemplate, config, weeks);
+homeTemplate = replaceGlobalVariables(homeTemplate, config, weeksLinks);
 homeTemplate = replaceConditionals(homeTemplate);
 
 // next week for reading session information:
@@ -124,7 +124,7 @@ config.weeks.map(weekConfig => {
     // reload the template for each week!
     var weekTemplate = fs.readFileSync("./" + config.weekTemplate, {encoding: "utf8"});
 
-    weekTemplate = replaceGlobalVariables(weekTemplate, config, weeks);
+    weekTemplate = replaceGlobalVariables(weekTemplate, config, weeksLinks);
     weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig);
     weekTemplate = replaceConditionals(weekTemplate);
 
