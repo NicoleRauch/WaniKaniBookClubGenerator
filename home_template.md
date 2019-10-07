@@ -16,7 +16,7 @@ We will start reading on $readingFirstDateWithYear$.
 
 Come and read from the previous week's section, join in the chat about this book _(also the previous book, possible future books, WK reviews, all things Japan-related, what else you did on the weekend, etc)_ or just lurk and listen.  Readers of all speeds and abilities welcome - we are here to help each other out. Reading sessions will be held every $readAlongWeekday$ at $readAlongJSTHuman$ JST. 
 
-Starting date: One week after we started reading the book, i.e. October 13th.
+Starting date: One week after we started reading the book, i.e. $readAlongFirstDate$.
 
 Next session (in your timezone): [date=2019-10-13 time=21:30:00 format="LLLL \T\Z " timezone="Japan" recurring="1.weeks"] 
 https://discord.gg/cuV52Bs 

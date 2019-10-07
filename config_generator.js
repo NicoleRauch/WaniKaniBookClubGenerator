@@ -90,6 +90,7 @@ const dummyConfig = {
     readingRangeTitle: columns.readingRangeTitle,
     isOnFloFlo: false,
     hasReadAlongSession: false,
+    readAlongFirstDate: "",
     readAlongWeekday: "Sunday",
     readAlongJSTHuman: "9:30pm",
     readAlongJSTComputer: "21:30:00",

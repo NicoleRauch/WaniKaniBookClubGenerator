@@ -53,6 +53,7 @@ The configuration file contains the following variables:
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|
 |`hasReadAlongSession`|Boolean|Set this to `true` if you want information about a Read-Along session to appear, `false` if not.|
+|`readAlongFirstDate`|String; optional|The date of the first reading session, to be announced in the home thread.|
 |`readAlongWeekday`|String; optional|The weekday of the read-along session. Only required when the read-along session should be shown.|
 |`readAlongJSTHuman`|String; optional|The time of the read-along session in JST, in human-readable format (e.g. `9:30pm`). Only required when the read-along session should be shown.|
 |`readAlongJSTComputer`|String; optional|The time of the read-along session in JST, in computer-readable format (e.g. `21:30:00`). Only required when the read-along session should be shown.|
