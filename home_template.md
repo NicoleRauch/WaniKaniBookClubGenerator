@@ -34,7 +34,22 @@ $weeklyBreakdown$
 * To you lurkers out there: Join the conversation, it's fun! 
 
 ## Member List
- Set your participation status [here](https://community.wanikani.com/t/x/38539/2).
+
+Are you planning to read $bookName$ with the book club?
+
+[poll type=regular results=always public=true]
+* Yes
+* Yes, but I might start late
+* Not sure
+* No
+[/poll]
+
+If so, which version will you be reading?
+
+[poll name=poll2 type=regular results=always public=true]
+* eBook
+* Paperback
+[/poll]
 
 ::if $isOnFloFlo$
 ## Additional Resources - Vocabulary lists
