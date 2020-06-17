@@ -148,6 +148,18 @@ If you want to update one of the forum posts at a later stage (e.g. because you 
 simply update the configuration file with the new information, run the generator again and update the appropriate
 forum posts with the result.
 
+## Typical Workflow
+
+A typical workflow goes like this:
+
+1. Publish the Home Thread as initially generated
+1. At the start of a new week:
+   a. Publish that week's thread as currently generated
+   a. Add the week's URL to the JSON config
+   a. Regenerate the threads
+   a. Publish the newly generated Home Thread
+   a. If we're not in week 1: Publish the newly generated previous week's thread
+  
 
 ## References
 

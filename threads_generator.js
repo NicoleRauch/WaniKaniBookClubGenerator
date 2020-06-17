@@ -3,12 +3,9 @@ const path = require('path');
 
 const NEWLINE = "\n";
 
-const urlSnippetOf = (url) => {
-    if (!url) {
-        return "";
-    } // safety measurement: should be caught in weekTemplate already
-    return "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1);
-};
+const urlSnippetOf = (url) =>
+    // safety measurement: empty url should be caught in weekTemplate already
+    url ? "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1) : "";
 
 const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" : name;
 
