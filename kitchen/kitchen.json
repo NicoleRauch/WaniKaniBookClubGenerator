@@ -34,7 +34,7 @@
     "readAlongWeekday": "Sunday",
     "readAlongJSTHuman": "9:30pm",
     "readAlongJSTComputer": "21:30:00",
-    "numberOfTheLastWeek": 10,
+    "numberOfTheLastWeek": 13,
     "weeks": [
         {
             "week": 1,
@@ -49,7 +49,7 @@
         {
             "week": 2,
             "weekStartDate": "Oct 12th",
-            "weekURL": "",
+            "weekURL": "39570",
             "readingPageInfo": "32",
             "readingEndPercent": 14,
             "readingRange": "神に心から感謝していた。",
@@ -59,7 +59,7 @@
         {
             "week": 3,
             "weekStartDate": "Oct 19th",
-            "weekURL": "",
+            "weekURL": "39691",
             "readingPageInfo": "43",
             "readingEndPercent": 19,
             "readingRange": "出なくては。",
@@ -69,7 +69,7 @@
         {
             "week": 4,
             "weekStartDate": "Oct 26th",
-            "weekURL": "",
+            "weekURL": "39804",
             "readingPageInfo": "57",
             "readingEndPercent": 26,
             "readingRange": "素足がふるえた。",
@@ -79,7 +79,7 @@
         {
             "week": 5,
             "weekStartDate": "Nov 2nd",
-            "weekURL": "",
+            "weekURL": "39962",
             "readingPageInfo": "73",
             "readingEndPercent": 33,
             "readingRange": "「お電話ありがとう。」と言った。",
@@ -89,7 +89,7 @@
         {
             "week": 6,
             "weekStartDate": "Nov 9th",
-            "weekURL": "",
+            "weekURL": "40122",
             "readingPageInfo": "86",
             "readingEndPercent": 40,
             "readingRange": "心に満ちてしまう。",
@@ -99,7 +99,7 @@
         {
             "week": 7,
             "weekStartDate": "Nov 16th",
-            "weekURL": "",
+            "weekURL": "40252",
             "readingPageInfo": "101*",
             "readingEndPercent": 48,
             "readingRange": "いやな悲しさでいっぱいになっていった。",
@@ -109,7 +109,7 @@
         {
             "week": 8,
             "weekStartDate": "Nov 23rd",
-            "weekURL": "",
+            "weekURL": "40408",
             "readingPageInfo": "115*",
             "readingEndPercent": 55,
             "readingRange": "きしめんを食べながら私は切り出した。",
@@ -119,7 +119,7 @@
         {
             "week": 9,
             "weekStartDate": "Nov 30th",
-            "weekURL": "",
+            "weekURL": "40526",
             "readingPageInfo": "131",
             "readingEndPercent": 63,
             "readingRange": "私は上っていった。",
@@ -129,12 +129,42 @@
         {
             "week": 10,
             "weekStartDate": "Dec 7th",
-            "weekURL": "",
+            "weekURL": "40650",
             "readingPageInfo": "145",
             "readingEndPercent": 70,
             "readingRange": "説明をはじめた。",
             "readingPageCount": 14,
             "readAlongNextDate": "2019-12-15"
+        },
+        {
+            "week": 11,
+            "weekStartDate": "Dec 14th",
+            "weekURL": "40762",
+            "readingPageInfo": "160",
+            "readingEndPercent": 79,
+            "readingRange": "スカートのすそをおぼえている。",
+            "readingPageCount": 16,
+            "readAlongNextDate": "2019-12-22"
+        },
+        {
+            "week": 12,
+            "weekStartDate": "Dec 21st",
+            "weekURL": "40913",
+            "readingPageInfo": "177",
+            "readingEndPercent": 87,
+            "readingRange": "あんまりだと思う。",
+            "readingPageCount": 16,
+            "readAlongNextDate": "2019-12-29"
+        },
+        {
+            "week": 13,
+            "weekStartDate": "Dec 28th",
+            "weekURL": "41028",
+            "readingPageInfo": "193",
+            "readingEndPercent": 96,
+            "readingRange": "The End",
+            "readingPageCount": 17,
+            "readAlongNextDate": "2020-01-05"
         }
     ]
 }

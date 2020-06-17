@@ -52,7 +52,8 @@ https://discord.gg/cuV52Bs
 
 ## Participants
 
-Mark your participation status by voting in this poll.
+Mark your participation status by voting in this poll. 
+(Please feel free to update your status whenever you like!)
 
 [poll type=regular results=always public=true]
 *  I'm reading along

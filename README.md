@@ -92,8 +92,7 @@ You can use the following variables in the template file as well, but you need n
 |`nextWeek`|The number of the subsequent week, e.g. for the "next week" link|
 |`bookPreviousWeekURL`|The URL of the preceding week|
 |`bookNextWeekURL`|The URL of the following week|
-|`discussionThreadLinks`|A list of links to each week's discussion thread, to be displayed in the home thread.|
-|`weeklyBreakdown`|The weekly breakdown that is contained in the weekly breakdown file.|
+|`weeklyBreakdown`|The weekly breakdown that is contained in the weekly breakdown file, enhanced by the links to the weekly threads.|
 
 ### Conditional Generation
 

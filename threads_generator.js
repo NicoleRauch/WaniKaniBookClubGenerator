@@ -10,18 +10,38 @@ const urlSnippetOf = (url) => {
     return "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1);
 };
 
-function replaceGlobalVariables(theTemplate, theConfig, weeksLinks) {
+const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" : name;
+
+function weeklyBreakdown(theConfig) {
+    const headerText = "| Week | Start Date | "
+        + theConfig.readingRangeTitle + " | "
+        + theConfig.readingPageInfoTitle
+        + " | Page Count |"
+        + NEWLINE + "|-|-|-|-|-|" + NEWLINE;
+    const weekEntry = (week) => "| " + [
+        urlOf("Week " + week.week, week.weekURL),
+        week.weekStartDate,
+        week.readingRange,
+        week.readingPageInfo,
+        week.readingPageCount].join(" | ") + " |";
+
+    const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
+        .map(weekEntry)
+        .join(NEWLINE);
+    return headerText + weeksText;
+}
+
+function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
     theTemplate = theTemplate.replace(/\$bookClubURL\$/g, urlSnippetOf(theConfig.bookClubURL));
     theTemplate = theTemplate.replace(/\$bookName\$/g, theConfig.bookName);
     theTemplate = theTemplate.replace(/\$bookImage\$/g, theConfig.bookImage);
     theTemplate = theTemplate.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(theConfig.bookHomeThreadURL));
-    theTemplate = theTemplate.replace(/\$whereToBuy\$/g, theConfig.whereToBuy.map(({name, url}) => "[" + name + "](" + url + ")").join(" | "));
+    theTemplate = theTemplate.replace(/\$whereToBuy\$/g, theConfig.whereToBuy.map(({name, url}) => urlOf(name, url)).join(" | "));
     theTemplate = theTemplate.replace(/\$numberOfTheLastWeek\$/g, theConfig.numberOfTheLastWeek);
     theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
-    theTemplate = theTemplate.replace(/\$discussionThreadLinks\$/g, weeksLinks);
-    theTemplate = theTemplate.replace(/\$weeklyBreakdown\$/g, fs.readFileSync("./" + config.weeklyBreakdownFile, {encoding: "utf8"}));
+    theTemplate = theTemplate.replace(/\$weeklyBreakdown\$/g, weeklyBreakdown(theConfig));
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
     theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
     theTemplate = theTemplate.replace(/\$readAlongFirstDate\$/g, theConfig.readAlongFirstDate);
@@ -90,16 +110,11 @@ const weeks = config.weeks.reduce(
     {}
 );
 
-let weeksLinks = "";
-for (i = 1; i <= config.numberOfTheLastWeek; i++) {
-    weeksLinks += weeks[i].weekURL ? "* [Week " + i + "](" + urlSnippetOf(weeks[i].weekURL) + ")" + NEWLINE : "";
-}
-
 /////////// generating the home thread /////////////////////////////////////////
 
 var homeTemplate = fs.readFileSync("./" + config.homeTemplate, {encoding: "utf8"});
 
-homeTemplate = replaceGlobalVariables(homeTemplate, config, weeksLinks);
+homeTemplate = replaceGlobalVariables(homeTemplate, config);
 homeTemplate = replaceConditionals(homeTemplate);
 
 // next week for reading session information:
@@ -125,7 +140,7 @@ config.weeks.map(weekConfig => {
     // reload the template for each week!
     var weekTemplate = fs.readFileSync("./" + config.weekTemplate, {encoding: "utf8"});
 
-    weekTemplate = replaceGlobalVariables(weekTemplate, config, weeksLinks);
+    weekTemplate = replaceGlobalVariables(weekTemplate, config);
     weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig);
     weekTemplate = replaceConditionals(weekTemplate);
 
