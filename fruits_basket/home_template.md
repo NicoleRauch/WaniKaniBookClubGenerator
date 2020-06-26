@@ -4,7 +4,7 @@ We're reading this as the [Beginner Book Club!](https://community.wanikani.com/t
 
 ![Fruits Basket 1|348x500, 60%](upload://dN0l9qeehfcDQ9V3bhU2ny4rszw.jpeg) 
 
-If you want to take part... just buy the book and join in the discussion when we start on the 20th of June! There's a membership poll further down.
+If you want to take part... just buy the book and join in the discussion! We only just started, on 20th June. There's a membership poll further down.
 
 Not sure if this is for you? Check out the sample pages in the [Nomination Post](https://community.wanikani.com/t/x/19766/3100) - remember that your fellow book club members and the vocab sheet will be here to help you out though ;)
 <br>
