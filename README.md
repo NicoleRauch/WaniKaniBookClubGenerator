@@ -51,6 +51,7 @@ The configuration file contains the following variables:
 |`numberOfTheLastWeek`|Number|The number of the last week for this book (so that the last week does not get a "next week" link).|
 |`readingFirstDateWithYear`|When this book's reading will start, as a full date with year (e.g. "October 5th, 2019").|
 |`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
+|`readingPageInfo2Title`|String|In case we have multiple book versions with different page numbers, we can add a second set.|
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
 |`weeklyBreakdownFile`|String|The name of the file that contains the weekly breakdown. If you start out by running the config_generator on the breakdown file, this variable is filled automatically.|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|
@@ -69,6 +70,7 @@ The configurations for each week contains the following variables:
 |`weekStartDate`|String|When does this part's reading start, in human-readable format (e.g. "June 3rd")|
 |`weekURL`|String; optional|The URL of the week's WK thread (To be added after posting. Initially it can be left out or left empty).|
 |`readingPageInfo`|String|Some indication of this week's reading, e.g. the last page or the pages, in the paper book.| 
+|`readingPageInfo2`|String|In case we have multiple book versions with different page numbers, this indicates a different page range etc.| 
 |`readingEndPercent`|Number|The percentage of the last sentence of this week's reading.| 
 |`readingRange`|String|An indicator of what to read, e.g. the chapter or the last phrase of this week's reading.| 
 |`readingPageCount`|Number|The number of pages that this week's reading covers.| 

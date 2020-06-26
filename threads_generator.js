@@ -11,16 +11,28 @@ const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" :
 
 function weeklyBreakdown(theConfig) {
     const headerText = "| Week | Start Date | "
-        + theConfig.readingRangeTitle + " | "
-        + theConfig.readingPageInfoTitle
+        + theConfig.readingRangeTitle
+        + " | " + theConfig.readingPageInfoTitle
+        + (theConfig.readingPageInfo2Title ? (" | " + theConfig.readingPageInfo2Title) : "")
         + " | Page Count |"
         + NEWLINE + "|-|-|-|-|-|" + NEWLINE;
-    const weekEntry = (week) => "| " + [
-        urlOf("Week " + week.week, week.weekURL),
-        week.weekStartDate,
-        week.readingRange,
-        week.readingPageInfo,
-        week.readingPageCount].join(" | ") + " |";
+
+    const weekEntry = (week) => "| " +
+        (week.readingPageInfo2
+            ? [
+                urlOf("Week " + week.week, week.weekURL),
+                week.weekStartDate,
+                week.readingRange,
+                week.readingPageInfo,
+                week.readingPageInfo2,
+                week.readingPageCount
+            ] : [
+                urlOf("Week " + week.week, week.weekURL),
+                week.weekStartDate,
+                week.readingRange,
+                week.readingPageInfo,
+                week.readingPageCount])
+            .join(" | ") + " |";
 
     const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
         .map(weekEntry)
@@ -37,6 +49,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$whereToBuy\$/g, theConfig.whereToBuy.map(({name, url}) => urlOf(name, url)).join(" | "));
     theTemplate = theTemplate.replace(/\$numberOfTheLastWeek\$/g, theConfig.numberOfTheLastWeek);
     theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle);
+    theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
     theTemplate = theTemplate.replace(/\$weeklyBreakdown\$/g, weeklyBreakdown(theConfig));
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
@@ -53,6 +66,7 @@ function replaceWeeklyVariables(theWeekTemplate, theWeekConfig) {
     theWeekTemplate = theWeekTemplate.replace(/\$week\$/g, theWeekConfig.week);
     theWeekTemplate = theWeekTemplate.replace(/\$weekStartDate\$/g, theWeekConfig.weekStartDate || "");
     theWeekTemplate = theWeekTemplate.replace(/\$readingPageInfo\$/g, theWeekConfig.readingPageInfo || "");
+    theWeekTemplate = theWeekTemplate.replace(/\$readingPageInfo2\$/g, theWeekConfig.readingPageInfo2 || "");
     theWeekTemplate = theWeekTemplate.replace(/\$readingEndPercent\$/g, theWeekConfig.readingEndPercent ? theWeekConfig.readingEndPercent + "%" : "");
     theWeekTemplate = theWeekTemplate.replace(/\$readingRange\$/g, theWeekConfig.readingRange || "");
     theWeekTemplate = theWeekTemplate.replace(/\$readingPageCount\$/g, theWeekConfig.readingPageCount || "");
