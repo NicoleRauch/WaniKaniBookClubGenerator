@@ -1,0 +1,153 @@
+{
+    "homeTemplate": "home_template.md",
+    "weekTemplate": "week_template.md",
+    "bookClubName": "Beginner Book Club",
+    "bookClubURL": "19766",
+    "bookName": "フルーツバスケット ・ Fruits Basket 🍏 🍇 🍑 🍒 🍐 🍊 🧺",
+    "bookImage": "![Fruits Basket 1|348x500, 60%](upload://dN0l9qeehfcDQ9V3bhU2ny4rszw.jpeg)",
+    "bookHomeThreadURL": "43184",
+    "whereToBuy": [],
+    "readingFirstDateWithYear": "June 20th, 2020",
+    "readingPageInfoTitle": "Page Numbers",
+    "readingRangeTitle": "Chapter",
+    "weeklyBreakdownFile": "fruits_basket.md",
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "numberOfTheLastWeek": 13,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "June 20th",
+            "weekURL": "44460",
+            "readingPageInfo": "9 - 31",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 1 (上)",
+            "readingPageCount": 23,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 2,
+            "weekStartDate": "June 27th",
+            "weekURL": "",
+            "readingPageInfo": "32 - 54",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 1 (下)",
+            "readingPageCount": 23,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 3,
+            "weekStartDate": "July 4th",
+            "weekURL": "",
+            "readingPageInfo": "55 - 84",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 2",
+            "readingPageCount": 29,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 4,
+            "weekStartDate": "July 11th",
+            "weekURL": "",
+            "readingPageInfo": "85 - 114",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 3",
+            "readingPageCount": 29,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 5,
+            "weekStartDate": "July 18th",
+            "weekURL": "",
+            "readingPageInfo": "115 - 144",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 4",
+            "readingPageCount": 29,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 6,
+            "weekStartDate": "July 25th",
+            "weekURL": "",
+            "readingPageInfo": "145 - 176",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 5",
+            "readingPageCount": 31,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 7,
+            "weekStartDate": "August 1st",
+            "weekURL": "",
+            "readingPageInfo": "177 - 208",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 6",
+            "readingPageCount": 31,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 8,
+            "weekStartDate": "August 8th",
+            "weekURL": "",
+            "readingPageInfo": "209 - 242",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 7",
+            "readingPageCount": 33,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 9,
+            "weekStartDate": "August 15th",
+            "weekURL": "",
+            "readingPageInfo": "243 - 272",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 8",
+            "readingPageCount": 29,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 10,
+            "weekStartDate": "August 22nd",
+            "weekURL": "",
+            "readingPageInfo": "273 - 302",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 9",
+            "readingPageCount": 29,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 11,
+            "weekStartDate": "August 29th",
+            "weekURL": "",
+            "readingPageInfo": "303 - 333",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 10",
+            "readingPageCount": 30,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 12,
+            "weekStartDate": "September 5th",
+            "weekURL": "",
+            "readingPageInfo": "334 - 366",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 11",
+            "readingPageCount": 30,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 13,
+            "weekStartDate": "September 12th",
+            "weekURL": "",
+            "readingPageInfo": "367 - 396",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 12",
+            "readingPageCount": 29,
+            "readAlongNextDate": ""
+        }
+    ]
+}

@@ -19,6 +19,9 @@ const possibleHeaders = [
     "Start Date",
     "End Page",
     "Page Numbers",
+    "Pages",
+    "Pages (old)",
+    "Pages (Collector's)",
     "End Percentage",
     "End Phrase",
     "Chapter",
@@ -34,12 +37,17 @@ const columnsFor = (header) => {
             switch (current) {
                 case "Week": return {...acc, week: index};
                 case "Start Date": return {...acc, weekStartDate: index};
-                case "End Page": return {...acc, readingPageInfo: index, readingPageInfoTitle: current};
-                case "Page Numbers": return {...acc, readingPageInfo: index, readingPageInfoTitle: current};
                 case "End Percentage": return {...acc, readingEndPercent: index};
-                case "End Phrase": return {...acc, readingRange: index, readingRangeTitle: current};
-                case "Chapter": return {...acc, readingRange: index, readingRangeTitle: current};
                 case "Page Count": return {...acc, readingPageCount: index};
+
+                case "End Page":
+                case "Pages (old)":
+                case "Page Numbers": return {...acc, readingPageInfo: index, readingPageInfoTitle: current};
+
+                case "Pages (Collector's)": return {...acc, readingPageInfo2: index, readingPageInfo2Title: current};
+
+                case "End Phrase":
+                case "Chapter": return {...acc, readingRange: index, readingRangeTitle: current};
                 default:
                     console.log("Unknown column header '" +current+ "' - column will be ignored.");
             }
