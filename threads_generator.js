@@ -9,36 +9,38 @@ const urlSnippetOf = (url) =>
 
 const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" : name;
 
-function readingSchedule(theConfig) {
-    const headerText = "| Week | Start Date | "
-        + theConfig.readingRangeTitle
-        + " | " + theConfig.readingPageInfoTitle
-        + (theConfig.readingPageInfo2Title ? (" | " + theConfig.readingPageInfo2Title) : "")
-        + " | Page Count |"
-        + NEWLINE + "|-|-|-|-|-|" + NEWLINE;
+const headerText = (theConfig) => "| Week | Start Date | "
+    + theConfig.readingRangeTitle
+    + " | " + theConfig.readingPageInfoTitle
+    + (theConfig.readingPageInfo2Title ? (" | " + theConfig.readingPageInfo2Title) : "")
+    + " | Page Count |"
+    + NEWLINE + "|-|-|-|-|-|" + NEWLINE;
 
-    const weekEntry = (week) => "| " +
-        (week.readingPageInfo2
-            ? [
-                urlOf("Week " + week.week, week.weekURL),
-                week.weekStartDate,
-                week.readingRange,
-                week.readingPageInfo,
-                week.readingPageInfo2,
-                week.readingPageCount
-            ] : [
-                urlOf("Week " + week.week, week.weekURL),
-                week.weekStartDate,
-                week.readingRange,
-                week.readingPageInfo,
-                week.readingPageCount])
-            .join(" | ") + " |";
+const weekEntry = withLinks => (week) => "| " +
+    (week.readingPageInfo2
+        ? [
+            withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week,
+            week.weekStartDate,
+            week.readingRange,
+            week.readingPageInfo,
+            week.readingPageInfo2,
+            week.readingPageCount
+        ] : [
+            withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week,
+            week.weekStartDate,
+            week.readingRange,
+            week.readingPageInfo,
+            week.readingPageCount])
+        .join(" | ") + " |";
 
+const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
-        .map(weekEntry)
+        .map(weekEntry(true))
         .join(NEWLINE);
-    return headerText + weeksText;
-}
+    return headerText(theConfig) + weeksText;
+};
+
+const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(false)(theWeekConfig);
 
 function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
@@ -62,7 +64,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     return theTemplate;
 }
 
-function replaceWeeklyVariables(theWeekTemplate, theWeekConfig) {
+function replaceWeeklyVariables(theWeekTemplate, theWeekConfig, theConfig) {
     theWeekTemplate = theWeekTemplate.replace(/\$week\$/g, theWeekConfig.week);
     theWeekTemplate = theWeekTemplate.replace(/\$weekStartDate\$/g, theWeekConfig.weekStartDate || "");
     theWeekTemplate = theWeekTemplate.replace(/\$readingPageInfo\$/g, theWeekConfig.readingPageInfo || "");
@@ -76,6 +78,7 @@ function replaceWeeklyVariables(theWeekTemplate, theWeekConfig) {
     theWeekTemplate = theWeekTemplate.replace(/\$nextWeek\$/g, theWeekConfig.week + 1);
     theWeekTemplate = theWeekTemplate.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week - 1] ? weeks[theWeekConfig.week - 1].weekURL : undefined));
     theWeekTemplate = theWeekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week + 1] ? weeks[theWeekConfig.week + 1].weekURL : undefined));
+    theWeekTemplate = theWeekTemplate.replace(/\$weeklyReadingSchedule\$/g, weeklyReadingSchedule(theConfig, theWeekConfig));
     return theWeekTemplate;
 }
 
@@ -138,7 +141,7 @@ const nextReadings =
         : [];
 
 if(nextReadings.length) {
-    homeTemplate = replaceWeeklyVariables(homeTemplate, weeks[nextReadings[0].week]);
+    homeTemplate = replaceWeeklyVariables(homeTemplate, weeks[nextReadings[0].week], config);
 }
 
 writeFile("_home.md", homeTemplate);
@@ -152,7 +155,7 @@ config.weeks.map(weekConfig => {
     var weekTemplate = fs.readFileSync("./" + config.weekTemplate, {encoding: "utf8"});
 
     weekTemplate = replaceGlobalVariables(weekTemplate, config);
-    weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig);
+    weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig, config);
     weekTemplate = replaceConditionals(weekTemplate);
 
     writeFile("_week" + weekConfig.week + ".md", weekTemplate);

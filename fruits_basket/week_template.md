@@ -25,10 +25,7 @@ $bookImage$
 
 ## Reading:
 
-| $readingPageInfoTitle$ | $readingRangeTitle$ | Page Count |
-| --- | --- | --- |
-|$readingPageInfo$|$readingRange$|$readingPageCount$|
-
+$weeklyReadingSchedule$
 
 ::if $isOnFloFlo$
 ## Word lists - Learn the vocabulary for $bookName$

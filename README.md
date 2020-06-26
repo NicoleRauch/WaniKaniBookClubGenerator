@@ -95,6 +95,7 @@ You can use the following variables in the template file as well, but you need n
 |`bookPreviousWeekURL`|The URL of the preceding week|
 |`bookNextWeekURL`|The URL of the following week|
 |`readingSchedule`|The reading schedule that is contained in the weekly breakdown file, enhanced by the links to the weekly threads.|
+|`weeklyReadingSchedule`|The excerpt of the reading schedule for the current week.|
 
 ### Conditional Generation
 
