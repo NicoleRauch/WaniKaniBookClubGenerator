@@ -9,7 +9,7 @@ const urlSnippetOf = (url) =>
 
 const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" : name;
 
-function weeklyBreakdown(theConfig) {
+function readingSchedule(theConfig) {
     const headerText = "| Week | Start Date | "
         + theConfig.readingRangeTitle
         + " | " + theConfig.readingPageInfoTitle
@@ -51,7 +51,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle);
     theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
-    theTemplate = theTemplate.replace(/\$weeklyBreakdown\$/g, weeklyBreakdown(theConfig));
+    theTemplate = theTemplate.replace(/\$readingSchedule\$/g, readingSchedule(theConfig));
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
     theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
     theTemplate = theTemplate.replace(/\$readAlongFirstDate\$/g, theConfig.readAlongFirstDate);

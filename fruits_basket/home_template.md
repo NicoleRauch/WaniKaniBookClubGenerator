@@ -26,7 +26,7 @@ There are of course other eBook retailers, including [BookWalker](https://bookwa
 
 ## Reading Schedule
 
-$weeklyBreakdown$
+$readingSchedule$
 
 ## Vocabulary List
 
