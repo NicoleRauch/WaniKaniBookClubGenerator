@@ -27,6 +27,12 @@ $bookImage$
 
 $weeklyReadingSchedule$
 
+::if "$vocabSpreadsheet$"
+## Vocabulary List
+
+$weeklyVocabSpreadsheet$
+::endif
+
 ::if $isOnFloFlo$
 ## Word lists - Learn the vocabulary for $bookName$
 * [FloFlo Word List](https://floflo.moe/books/) (Requires free account)

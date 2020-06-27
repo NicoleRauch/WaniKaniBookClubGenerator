@@ -54,6 +54,7 @@ The configuration file contains the following variables:
 |`readingPageInfo2Title`|String|In case we have multiple book versions with different page numbers, we can add a second set.|
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
 |`weeklyBreakdownFile`|String|The name of the file that contains the weekly breakdown. If you start out by running the config_generator on the breakdown file, this variable is filled automatically.|
+|`vocabSpreadsheet`|String; optional|Link to an external spreadsheet for vocabulary.|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|
 |`hasReadAlongSession`|Boolean|Set this to `true` if you want information about a Read-Along session to appear, `false` if not.|
 |`readAlongFirstDate`|String; optional|The date of the first reading session, to be announced in the home thread.|
@@ -75,6 +76,7 @@ The configurations for each week contains the following variables:
 |`readingRange`|String|An indicator of what to read, e.g. the chapter or the last phrase of this week's reading.| 
 |`readingPageCount`|Number|The number of pages that this week's reading covers.| 
 |`readAlongNextDate`|String; optional|The date of the next read-along session, in computer-readable format (e.g. `2019-03-15`). Only required when the read-along session should be shown.|
+|`weeklyVocabSpreadsheet`|String; optional|Link to the weekly section of that spreadsheet.|
 
 *Note:* For all URLs, the full forum thread URL or only its last part can be specified. (A robust URL will be generated from either information.)
 
