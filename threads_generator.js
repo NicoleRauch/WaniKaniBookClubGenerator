@@ -9,30 +9,31 @@ const urlSnippetOf = (url) =>
 
 const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" : name;
 
-const toTableRow = (rowElements) => "| " + rowElements.join(" | ") + " |" + NEWLINE;
+const toTableRow = rowElements => "| " + rowElements.join(" | ") + " |" + NEWLINE;
 
-const headerText = (theConfig) => {
-    const headings = ["Week", "Start Date", theConfig.readingRangeTitle, theConfig.readingPageInfoTitle]
-            .concat(theConfig.readingPageInfo2Title ? theConfig.readingPageInfo2Title : [])
-            .concat("Page Count");
+const headerText = theConfig => {
+    const headings =
+        [
+            "Week",
+            "Start Date",
+            theConfig.readingRangeTitle,
+            theConfig.readingPageInfoTitle
+        ]
+        .concat(theConfig.readingPageInfo2Title ? theConfig.readingPageInfo2Title : [])
+        .concat("Page Count");
     return toTableRow(headings) + toTableRow(headings.map(h => "-"));
 };
 
-const weekEntry = withLinks => (week) =>
-    toTableRow(week.readingPageInfo2
-        ? [
+const weekEntry = withLinks => week =>
+    toTableRow(
+        [
             withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week,
             week.weekStartDate,
             week.readingRange,
-            week.readingPageInfo,
-            week.readingPageInfo2,
-            week.readingPageCount
-        ] : [
-            withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week,
-            week.weekStartDate,
-            week.readingRange,
-            week.readingPageInfo,
-            week.readingPageCount]);
+            week.readingPageInfo
+        ]
+        .concat(week.readingPageInfo2 ? week.readingPageInfo2 : [])
+        .concat(week.readingPageCount));
 
 const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
