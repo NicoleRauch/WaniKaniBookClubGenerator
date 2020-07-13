@@ -1,0 +1,81 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Intermediate",
+    "bookClubURL": "18908",
+    "bookName": "聖☆おにいさん",
+    "bookImage": "",
+    "bookHomeThreadURL": "",
+    "whereToBuy": [
+      {
+        "name": "Amazon JP",
+        "url": "https://www.amazon.co.jp/dp/product/4063726622"
+      },
+      {
+        "name": "Bookwalker",
+        "url": "https://bookwalker.jp/dea3457224-7d03-43b1-b46f-fd0b41d82bd5/"
+      }
+    ],
+    "readingFirstDateWithYear": "",
+    "readingPageInfoTitle": "Pages (physical)",
+    "readingPageInfo2Title": "Pages (ebook)",
+    "readingRangeTitle": "Chapter",
+    "mainVocabUrl": "",
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "numberOfTheLastWeek": 4,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingPageInfo2": "5 - 27",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 1 + 2",
+            "readingPageCount": 20,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 2,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingPageInfo2": "29 - 63",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 3 + 4",
+            "readingPageCount": 32,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 3,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingPageInfo2": "65 - 99",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 5 + 6",
+            "readingPageCount": 32,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 4,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingPageInfo2": "101 - 135",
+            "readingEndPercent": null,
+            "readingRange": "Chapter 7 + 8",
+            "readingPageCount": 32,
+            "readAlongNextDate": ""
+        }
+    ]
+}
