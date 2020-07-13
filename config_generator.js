@@ -104,7 +104,6 @@ const dummyConfig = {
     readingPageInfoTitle: columns.readingPageInfoTitle,
     readingPageInfo2Title: columns.readingPageInfo2Title,
     readingRangeTitle: columns.readingRangeTitle,
-    weeklyBreakdownFile,
     mainVocabUrl: "",
     isOnFloFlo: false,
     hasReadAlongSession: false,

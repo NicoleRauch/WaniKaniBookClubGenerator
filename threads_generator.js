@@ -19,7 +19,7 @@ const headerText = theConfig => {
             theConfig.readingRangeTitle,
             theConfig.readingPageInfoTitle
         ]
-        .concat(theConfig.readingPageInfo2Title ? theConfig.readingPageInfo2Title : [])
+        .concat(theConfig.readingPageInfo2Title || [])
         .concat("Page Count");
     return toTableRow(headings) + toTableRow(headings.map(h => "-"));
 };
