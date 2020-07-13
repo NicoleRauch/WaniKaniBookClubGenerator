@@ -3,6 +3,8 @@ const path = require('path');
 
 const NEWLINE = "\n";
 
+const log = (text) => { console.log(text); return text; };
+
 const urlSnippetOf = (url) =>
     // safety measurement: empty url should be caught in weekTemplate already
     url ? "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1) : "";

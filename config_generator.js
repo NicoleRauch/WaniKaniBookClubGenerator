@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const log = (text) => { console.log(text); return text; };
+
 const weeklyBreakdownFile = process.argv[2];
 const tableRows = fs.readFileSync("./" + weeklyBreakdownFile, {encoding: "utf8"}).split("\n").map(x => x.trim());
 
