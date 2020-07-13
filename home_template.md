@@ -6,10 +6,16 @@ $bookImage$
  ## Where to buy 
 $whereToBuy$ 
 
-## Discussion Threads 
+## Discussion Threads and Reading Schedule
 We will start reading on $readingFirstDateWithYear$.
 
-$discussionThreadLinks$
+$readingSchedule$
+
+## Discussion Rules
+ * Please use spoiler tags for **_major_** events in the current chapter(s) and **_any_** content in future chapters. 
+* When asking for help, please mention the chapter and page number. Also mention what version of the book you are reading. 
+* Don't be afraid of asking questions, even if they seem embarassing at first. All of us are here to learn. 
+* To you lurkers out there: Join the conversation, it's fun! 
 
 ::if $hasReadAlongSession$
 ## Read-along Sessions
@@ -21,17 +27,6 @@ Starting date: One week after we started reading the book, i.e. $readAlongFirstD
 Next session (in your timezone): [date=$readAlongNextDate$ time=$readAlongJSTComputer$ format="LLLL \T\Z " timezone="Japan" recurring="1.weeks"]
 https://discord.gg/cuV52Bs 
 ::endif
-
- ## Reading Schedule 
-
-$weeklyBreakdown$
-
-
-## Discussion Rules
- * Please use spoiler tags for **_major_** events in the current chapter(s) and **_any_** content in future chapters. 
-* When asking for help, please mention the chapter and page number. Also mention what version of the book you are reading. 
-* Don't be afraid of asking questions, even if they seem embarassing at first. All of us are here to learn. 
-* To you lurkers out there: Join the conversation, it's fun! 
 
 ## Member List
 

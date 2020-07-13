@@ -24,9 +24,7 @@ $bookImage$
 
 ## Reading:
 
-| $readingPageInfoTitle$ | End % | $readingRangeTitle$ | Page Count |
-| --- | --- | --- | --- |
-|$readingPageInfo$|$readingEndPercent$|$readingRange$|$readingPageCount$|
+$weeklyReadingSchedule$
 
 
 ::if $isOnFloFlo$
@@ -60,9 +58,9 @@ Mark your participation status by voting in this poll.
 *  I have finished this part
 ::if $week$ === 1
 *  I'm planning to catch up later
+*  I'm skipping this book
 ::else
 *  I'm still reading the book but I haven't reached this part yet
 *  I am no longer reading the book
 ::endif
-*  I'm skipping this book
 [/poll]
