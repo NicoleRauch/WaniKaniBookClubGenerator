@@ -24,6 +24,8 @@ const possibleHeaders = [
     "Pages",
     "Pages (old)",
     "Pages (Collector's)",
+    "Pages (physical)",
+    "Pages (ebook)",
     "End Percentage",
     "End Phrase",
     "Chapter",
@@ -48,12 +50,18 @@ const columnsFor = (header) => {
 
                 case "End Page":
                 case "Pages (old)":
-                case "Page Numbers": return {...acc, readingPageInfo: index, readingPageInfoTitle: current};
+                case "Page Numbers":
+                case "Pages (physical)":
+                    return {...acc, readingPageInfo: index, readingPageInfoTitle: current};
 
-                case "Pages (Collector's)": return {...acc, readingPageInfo2: index, readingPageInfo2Title: current};
+                case "Pages (Collector's)":
+                case "Pages (ebook)":
+                    return {...acc, readingPageInfo2: index, readingPageInfo2Title: current};
 
                 case "End Phrase":
-                case "Chapter": return {...acc, readingRange: index, readingRangeTitle: current};
+                case "Chapter":
+                    return {...acc, readingRange: index, readingRangeTitle: current};
+
                 default:
                     console.log("Unknown column header '" +current+ "' - column will be ignored.");
             }
