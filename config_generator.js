@@ -28,7 +28,11 @@ const possibleHeaders = [
     "Page Count"
 ];
 
-const splitRow = row => row.split("|").map(x => x.trim()).filter(x => x);
+const splitRow = row => {
+    const firstSplit = row.split("|").map(x => x.trim());
+    // only throw away empty entries at the start and the end, not in the middle!
+    return firstSplit.slice(1, firstSplit.length-1);
+};
 
 const columnsFor = (header) => {
     const columnTitles = splitRow(header);

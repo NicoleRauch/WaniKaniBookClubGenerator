@@ -24,25 +24,27 @@ const headerText = theConfig => {
     return toTableRow(headings) + toTableRow(headings.map(h => "-"));
 };
 
-const weekEntry = withLinks => week =>
-    toTableRow(
+const insert = entry => entry || "";
+
+const weekEntry = (withLinks, hasPageInfo2) => week => toTableRow(
         [
             withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week,
-            week.weekStartDate,
-            week.readingRange,
-            week.readingPageInfo
+            insert(week.weekStartDate),
+            insert(week.readingRange),
+            insert(week.readingPageInfo)
         ]
-        .concat(week.readingPageInfo2 ? week.readingPageInfo2 : [])
-        .concat(week.readingPageCount));
+        .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
+        .concat(insert(week.readingPageCount))
+        );
 
 const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
-        .map(weekEntry(true))
+        .map(weekEntry(true, !!theConfig.readingPageInfo2Title))
         .join("");
     return headerText(theConfig) + weeksText;
 };
 
-const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(false)(theWeekConfig);
+const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(false, !!theConfig.readingPageInfo2Title)(theWeekConfig);
 
 function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
