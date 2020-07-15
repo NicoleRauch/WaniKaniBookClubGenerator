@@ -53,7 +53,6 @@ The configuration file contains the following variables:
 |`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
 |`readingPageInfo2Title`|String|In case we have multiple book versions with different page numbers, we can add a second set.|
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
-|`weeklyBreakdownFile`|String|The name of the file that contains the weekly breakdown. If you start out by running the config_generator on the breakdown file, this variable is filled automatically.|
 |`vocabSpreadsheet`|String; optional|Link to an external spreadsheet for vocabulary.|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|
 |`hasReadAlongSession`|Boolean|Set this to `true` if you want information about a Read-Along session to appear, `false` if not.|
