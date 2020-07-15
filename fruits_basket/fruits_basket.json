@@ -12,6 +12,7 @@
     "readingPageInfo2Title": "Pages (Collector's)",
     "readingRangeTitle": "Chapter",
     "mainVocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=1685002629",
+    "properNouns": [],
     "isOnFloFlo": false,
     "hasReadAlongSession": false,
     "readAlongFirstDate": "",
@@ -27,7 +28,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=593965043",
             "readingPageInfo": "5 - 29",
             "readingPageInfo2": "9 - 31",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 1 (上)",
             "readingPageCount": 23,
             "readAlongNextDate": ""
@@ -39,7 +40,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=1411378576",
             "readingPageInfo": "30 - 52",
             "readingPageInfo2": "32 - 54",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 1 (下)",
             "readingPageCount": 23,
             "readAlongNextDate": ""
@@ -51,7 +52,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=1787589212",
             "readingPageInfo": "53 - 82",
             "readingPageInfo2": "55 - 84",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 2",
             "readingPageCount": 30,
             "readAlongNextDate": ""
@@ -63,7 +64,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=188005568",
             "readingPageInfo": "83 - 112",
             "readingPageInfo2": "85 - 114",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 3",
             "readingPageCount": 30,
             "readAlongNextDate": ""
@@ -75,7 +76,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=1866812957",
             "readingPageInfo": "113 - 142",
             "readingPageInfo2": "115 - 144",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 4",
             "readingPageCount": 30,
             "readAlongNextDate": ""
@@ -87,7 +88,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=231748051",
             "readingPageInfo": "143 - 174",
             "readingPageInfo2": "145 - 176",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 5",
             "readingPageCount": 32,
             "readAlongNextDate": ""
@@ -99,7 +100,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=1756211219",
             "readingPageInfo": "175 - 205",
             "readingPageInfo2": "177 - 208",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 6",
             "readingPageCount": 32,
             "readAlongNextDate": ""
@@ -111,7 +112,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=1933349163",
             "readingPageInfo": "3 - 36 (v2)",
             "readingPageInfo2": "209 - 242",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 7",
             "readingPageCount": 34,
             "readAlongNextDate": ""
@@ -123,7 +124,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=100483388",
             "readingPageInfo": "37 - 66 (v2)",
             "readingPageInfo2": "243 - 272",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 8",
             "readingPageCount": 30,
             "readAlongNextDate": ""
@@ -135,7 +136,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=678621373",
             "readingPageInfo": "67 - 96 (v2)",
             "readingPageInfo2": "273 - 302",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 9",
             "readingPageCount": 30,
             "readAlongNextDate": ""
@@ -147,7 +148,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=4047963",
             "readingPageInfo": "97 - 127 (v2)",
             "readingPageInfo2": "303 - 333",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 10",
             "readingPageCount": 31,
             "readAlongNextDate": ""
@@ -159,7 +160,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=1398419701",
             "readingPageInfo": "128 - 160 (v2)",
             "readingPageInfo2": "334 - 366",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 11",
             "readingPageCount": 33,
             "readAlongNextDate": ""
@@ -171,7 +172,7 @@
             "vocabURL": "https://docs.google.com/spreadsheets/d/1JCn2hRc8qSnuHhLAjZss2TIH25K4_ToSOvGdhMRtFtc/edit#gid=129141417",
             "readingPageInfo": "161 - 190 (v2)",
             "readingPageInfo2": "367 - 396",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 12",
             "readingPageCount": 30,
             "readAlongNextDate": ""

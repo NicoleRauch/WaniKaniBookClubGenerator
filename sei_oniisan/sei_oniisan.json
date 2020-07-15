@@ -21,6 +21,7 @@
     "readingPageInfo2Title": "Pages (ebook)",
     "readingRangeTitle": "Chapter",
     "mainVocabURL": "",
+    "properNouns": [],
     "isOnFloFlo": false,
     "hasReadAlongSession": false,
     "readAlongFirstDate": "",
@@ -36,7 +37,7 @@
             "vocabURL": "",
             "readingPageInfo": "",
             "readingPageInfo2": "5 - 27",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 1 + 2",
             "readingPageCount": 20,
             "readAlongNextDate": ""
@@ -48,7 +49,7 @@
             "vocabURL": "",
             "readingPageInfo": "",
             "readingPageInfo2": "29 - 63",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 3 + 4",
             "readingPageCount": 32,
             "readAlongNextDate": ""
@@ -60,7 +61,7 @@
             "vocabURL": "",
             "readingPageInfo": "",
             "readingPageInfo2": "65 - 99",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 5 + 6",
             "readingPageCount": 32,
             "readAlongNextDate": ""
@@ -72,7 +73,7 @@
             "vocabURL": "",
             "readingPageInfo": "",
             "readingPageInfo2": "101 - 135",
-            "readingEndPercent": null,
+            "readingEndPercent": "",
             "readingRange": "Chapter 7 + 8",
             "readingPageCount": 32,
             "readAlongNextDate": ""
