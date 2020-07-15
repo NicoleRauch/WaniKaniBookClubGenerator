@@ -1,0 +1,210 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "",
+    "bookClubURL": "",
+    "bookName": "",
+    "bookImage": "![hakase|175x250](upload://9PhavUfzoe4WXJEmvwB7oMkW4Jp.jpeg)",
+    "bookHomeThreadURL": "",
+    "whereToBuy": [
+        {
+            "name": "Amazon JP",
+            "url": "https://www.amazon.co.jp/dp/4101215235"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de646dc41a-536e-4033-889f-dd592a82feaf/"
+        }
+    ],
+    "readingFirstDateWithYear": "",
+    "readingPageInfoTitle": "End Page",
+    "readingRangeTitle": "End Phrase",
+    "mainVocabUrl": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "hasProperNounsTable": false,
+    "numberOfTheLastWeek": 16,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 10,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 2,
+            "weekStartDate": "[End Chapter 1]",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 13,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 3,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 16,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 4,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 16,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 5,
+            "weekStartDate": "[End Chapter 3]",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 16,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 6,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 15,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 7,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 15,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 8,
+            "weekStartDate": "[End Chapter 5]",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 16,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 9,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 15,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 10,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 14,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 11,
+            "weekStartDate": "[End Chapter 7]",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 14,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 12,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 15,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 13,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 15,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 14,
+            "weekStartDate": "[End Chapter 9]",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 15,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 15,
+            "weekStartDate": "[End Chapter 10]",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 10,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 16,
+            "weekStartDate": "[End Chapter 11]",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "",
+            "readingEndPercent": "",
+            "readingRange": "",
+            "readingPageCount": 10,
+            "readAlongNextDate": ""
+        }
+    ]
+}
