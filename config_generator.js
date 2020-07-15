@@ -115,6 +115,7 @@ const dummyConfig = {
     readingPageInfo2Title: columns.readingPageInfo2Title,
     readingRangeTitle: columns.readingRangeTitle,
     mainVocabUrl: "",
+    properNouns: [],
     isOnFloFlo: false,
     hasReadAlongSession: false,
     readAlongFirstDate: "",

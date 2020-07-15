@@ -54,6 +54,7 @@ The configuration file contains the following variables:
 |`readingPageInfo2Title`|String|In case we have multiple book versions with different page numbers, we can add a second set.|
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
 |`mainVocabUrl`|String; optional|Link to an external spreadsheet for vocabulary.|
+|`properNouns`|List of { name, reading, notes, proof }|To list the readings of proper nouns, mainly character names.|
 |`isOnFloFlo`|Boolean|Set this to `true` if you want a FloFlo section to be generated, `false` if not.|
 |`hasReadAlongSession`|Boolean|Set this to `true` if you want information about a Read-Along session to appear, `false` if not.|
 |`readAlongFirstDate`|String; optional|The date of the first reading session, to be announced in the home thread.|
@@ -97,6 +98,7 @@ You can use the following variables in the template file as well, but you need n
 |`bookNextWeekURL`|The URL of the following week|
 |`readingSchedule`|The reading schedule that is contained in the weekly breakdown file, enhanced by the links to the weekly threads.|
 |`weeklyReadingSchedule`|The excerpt of the reading schedule for the current week.|
+|`hasProperNouns`|True if any proper nouns are defined in the `properNouns` config entry.|
 
 ### Conditional Generation
 

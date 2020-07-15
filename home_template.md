@@ -51,6 +51,8 @@ If so, which version will you be reading?
 [FloFlo Word List](https://floflo.moe/books/) (Requires free account)
 ::endif
 
+::if $hasProperNouns$
 ## Proper Noun Readings
 |Name|Reading|Notes|Proof|
 |-|-|-|-|
+::endif
