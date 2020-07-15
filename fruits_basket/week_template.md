@@ -27,10 +27,10 @@ $bookImage$
 
 $weeklyReadingSchedule$
 
-::if "$mainVocabUrl$"
+::if "$mainVocabURL$"
 ## Vocabulary List
 
-$vocabUrl$
+$vocabURL$
 ::endif
 
 ::if $isOnFloFlo$

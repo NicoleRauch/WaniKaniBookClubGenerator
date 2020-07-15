@@ -114,7 +114,7 @@ const dummyConfig = {
     readingPageInfoTitle: columns.readingPageInfoTitle,
     readingPageInfo2Title: columns.readingPageInfo2Title,
     readingRangeTitle: columns.readingRangeTitle,
-    mainVocabUrl: "",
+    mainVocabURL: "",
     properNouns: [],
     isOnFloFlo: false,
     hasReadAlongSession: false,

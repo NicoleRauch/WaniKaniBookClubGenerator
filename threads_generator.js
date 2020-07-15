@@ -60,7 +60,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
     theTemplate = theTemplate.replace(/\$readingSchedule\$/g, readingSchedule(theConfig));
-    theTemplate = theTemplate.replace(/\$mainVocabUrl\$/g, theConfig.mainVocabUrl);
+    theTemplate = theTemplate.replace(/\$mainVocabURL\$/g, theConfig.mainVocabURL);
     theTemplate = theTemplate.replace(/\$hasProperNouns\$/g, theConfig.properNouns.length > 0);
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
     theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
