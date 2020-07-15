@@ -94,7 +94,7 @@ const weeksConfig = tableBody.map(row => {
         vocabURL: existingWeeksConfig[week] ? existingWeeksConfig[week].vocabURL || "" : "",
         readingPageInfo: fields[columns.readingPageInfo],
         readingPageInfo2: fields[columns.readingPageInfo2],
-        readingEndPercent: parseInt(fields[columns.readingEndPercent], 10),
+        readingEndPercent: parseInt(fields[columns.readingEndPercent], 10) || "",
         readingRange: fields[columns.readingRange],
         readingPageCount: parseFloat(fields[columns.readingPageCount]),
         readAlongNextDate: existingWeeksConfig[week] ? existingWeeksConfig[week].readAlongNextDate || "" : ""
@@ -102,8 +102,8 @@ const weeksConfig = tableBody.map(row => {
 });
 
 const dummyConfig = {
-    homeTemplate: "home_template.md",
-    weekTemplate: "week_template.md",
+    homeTemplate: "../home_template.md",
+    weekTemplate: "../week_template.md",
     bookClubName: "",
     bookClubURL: "",
     bookName: "",
