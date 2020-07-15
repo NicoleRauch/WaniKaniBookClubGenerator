@@ -1,3 +1,9 @@
+<!-- 
+$bookName$ ($bookClubName$ Book Club)
+
+^^^^^^^^^^^^^^^ Use this for the thread title!
+-->
+
 [Join the $bookClubName$ Book Club here!]($bookClubURL$) 
 
 ## Welcome to $bookName$
