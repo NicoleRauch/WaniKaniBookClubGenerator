@@ -60,7 +60,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
     theTemplate = theTemplate.replace(/\$readingSchedule\$/g, readingSchedule(theConfig));
-    theTemplate = theTemplate.replace(/\$vocabSpreadsheet\$/g, theConfig.mainVocabUrl);
+    theTemplate = theTemplate.replace(/\$mainVocabUrl\$/g, theConfig.mainVocabUrl);
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
     theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
     theTemplate = theTemplate.replace(/\$readAlongFirstDate\$/g, theConfig.readAlongFirstDate);
@@ -86,7 +86,7 @@ function replaceWeeklyVariables(theWeekTemplate, theWeekConfig, theConfig) {
     theWeekTemplate = theWeekTemplate.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week - 1] ? weeks[theWeekConfig.week - 1].weekURL : undefined));
     theWeekTemplate = theWeekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week + 1] ? weeks[theWeekConfig.week + 1].weekURL : undefined));
     theWeekTemplate = theWeekTemplate.replace(/\$weeklyReadingSchedule\$/g, weeklyReadingSchedule(theConfig, theWeekConfig));
-    theWeekTemplate = theWeekTemplate.replace(/\$weeklyVocabSpreadsheet\$/g, theWeekConfig.vocabURL);
+    theWeekTemplate = theWeekTemplate.replace(/\$vocabURL\$/g, theWeekConfig.vocabURL);
     return theWeekTemplate;
 }
 
