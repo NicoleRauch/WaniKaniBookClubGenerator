@@ -16,21 +16,21 @@ const existingWeeksConfig = existingConfig.weeks ?
     )
     : {};
 
-const possibleHeaders = [
-    "Week",
-    "Start Date",
-    "End Page",
-    "Page Numbers",
-    "Pages",
-    "Pages (old)",
-    "Pages (Collector's)",
-    "Pages (physical)",
-    "Pages (ebook)",
-    "End Percentage",
-    "End Phrase",
-    "Chapter",
-    "Page Count"
-];
+const possibleHeaders = {
+    week: "Week",
+    start_date: "Start Date",
+    end_page: "End Page",
+    page_numbers: "Page Numbers",
+    pages: "Pages",
+    pages_old: "Pages (old)",
+    pages_collectors: "Pages (Collector's)",
+    pages_physical: "Pages (physical)",
+    pages_ebook: "Pages (ebook)",
+    end_percentage: "End Percentage",
+    end_phrase: "End Phrase",
+    chapter: "Chapter",
+    page_count: "Page Count"
+};
 
 const splitRow = row => {
     const firstSplit = row.split("|").map(x => x.trim());
@@ -43,23 +43,24 @@ const columnsFor = (header) => {
     return columnTitles.reduce(
         (acc, current, index) => {
             switch (current) {
-                case "Week": return {...acc, week: index};
-                case "Start Date": return {...acc, weekStartDate: index};
-                case "End Percentage": return {...acc, readingEndPercent: index};
-                case "Page Count": return {...acc, readingPageCount: index};
+                case possibleHeaders.week: return {...acc, week: index};
+                case possibleHeaders.start_date: return {...acc, weekStartDate: index};
+                case possibleHeaders.end_percentage: return {...acc, readingEndPercent: index};
+                case possibleHeaders.page_count: return {...acc, readingPageCount: index};
 
-                case "End Page":
-                case "Pages (old)":
-                case "Page Numbers":
-                case "Pages (physical)":
+                case possibleHeaders.pages:
+                case possibleHeaders.end_page:
+                case possibleHeaders.pages_old:
+                case possibleHeaders.page_numbers:
+                case possibleHeaders.pages_physical:
                     return {...acc, readingPageInfo: index, readingPageInfoTitle: current};
 
-                case "Pages (Collector's)":
-                case "Pages (ebook)":
+                case possibleHeaders.pages_collectors:
+                case possibleHeaders.pages_ebook:
                     return {...acc, readingPageInfo2: index, readingPageInfo2Title: current};
 
-                case "End Phrase":
-                case "Chapter":
+                case possibleHeaders.end_phrase:
+                case possibleHeaders.chapter:
                     return {...acc, readingRange: index, readingRangeTitle: current};
 
                 default:
