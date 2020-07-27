@@ -1,11 +1,11 @@
 {
     "homeTemplate": "../home_template.md",
     "weekTemplate": "../week_template.md",
-    "bookClubName": "",
-    "bookClubURL": "",
-    "bookName": "",
+    "bookClubName": "Intermediate",
+    "bookClubURL": "18908",
+    "bookName": "博士の愛した数式 - The Housekeeper and the Professor 🎓🧮",
     "bookImage": "![hakase|175x250](upload://9PhavUfzoe4WXJEmvwB7oMkW4Jp.jpeg)",
-    "bookHomeThreadURL": "",
+    "bookHomeThreadURL": "45098",
     "whereToBuy": [
         {
             "name": "Amazon JP",
@@ -16,7 +16,7 @@
             "url": "https://bookwalker.jp/de646dc41a-536e-4033-889f-dd592a82feaf/"
         }
     ],
-    "readingFirstDateWithYear": "",
+    "readingFirstDateWithYear": "TBA",
     "readingPageInfoTitle": "End Page",
     "readingRangeTitle": "End Phrase",
     "mainVocabURL": "",
