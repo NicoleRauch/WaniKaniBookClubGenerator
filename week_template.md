@@ -1,8 +1,8 @@
 <!-- 
 ::if $week$ < $numberOfTheLastWeek$
-$bookName$: Week $week$ Discussion
+Week $week$: $bookName$
 ::else
-$bookName$: Week $week$ Discussion [END]
+Week $week$: $bookName$ [END]
 ::endif
 
 ^^^^^^^^^^^^^^^ Use this for the thread title!
