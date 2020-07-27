@@ -18,6 +18,7 @@
     ],
     "readingFirstDateWithYear": "TBA",
     "readingPageInfoTitle": "End Page",
+    "readingEndPercentTitle": "End Percentage",
     "readingRangeTitle": "End Phrase",
     "mainVocabURL": "",
     "properNouns": [],
@@ -28,28 +29,28 @@
     "readAlongJSTHuman": "9:30pm",
     "readAlongJSTComputer": "21:30:00",
     "hasProperNounsTable": false,
-    "numberOfTheLastWeek": 16,
+    "numberOfTheLastWeek": 20,
     "weeks": [
         {
             "week": 1,
             "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
+            "readingPageInfo": "18",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 10,
+            "readingPageCount": 14,
             "readAlongNextDate": ""
         },
         {
             "week": 2,
-            "weekStartDate": "[End Chapter 1]",
+            "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
-            "readingEndPercent": "",
-            "readingRange": "",
-            "readingPageCount": 13,
+            "readingPageInfo": "33",
+            "readingEndPercent": 11,
+            "readingRange": "[End Chapter 1]",
+            "readingPageCount": 15,
             "readAlongNextDate": ""
         },
         {
@@ -60,7 +61,7 @@
             "readingPageInfo": "",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 16,
+            "readingPageCount": 14,
             "readAlongNextDate": ""
         },
         {
@@ -68,15 +69,15 @@
             "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
+            "readingPageInfo": "62",
             "readingEndPercent": "",
-            "readingRange": "",
-            "readingPageCount": 16,
+            "readingRange": "[End Chapter 2]",
+            "readingPageCount": 15,
             "readAlongNextDate": ""
         },
         {
             "week": 5,
-            "weekStartDate": "[End Chapter 3]",
+            "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "",
@@ -90,10 +91,10 @@
             "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
+            "readingPageInfo": "94",
             "readingEndPercent": "",
-            "readingRange": "",
-            "readingPageCount": 15,
+            "readingRange": "[End Chapter 3]",
+            "readingPageCount": 16,
             "readAlongNextDate": ""
         },
         {
@@ -104,18 +105,18 @@
             "readingPageInfo": "",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 15,
+            "readingPageCount": 12,
             "readAlongNextDate": ""
         },
         {
             "week": 8,
-            "weekStartDate": "[End Chapter 5]",
+            "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
+            "readingPageInfo": "118",
             "readingEndPercent": "",
-            "readingRange": "",
-            "readingPageCount": 16,
+            "readingRange": "[End Chapter 4]",
+            "readingPageCount": 12,
             "readAlongNextDate": ""
         },
         {
@@ -126,7 +127,7 @@
             "readingPageInfo": "",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 15,
+            "readingPageCount": 16,
             "readAlongNextDate": ""
         },
         {
@@ -134,21 +135,21 @@
             "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
+            "readingPageInfo": "151",
             "readingEndPercent": "",
-            "readingRange": "",
-            "readingPageCount": 14,
+            "readingRange": "[End Chapter 5]",
+            "readingPageCount": 17,
             "readAlongNextDate": ""
         },
         {
             "week": 11,
-            "weekStartDate": "[End Chapter 7]",
+            "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 14,
+            "readingPageCount": 11,
             "readAlongNextDate": ""
         },
         {
@@ -156,10 +157,10 @@
             "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
+            "readingPageInfo": "174",
             "readingEndPercent": "",
-            "readingRange": "",
-            "readingPageCount": 15,
+            "readingRange": "[End Chapter 6]",
+            "readingPageCount": 12,
             "readAlongNextDate": ""
         },
         {
@@ -170,40 +171,84 @@
             "readingPageInfo": "",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 15,
+            "readingPageCount": 14,
             "readAlongNextDate": ""
         },
         {
             "week": 14,
-            "weekStartDate": "[End Chapter 9]",
+            "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
-            "readingPageInfo": "",
+            "readingPageInfo": "202",
             "readingEndPercent": "",
-            "readingRange": "",
-            "readingPageCount": 15,
+            "readingRange": "[End Chapter 7]",
+            "readingPageCount": 14,
             "readAlongNextDate": ""
         },
         {
             "week": 15,
-            "weekStartDate": "[End Chapter 10]",
+            "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 10,
+            "readingPageCount": 12,
             "readAlongNextDate": ""
         },
         {
             "week": 16,
-            "weekStartDate": "[End Chapter 11]",
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "227",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 8]",
+            "readingPageCount": 13,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 17,
+            "weekStartDate": "",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "",
             "readingEndPercent": "",
             "readingRange": "",
-            "readingPageCount": 10,
+            "readingPageCount": 14,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 18,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "256",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 9]",
+            "readingPageCount": 15,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 19,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "269",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 10]",
+            "readingPageCount": 13,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 20,
+            "weekStartDate": "",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "282",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 11]",
+            "readingPageCount": 13,
             "readAlongNextDate": ""
         }
     ]
