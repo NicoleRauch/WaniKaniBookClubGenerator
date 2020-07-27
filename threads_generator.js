@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const possibleHeaders = require('./general').possibleHeaders;
 
 const NEWLINE = "\n";
 
@@ -13,6 +14,30 @@ const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" :
 
 const toTableRow = rowElements => "| " + rowElements.join(" | ") + " |" + NEWLINE;
 
+
+const headerDashesWithAlignment = (heading) => {
+    switch (heading) {
+        case possibleHeaders.end_page:
+        case possibleHeaders.page_numbers:
+        case possibleHeaders.pages:
+        case possibleHeaders.pages_old:
+        case possibleHeaders.pages_collectors:
+        case possibleHeaders.pages_physical:
+        case possibleHeaders.pages_ebook:
+        case possibleHeaders.end_percentage:
+        case possibleHeaders.page_count:
+            return "-:"; // right-aligned
+        case possibleHeaders.week:
+        case possibleHeaders.start_date:
+        case possibleHeaders.end_phrase:
+        case possibleHeaders.chapter:
+            return ":-"; // left-aligned
+        default:
+            return "MISSING ALIGNMENT";
+    }
+};
+
+
 const headerText = theConfig => {
     const headings =
         [
@@ -23,7 +48,7 @@ const headerText = theConfig => {
         ]
         .concat(theConfig.readingPageInfo2Title || [])
         .concat("Page Count");
-    return toTableRow(headings) + toTableRow(headings.map(h => "-"));
+    return toTableRow(headings) + toTableRow(headings.map(headerDashesWithAlignment));
 };
 
 const insert = entry => entry || "";
