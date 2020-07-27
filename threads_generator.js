@@ -47,13 +47,14 @@ const headerText = theConfig => {
             theConfig.readingPageInfoTitle
         ]
         .concat(theConfig.readingPageInfo2Title || [])
+        .concat(theConfig.readingEndPercentTitle || [])
         .concat("Page Count");
     return toTableRow(headings) + toTableRow(headings.map(headerDashesWithAlignment));
 };
 
-const insert = entry => entry || "";
+const insert = (entry, suffix = "") => entry ? entry + suffix : "";
 
-const weekEntry = (withLinks, hasPageInfo2) => week => toTableRow(
+const weekEntry = (withLinks, hasPageInfo2, hasEndPercentage) => week => toTableRow(
         [
             withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week,
             insert(week.weekStartDate),
@@ -61,12 +62,13 @@ const weekEntry = (withLinks, hasPageInfo2) => week => toTableRow(
             insert(week.readingPageInfo)
         ]
         .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
+        .concat(hasEndPercentage ? insert(week.readingEndPercent, "%") : [])
         .concat(insert(week.readingPageCount))
         );
 
 const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
-        .map(weekEntry(true, !!theConfig.readingPageInfo2Title))
+        .map(weekEntry(true, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
         .join("");
     return headerText(theConfig) + weeksText;
 };

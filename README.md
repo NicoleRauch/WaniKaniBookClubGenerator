@@ -52,6 +52,7 @@ The configuration file contains the following variables:
 |`readingFirstDateWithYear`|When this book's reading will start, as a full date with year (e.g. "October 5th, 2019").|
 |`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
 |`readingPageInfo2Title`|String|In case we have multiple book versions with different page numbers, we can add a second set.|
+|`readingEndPercentTitle`|String|If we want to specify an end percentage, this will be the column title.|
 |`readingRangeTitle`|String|The title for the reading range column (see below), e.g. "Chapter" or "End Phrase".|
 |`mainVocabURL`|String; optional|Link to an external spreadsheet for vocabulary.|
 |`properNouns`|List of { name, reading, notes, proof }|To list the readings of proper nouns, mainly character names.|

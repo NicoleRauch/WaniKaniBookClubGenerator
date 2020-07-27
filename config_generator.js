@@ -30,7 +30,7 @@ const columnsFor = (header) => {
             switch (current) {
                 case possibleHeaders.week: return {...acc, week: index};
                 case possibleHeaders.start_date: return {...acc, weekStartDate: index};
-                case possibleHeaders.end_percentage: return {...acc, readingEndPercent: index};
+                case possibleHeaders.end_percentage: return {...acc, readingEndPercent: index, readingEndPercentTitle: current};
                 case possibleHeaders.page_count: return {...acc, readingPageCount: index};
 
                 case possibleHeaders.pages:
@@ -99,6 +99,7 @@ const dummyConfig = {
     readingFirstDateWithYear: "",
     readingPageInfoTitle: columns.readingPageInfoTitle,
     readingPageInfo2Title: columns.readingPageInfo2Title,
+    readingEndPercentTitle: columns.readingEndPercentTitle,
     readingRangeTitle: columns.readingRangeTitle,
     mainVocabURL: "",
     properNouns: [],
