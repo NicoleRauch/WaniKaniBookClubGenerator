@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const possibleHeaders = require('./general').possibleHeaders;
 
 const log = (text) => { console.log(text); return text; };
 
@@ -15,22 +16,6 @@ const existingWeeksConfig = existingConfig.weeks ?
         {}
     )
     : {};
-
-const possibleHeaders = {
-    week: "Week",
-    start_date: "Start Date",
-    end_page: "End Page",
-    page_numbers: "Page Numbers",
-    pages: "Pages",
-    pages_old: "Pages (old)",
-    pages_collectors: "Pages (Collector's)",
-    pages_physical: "Pages (physical)",
-    pages_ebook: "Pages (ebook)",
-    end_percentage: "End Percentage",
-    end_phrase: "End Phrase",
-    chapter: "Chapter",
-    page_count: "Page Count"
-};
 
 const splitRow = row => {
     const firstSplit = row.split("|").map(x => x.trim());
