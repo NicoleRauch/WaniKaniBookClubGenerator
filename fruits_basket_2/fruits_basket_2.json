@@ -23,7 +23,7 @@
     "weeks": [
         {
             "week": 1,
-            "weekStartDate": "",
+            "weekStartDate": "Sept 26th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "3 - 34 (v3)",
@@ -35,7 +35,7 @@
         },
         {
             "week": 2,
-            "weekStartDate": "",
+            "weekStartDate": "Oct 3rd",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "35 - 64 (v3)",
@@ -47,7 +47,7 @@
         },
         {
             "week": 3,
-            "weekStartDate": "",
+            "weekStartDate": "Oct 10th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "65 - 94 (v3)",
@@ -59,7 +59,7 @@
         },
         {
             "week": 4,
-            "weekStartDate": "",
+            "weekStartDate": "Oct 17th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "95 - 126 (v3)",
@@ -71,7 +71,7 @@
         },
         {
             "week": 5,
-            "weekStartDate": "",
+            "weekStartDate": "Oct 24th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "127 - 156 (v3)",
@@ -83,7 +83,7 @@
         },
         {
             "week": 6,
-            "weekStartDate": "",
+            "weekStartDate": "Oct 31st",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "157 - 187 (v3)",
@@ -95,7 +95,7 @@
         },
         {
             "week": 7,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 7th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "6 - 38 (v4)",
@@ -107,7 +107,7 @@
         },
         {
             "week": 8,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 14th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "39 - 68 (v4)",
@@ -119,7 +119,7 @@
         },
         {
             "week": 9,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 21st",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "69 - 98 (v4)",
@@ -131,7 +131,7 @@
         },
         {
             "week": 10,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 28th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "99 - 128 (v4)",
@@ -143,7 +143,7 @@
         },
         {
             "week": 11,
-            "weekStartDate": "",
+            "weekStartDate": "Dec 5th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "129 - 160 (v4)",
@@ -155,7 +155,7 @@
         },
         {
             "week": 12,
-            "weekStartDate": "",
+            "weekStartDate": "Dec 12th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "161 - 190 (v4)",
