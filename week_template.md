@@ -26,6 +26,11 @@ $bookImage$
 
 $weeklyReadingSchedule$
 
+::if "$mainVocabURL$"
+## Vocabulary List
+
+$vocabURL$
+::endif
 
 ::if $isOnFloFlo$
 ## Word lists - Learn the vocabulary for $bookName$

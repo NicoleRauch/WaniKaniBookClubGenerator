@@ -17,6 +17,12 @@ We will start reading on $readingFirstDateWithYear$.
 
 $readingSchedule$
 
+::if "$mainVocabURL$"
+## Vocabulary List
+
+$mainVocabURL$
+::endif
+
 ## Discussion Rules
  * Please use spoiler tags for **_major_** events in the current chapter(s) and **_any_** content in future chapters. 
 * When asking for help, please mention the chapter and page number. Also mention what version of the book you are reading. 
