@@ -73,7 +73,7 @@ const readingSchedule = (theConfig) => {
     return headerText(theConfig) + weeksText;
 };
 
-const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(false, !!theConfig.readingPageInfo2Title)(theWeekConfig);
+const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(false, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
 
 function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
