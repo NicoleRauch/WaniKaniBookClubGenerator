@@ -14,6 +14,7 @@ Week $week$: $bookName$ [END]
 
 ## Week $week$
 $bookImage$
+
 **Start Date:** $weekStartDate$
 ::if $week$ > 1 && "$bookPreviousWeekURL$"
 **Previous Part:** [Week $previousWeek$]($bookPreviousWeekURL$)
@@ -26,7 +27,7 @@ $bookImage$
 
 $weeklyReadingSchedule$
 
-::if "$mainVocabURL$"
+::if "$vocabURL$"
 ## Vocabulary List
 
 $vocabURL$
