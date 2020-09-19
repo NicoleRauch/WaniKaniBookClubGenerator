@@ -1,9 +1,9 @@
 {
-    "homeTemplate": "../home_template.md",
+    "homeTemplate": "./home_template.md",
     "weekTemplate": "../week_template.md",
     "bookClubName": "Beginner Book Club",
     "bookClubURL": "19766",
-    "bookName": "フルーツバスケット ・ Fruits Basket 🍏 🍇 🍑 🍒 🍐 🍊 🧺",
+    "bookName": "フルーツバスケット ・ Fruits Basket Vol. 2 🍏 🍇 🍑 🍒 🍐 🍊 🧺",
     "bookImage": "![Fruits Basket 1|348x500, 60%](upload://dN0l9qeehfcDQ9V3bhU2ny4rszw.jpeg)",
     "bookHomeThreadURL": "43184",
     "whereToBuy": [],
