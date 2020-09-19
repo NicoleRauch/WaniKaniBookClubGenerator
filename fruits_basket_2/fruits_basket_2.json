@@ -19,10 +19,10 @@
     "readAlongWeekday": "Sunday",
     "readAlongJSTHuman": "9:30pm",
     "readAlongJSTComputer": "21:30:00",
-    "numberOfTheLastWeek": 12,
+    "numberOfTheLastWeek": 25,
     "weeks": [
         {
-            "week": 1,
+            "week": 14,
             "weekStartDate": "Sept 26th",
             "weekURL": "",
             "vocabURL": "",
@@ -34,7 +34,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 2,
+            "week": 15,
             "weekStartDate": "Oct 3rd",
             "weekURL": "",
             "vocabURL": "",
@@ -46,7 +46,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 3,
+            "week": 16,
             "weekStartDate": "Oct 10th",
             "weekURL": "",
             "vocabURL": "",
@@ -58,7 +58,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 4,
+            "week": 17,
             "weekStartDate": "Oct 17th",
             "weekURL": "",
             "vocabURL": "",
@@ -70,7 +70,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 5,
+            "week": 18,
             "weekStartDate": "Oct 24th",
             "weekURL": "",
             "vocabURL": "",
@@ -82,7 +82,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 6,
+            "week": 19,
             "weekStartDate": "Oct 31st",
             "weekURL": "",
             "vocabURL": "",
@@ -94,7 +94,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 7,
+            "week": 20,
             "weekStartDate": "Nov 7th",
             "weekURL": "",
             "vocabURL": "",
@@ -106,7 +106,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 8,
+            "week": 21,
             "weekStartDate": "Nov 14th",
             "weekURL": "",
             "vocabURL": "",
@@ -118,7 +118,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 9,
+            "week": 22,
             "weekStartDate": "Nov 21st",
             "weekURL": "",
             "vocabURL": "",
@@ -130,7 +130,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 10,
+            "week": 23,
             "weekStartDate": "Nov 28th",
             "weekURL": "",
             "vocabURL": "",
@@ -142,7 +142,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 11,
+            "week": 24,
             "weekStartDate": "Dec 5th",
             "weekURL": "",
             "vocabURL": "",
@@ -154,7 +154,7 @@
             "readAlongNextDate": ""
         },
         {
-            "week": 12,
+            "week": 25,
             "weekStartDate": "Dec 12th",
             "weekURL": "",
             "vocabURL": "",
