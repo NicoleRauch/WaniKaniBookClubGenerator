@@ -70,9 +70,14 @@ const columns = columnsFor(tableRows[0]);
 
 const tableBody = tableRows.slice(2).filter(x => x.trim()); // only non-empty lines!
 
+let numberOfTheLastWeek = 0;
+
 const weeksConfig = tableBody.map(row => {
     const fields = splitRow(row);
-    let week = parseInt(fields[columns.week].replace("Week ", ""), 10);
+    const week = parseInt(fields[columns.week].replace("Week ", ""), 10);
+    if(week > numberOfTheLastWeek){
+        numberOfTheLastWeek = week;
+    }
     return {
         week,
         weekStartDate: fields[columns.weekStartDate],
@@ -111,7 +116,7 @@ const dummyConfig = {
     readAlongJSTComputer: "21:30:00",
 };
 
-const fullConfig = {...dummyConfig, ...existingConfig, numberOfTheLastWeek: weeksConfig.length, weeks: weeksConfig};
+const fullConfig = {...dummyConfig, ...existingConfig, numberOfTheLastWeek, weeks: weeksConfig};
 
 fs.writeFileSync("./" + configFileName, JSON.stringify(fullConfig, null, 4) + "\n", {encoding: "utf8"});
 
