@@ -2,7 +2,7 @@
 
 We have read Volume 1 as the [Beginner Book Club](https://community.wanikani.com/t/x/19766).
 
-Now we're reading Volume 2 as a spin-off.
+Now we're continuing with Volume 2 as an offshoot book club.
 
 ![Fruits Basket 1|348x500, 60%](upload://dN0l9qeehfcDQ9V3bhU2ny4rszw.jpeg) 
 
