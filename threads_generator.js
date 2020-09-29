@@ -15,22 +15,16 @@ const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" :
 const toTableRow = rowElements => "| " + rowElements.join(" | ") + " |" + NEWLINE;
 
 
-const headerDashesWithAlignment = (heading) => {
+const headerDashesWithAlignment = theConfig => heading => {
     switch (heading) {
-        case possibleHeaders.end_page:
-        case possibleHeaders.page_numbers:
-        case possibleHeaders.pages:
-        case possibleHeaders.pages_old:
-        case possibleHeaders.pages_collectors:
-        case possibleHeaders.pages_physical:
-        case possibleHeaders.pages_ebook:
-        case possibleHeaders.end_percentage:
+        case theConfig.readingPageInfoTitle:
+        case theConfig.readingPageInfo2Title:
+        case theConfig.readingEndPercentTitle:
         case possibleHeaders.page_count:
             return "-:"; // right-aligned
         case possibleHeaders.week:
         case possibleHeaders.start_date:
-        case possibleHeaders.end_phrase:
-        case possibleHeaders.chapter:
+        case theConfig.readingRangeTitle:
             return ":-"; // left-aligned
         default:
             return "MISSING ALIGNMENT";
@@ -49,7 +43,7 @@ const headerText = theConfig => {
         .concat(theConfig.readingPageInfo2Title || [])
         .concat(theConfig.readingEndPercentTitle || [])
         .concat("Page Count");
-    return toTableRow(headings) + toTableRow(headings.map(headerDashesWithAlignment));
+    return toTableRow(headings) + toTableRow(headings.map(headerDashesWithAlignment(theConfig)));
 };
 
 const insert = (entry, suffix = "") => entry ? entry + suffix : "";
