@@ -34,40 +34,42 @@ const headerDashesWithAlignment = theConfig => heading => {
 
 const headerText = theConfig => {
     const headings =
-        [
-            "Week",
+        (theConfig.showWeekInfo ? [ "Week" ] : [])
+        .concat([
             "Start Date",
             theConfig.readingRangeTitle,
             theConfig.readingPageInfoTitle
-        ]
+        ])
         .concat(theConfig.readingPageInfo2Title || [])
         .concat(theConfig.readingEndPercentTitle || [])
         .concat("Page Count");
     return toTableRow(headings) + toTableRow(headings.map(headerDashesWithAlignment(theConfig)));
 };
 
-const insert = (entry, suffix = "") => entry ? entry + suffix : "";
+const insert = (entry, mod = x => x) => entry ? mod(entry) : "";
 
-const weekEntry = (withLinks, hasPageInfo2, hasEndPercentage) => week => toTableRow(
-        [
-            withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week,
+const weekEntry = (showWeekInfo, withLinks, hasPageInfo2, hasEndPercentage) => week => toTableRow(
+    (showWeekInfo
+        ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
+        : [])
+        .concat([
             insert(week.weekStartDate),
-            insert(week.readingRange),
+            insert(week.readingRange, x => withLinks ? urlOf(x, week.weekURL) : x),
             insert(week.readingPageInfo)
-        ]
+        ])
         .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
-        .concat(hasEndPercentage ? insert(week.readingEndPercent, "%") : [])
+        .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
         .concat(insert(week.readingPageCount))
         );
 
 const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
-        .map(weekEntry(true, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
+        .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
         .join("");
     return headerText(theConfig) + weeksText;
 };
 
-const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(false, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
+const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
 
 function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
@@ -148,6 +150,10 @@ function writeFile(fileExtension, theTemplate) {
 
 const configFileName = process.argv[2];
 const config = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
+// add default values:
+if(config.showWeekInfo === undefined){
+    config.showWeekInfo = true;
+}
 
 const weeks = config.weeks.reduce(
     (acc, current) => ({...acc, [current.week]: current}),

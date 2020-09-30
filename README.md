@@ -36,19 +36,18 @@ be merged with the edited data, so nothing should be lost. (We still advise to c
 To generate the weekly thread files from the generated JSON file, more information must be specified.
 Just fill in the empty strings and adjust any boolean values (for a fully edited file see the provided example file `kitchen.json`).
 
-The configuration file contains the following variables:
+The configuration file contains two kinds of variables: Those that can be used in the template files and those that are used to control generation in some other way.
+
+#### Variables that Can be Used in Templates
 
 |Name|Type|Explanation|
 |----|----|-----------|
-|`homeTemplate`|String|The name of the template file for the home thread, including file name extension (relative to the current directory)|
-|`weekTemplate`|String|The name of the template file for the weekly threads, including file name extension (relative to the current directory)|
 |`bookClubName`|String|The name of the book club, e.g. "Beginner"|
 |`bookClubURL`|String|The URL of the book club thread (or the last part of the URL)|
 |`bookName`|String|The name of the book that this post is for|
 |`bookImage`|String|The full image descriptor (you can usually steal this from the book's home thread).|
 |`bookHomeThreadURL`|String|The URL of the book's home thread (or the last part of the URL)|
 |`whereToBuy`|List of { name, url }|A list of objects containing name and URL of one source of acquisition each.|
-|`numberOfTheLastWeek`|Number|The number of the last week for this book (so that the last week does not get a "next week" link).|
 |`readingFirstDateWithYear`|When this book's reading will start, as a full date with year (e.g. "October 5th, 2019").|
 |`readingPageInfoTitle`|String|The title for the reading page info column (see below), e.g. "Last Page" or "Pages".|
 |`readingPageInfo2Title`|String|In case we have multiple book versions with different page numbers, we can add a second set.|
@@ -62,7 +61,20 @@ The configuration file contains the following variables:
 |`readAlongWeekday`|String; optional|The weekday of the read-along session. Only required when the read-along session should be shown.|
 |`readAlongJSTHuman`|String; optional|The time of the read-along session in JST, in human-readable format (e.g. `9:30pm`). Only required when the read-along session should be shown.|
 |`readAlongJSTComputer`|String; optional|The time of the read-along session in JST, in computer-readable format (e.g. `21:30:00`). Only required when the read-along session should be shown.|
+
+#### Variables that Control Generation In Some Other Way
+
+|Name|Type|Explanation|
+|----|----|-----------|
+|`homeTemplate`|String|The name of the template file for the home thread, including file name extension (relative to the current directory)|
+|`weekTemplate`|String|The name of the template file for the weekly threads, including file name extension (relative to the current directory)|
+|`numberOfTheLastWeek`|Number|The number of the last week for this book (so that the last week does not get a "next week" link).|
+|`showWeekInfo`|Boolean; optional (default: `true`)|Controls whether the schedule will contain a column for the weeks. Recommendation: Show for regular bookclubs, hide for offshoot bookclubs.|
 |`weeks`|Array|The list of the configurations for each week (see below).|
+
+
+
+#### Variables for the Week Templates
 
 The configurations for each week contains the following variables:
 
