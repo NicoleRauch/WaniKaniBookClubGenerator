@@ -1,6 +1,6 @@
 {
     "homeTemplate": "./home_template.md",
-    "weekTemplate": "../week_template.md",
+    "weekTemplate": "./chapter_post_template.md",
     "bookClubName": "Beginner Book Club",
     "bookClubURL": "19766",
     "bookName": "フルーツバスケット ・ Fruits Basket Vol. 2 🍏 🍇 🍑 🍒 🍐 🍊 🧺",
