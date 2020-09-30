@@ -194,5 +194,5 @@ config.weeks.map(weekConfig => {
     weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig, config);
     weekTemplate = replaceConditionals(weekTemplate);
 
-    writeFile("_week" + weekConfig.week + ".md", weekTemplate);
+    writeFile("_" + (config.showWeekInfo ? "week" : "") + weekConfig.week + ".md", weekTemplate);
 });
