@@ -6,9 +6,20 @@ const NEWLINE = "\n";
 
 const log = (text) => { console.log(text); return text; };
 
+function countOccurrences(url) {
+    if (!url) { return 0; }
+    return url.split("").filter(x => x === '/').length;
+}
+
+const urlPrefix = "https://community.wanikani.com/t/x/";
+const urlSuffix = url => // we assume the URL is not null
+        countOccurrences(url) < 2
+            ? url // it already is a suffix
+            : url.substring(url.lastIndexOf('/') + 1); // find and use the suffix
+
 const urlSnippetOf = (url) =>
     // safety measurement: empty url should be caught in weekTemplate already
-    url ? "https://community.wanikani.com/t/x/" + url.substring(url.lastIndexOf('/') + 1) : "";
+    url ? urlPrefix + urlSuffix(url) : "";
 
 const urlOf = (name, url) => url ? "[" + name + "](" + urlSnippetOf(url) + ")" : name;
 
