@@ -4,7 +4,7 @@
     "bookClubName": "Beginner",
     "bookClubURL": "19766",
     "bookName": "フルーツバスケット ・ Fruits Basket 🍏 🍇 🍑 🍒 🍐 🍊 🧺",
-    "bookImage": "![Fruits Basket 1|348x500, 60%](upload://dN0l9qeehfcDQ9V3bhU2ny4rszw.jpeg)",
+    "bookImage": "![image|252x396](upload://yTZi1jmDI46O7e0X6Hf9zdSKM9R.jpeg)",
     "bookHomeThreadURL": "43184",
     "whereToBuy": [],
     "readingFirstDateWithYear": "June 20th, 2020",
@@ -20,7 +20,7 @@
     "readAlongJSTHuman": "9:30pm",
     "readAlongJSTComputer": "21:30:00",
     "showWeekInfo": false,
-    "numberOfTheLastWeek": 24,
+    "numberOfTheLastWeek": 18,
     "weeks": [
         {
             "week": 13,
@@ -92,78 +92,6 @@
             "readingEndPercent": "",
             "readingRange": "Chapter 18",
             "readingPageCount": 31,
-            "readAlongNextDate": ""
-        },
-        {
-            "week": 19,
-            "weekStartDate": "Nov 7th",
-            "weekURL": "",
-            "vocabURL": "",
-            "readingPageInfo": "6 - 38 (v4)",
-            "readingPageInfo2": "192 - 224 (v2)",
-            "readingEndPercent": "",
-            "readingRange": "Chapter 19",
-            "readingPageCount": 33,
-            "readAlongNextDate": ""
-        },
-        {
-            "week": 20,
-            "weekStartDate": "Nov 14th",
-            "weekURL": "",
-            "vocabURL": "",
-            "readingPageInfo": "39 - 68 (v4)",
-            "readingPageInfo2": "225 - 254 (v2)",
-            "readingEndPercent": "",
-            "readingRange": "Chapter 20",
-            "readingPageCount": 30,
-            "readAlongNextDate": ""
-        },
-        {
-            "week": 21,
-            "weekStartDate": "Nov 21st",
-            "weekURL": "",
-            "vocabURL": "",
-            "readingPageInfo": "69 - 98 (v4)",
-            "readingPageInfo2": "255 - 284 (v2)",
-            "readingEndPercent": "",
-            "readingRange": "Chapter 21",
-            "readingPageCount": 30,
-            "readAlongNextDate": ""
-        },
-        {
-            "week": 22,
-            "weekStartDate": "Nov 28th",
-            "weekURL": "",
-            "vocabURL": "",
-            "readingPageInfo": "99 - 128 (v4)",
-            "readingPageInfo2": "285 - 314 (v2)",
-            "readingEndPercent": "",
-            "readingRange": "Chapter 22",
-            "readingPageCount": 30,
-            "readAlongNextDate": ""
-        },
-        {
-            "week": 23,
-            "weekStartDate": "Dec 5th",
-            "weekURL": "",
-            "vocabURL": "",
-            "readingPageInfo": "129 - 160 (v4)",
-            "readingPageInfo2": "315 - 346 (v2)",
-            "readingEndPercent": "",
-            "readingRange": "Chapter 23",
-            "readingPageCount": 32,
-            "readAlongNextDate": ""
-        },
-        {
-            "week": 24,
-            "weekStartDate": "Dec 12th",
-            "weekURL": "",
-            "vocabURL": "",
-            "readingPageInfo": "161 - 190 (v4)",
-            "readingPageInfo2": "347 - 376 (v2)",
-            "readingEndPercent": "",
-            "readingRange": "Chapter 24",
-            "readingPageCount": 30,
             "readAlongNextDate": ""
         }
     ]
