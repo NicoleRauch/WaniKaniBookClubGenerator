@@ -61,8 +61,9 @@ const isUnderline = str => str.replace(/\|/g, "").replace(/-/g, "").replace(/ /g
 
 if(!isUnderline(tableRows[1])){
     console.log("The table header underline must only contain | - and whitespace");
-    console.log("But its second row looks like this:");
+    console.log("But the file's second row looks like this:");
     console.log(tableRows[1]);
+    console.log("Make sure to use a .md file containting the weekly schedule with the config generator.")
     process.exit(0);
 }
 
