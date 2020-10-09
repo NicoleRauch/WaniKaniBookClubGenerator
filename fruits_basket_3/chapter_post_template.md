@@ -1,7 +1,7 @@
 
 Welcome to Chapter $week$!
 
-## Reading:
+## Reading
 
 $weeklyReadingSchedule$
 
