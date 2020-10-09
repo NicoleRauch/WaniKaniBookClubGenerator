@@ -20,9 +20,9 @@
             "url": "https://bookwalker.jp/de5302d6b5-a0a9-4e38-ba83-3da762942fa9/"
         }
     ],
-    "readingFirstDateWithYear": "TBA",
+    "readingFirstDateWithYear": "Oct 31st, 2020",
     "readingPageInfoTitle": "End Page (角川文庫)",
-    "readingEndPercentTitle": "End Percentage",
+    "readingEndPercentTitle": "End %",
     "readingRangeTitle": "End Phrase",
     "mainVocabURL": "",
     "properNouns": [],
@@ -36,7 +36,7 @@
     "weeks": [
         {
             "week": 1,
-            "weekStartDate": "",
+            "weekStartDate": "Oct 31st",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "19",
@@ -47,7 +47,7 @@
         },
         {
             "week": 2,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 7th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "40",
@@ -58,7 +58,7 @@
         },
         {
             "week": 3,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 14th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "49",
@@ -69,7 +69,7 @@
         },
         {
             "week": 4,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 21th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "65",
@@ -80,7 +80,7 @@
         },
         {
             "week": 5,
-            "weekStartDate": "",
+            "weekStartDate": "Nov 28th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "75",
@@ -91,7 +91,7 @@
         },
         {
             "week": 6,
-            "weekStartDate": "",
+            "weekStartDate": "Dec 5th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "89",
@@ -102,7 +102,7 @@
         },
         {
             "week": 7,
-            "weekStartDate": "",
+            "weekStartDate": "Dec 12th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "109",
@@ -113,7 +113,7 @@
         },
         {
             "week": 8,
-            "weekStartDate": "",
+            "weekStartDate": "Dec 19th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "127",
@@ -124,7 +124,7 @@
         },
         {
             "week": 9,
-            "weekStartDate": "",
+            "weekStartDate": "Dec 26th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "142",
@@ -135,7 +135,7 @@
         },
         {
             "week": 10,
-            "weekStartDate": "",
+            "weekStartDate": "Jan 2nd",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "154",
@@ -146,7 +146,7 @@
         },
         {
             "week": 11,
-            "weekStartDate": "",
+            "weekStartDate": "Jan 9th",
             "weekURL": "",
             "vocabURL": "",
             "readingPageInfo": "178",
