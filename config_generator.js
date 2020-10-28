@@ -115,6 +115,7 @@ const dummyConfig = {
     readAlongWeekday: "Sunday",
     readAlongJSTHuman: "9:30pm",
     readAlongJSTComputer: "21:30:00",
+    showWeekInfo: true,
 };
 
 const fullConfig = {...dummyConfig, ...existingConfig, numberOfTheLastWeek, weeks: weeksConfig};
