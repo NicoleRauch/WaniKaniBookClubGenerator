@@ -12,6 +12,10 @@ Volume 3 (Original Ed.): $bookName$
 
 $bookImage$
 
+**Start Date:** $readingFirstDateWithYear$
+**Previous:** [Volume 1+2](https://community.wanikani.com/t/x/43184)
+**Next:**  [Volume 4](https://community.wanikani.com/t/x/46838)
+
 ## Reading Schedule
 
 $readingSchedule$
