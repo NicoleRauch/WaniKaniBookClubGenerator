@@ -65,6 +65,5 @@ If so, which version will you be reading?
 
 ::if $hasProperNouns$
 ## Proper Noun Readings
-|Name|Reading|Notes|Proof|
-|-|-|-|-|
+$properNouns$
 ::endif

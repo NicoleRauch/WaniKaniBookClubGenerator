@@ -59,6 +59,11 @@ const headerText = theConfig => {
 
 const insert = (entry, mod = x => x) => entry ? mod(entry) : "";
 
+const properNounsTableFor = properNouns =>
+    "|Name|Reading|Notes|Proof|\n" +
+    "|-|-|-|-|\n" +
+    properNouns.map(noun => "|" + [noun.name, noun.reading, noun.notes, noun.proof].join("|") + "|").join("\n");
+
 const weekEntry = (showWeekInfo, withLinks, hasPageInfo2, hasEndPercentage) => week => toTableRow(
     (showWeekInfo
         ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
@@ -96,6 +101,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readingSchedule\$/g, readingSchedule(theConfig));
     theTemplate = theTemplate.replace(/\$mainVocabURL\$/g, theConfig.mainVocabURL);
     theTemplate = theTemplate.replace(/\$hasProperNouns\$/g, theConfig.properNouns.length > 0);
+    theTemplate = theTemplate.replace(/\$properNouns\$/g, properNounsTableFor(theConfig.properNouns));
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
     theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
     theTemplate = theTemplate.replace(/\$readAlongFirstDate\$/g, theConfig.readAlongFirstDate);

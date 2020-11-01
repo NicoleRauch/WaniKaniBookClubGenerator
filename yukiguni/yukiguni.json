@@ -25,7 +25,18 @@
     "readingEndPercentTitle": "End %",
     "readingRangeTitle": "End Phrase",
     "mainVocabURL": "",
-    "properNouns": [],
+    "properNouns": [{
+      "name": "島村",
+      "reading": "しまむら",
+      "notes": "Our protagonist",
+      "proof": ""
+    },
+      {
+        "name": "葉子",
+        "reading": "ようこ",
+        "notes": "The girl on the train",
+        "proof": "Furigana"
+      }],
     "isOnFloFlo": true,
     "hasReadAlongSession": false,
     "readAlongFirstDate": "",
