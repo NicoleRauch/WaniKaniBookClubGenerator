@@ -70,3 +70,8 @@ Mark your participation status by voting in this poll.
 *  I am no longer reading the book
 ::endif
 [/poll]
+
+::if $hasProperNouns$
+## Proper Noun Readings
+$properNouns$
+::endif
