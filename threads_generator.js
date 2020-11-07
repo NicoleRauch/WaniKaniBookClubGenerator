@@ -87,6 +87,8 @@ const readingSchedule = (theConfig) => {
 
 const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
 
+const hasWeekURL = (theWeeks) => theWeeks === undefined ? false : theWeeks.some(week => week.weekURL);
+
 function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
     theTemplate = theTemplate.replace(/\$bookClubURL\$/g, urlSnippetOf(theConfig.bookClubURL));
@@ -109,6 +111,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readAlongJSTHuman\$/g, theConfig.readAlongJSTHuman);
     theTemplate = theTemplate.replace(/\$readAlongJSTComputer\$/g, theConfig.readAlongJSTComputer); // TODO
     theTemplate = theTemplate.replace(/\$readingFirstDateWithYear\$/g, theConfig.readingFirstDateWithYear);
+    theTemplate = theTemplate.replace(/\$hasStarted\$/g, hasWeekURL(theConfig.weeks));
     return theTemplate;
 }
 

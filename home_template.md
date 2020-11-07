@@ -13,7 +13,11 @@ $bookImage$
 $whereToBuy$ 
 
 ## Discussion Threads and Reading Schedule
+::if $hasStarted$
+We started reading on $readingFirstDateWithYear$.
+::else
 We will start reading on $readingFirstDateWithYear$.
+::endif
 
 $readingSchedule$
 

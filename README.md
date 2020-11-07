@@ -109,6 +109,7 @@ You can use the following variables in the template file as well, but you need n
 |`nextWeek`|The number of the subsequent week, e.g. for the "next week" link|
 |`bookPreviousWeekURL`|The URL of the preceding week|
 |`bookNextWeekURL`|The URL of the following week|
+|`hasStarted`|Whether the book club has started yet. This is determined by the existence of the first week, not by comparing dates.|
 |`readingSchedule`|The reading schedule that is contained in the weekly breakdown file, enhanced by the links to the weekly threads.|
 |`weeklyReadingSchedule`|The excerpt of the reading schedule for the current week.|
 |`hasProperNouns`|True if any proper nouns are defined in the `properNouns` config entry.|
