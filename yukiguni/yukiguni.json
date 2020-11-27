@@ -36,6 +36,12 @@
         "reading": "ようこ",
         "notes": "The girl on the train",
         "proof": "Furigana"
+      },
+      {
+        "name": "駒子",
+        "reading": "こまこ",
+        "notes": "The girl in the village",
+        "proof": "Furigana"
       }],
     "isOnFloFlo": true,
     "hasReadAlongSession": false,
@@ -81,7 +87,7 @@
         {
             "week": 4,
             "weekStartDate": "Nov 21th",
-            "weekURL": "",
+            "weekURL": "47272",
             "vocabURL": "",
             "readingPageInfo": "65",
             "readingEndPercent": 35,
