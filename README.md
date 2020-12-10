@@ -71,7 +71,8 @@ The configuration file contains two kinds of variables: Those that can be used i
 |`numberOfTheLastWeek`|Number|The number of the last week for this book (so that the last week does not get a "next week" link).|
 |`showWeekInfo`|Boolean; optional (default: `true`)|Controls whether the schedule will contain a column for the weeks. Recommendation: Show for regular bookclubs, hide for offshoot bookclubs.|
 |`weeks`|Array|The list of the configurations for each week (see below).|
-
+|`bookwalkerPageCount`|The number of pages as given by BookWalker.|
+|`physicalPageCount`|The number of pages in the physical book (or as given by Amazon).|
 
 
 #### Variables for the Week Templates
@@ -112,6 +113,7 @@ You can use the following variables in the template file as well, but you need n
 |`hasStarted`|Whether the book club has started yet. This is determined by the existence of the first week, not by comparing dates.|
 |`readingSchedule`|The reading schedule that is contained in the weekly breakdown file, enhanced by the links to the weekly threads.|
 |`weeklyReadingSchedule`|The excerpt of the reading schedule for the current week.|
+|`textRatioPerPage`|The percentage of text of a BookWalker "standard page" that shows up on one physical page of the book.|
 |`hasProperNouns`|True if any proper nouns are defined in the `properNouns` config entry.|
 
 ### Conditional Generation

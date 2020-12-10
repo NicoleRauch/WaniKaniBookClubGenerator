@@ -85,6 +85,15 @@ const readingSchedule = (theConfig) => {
     return headerText(theConfig) + weeksText;
 };
 
+const isNumber = (n) => !isNaN(parseFloat(String(n))) && isFinite(Number(n));
+
+const textRatioPerPageFor = (bookWalkerPages, physicalPages) => {
+    if(bookWalkerPages === undefined || physicalPages === undefined || !isNumber(bookWalkerPages) || !isNumber(physicalPages)) {
+        return "";
+    }
+    return (Number(bookWalkerPages) / Number(physicalPages) * 100).toFixed(0);
+}
+
 const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
 
 const hasWeekURL = (theWeeks) => theWeeks === undefined ? false : theWeeks.some(week => week.weekURL);
@@ -101,6 +110,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title);
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle);
     theTemplate = theTemplate.replace(/\$readingSchedule\$/g, readingSchedule(theConfig));
+    theTemplate = theTemplate.replace(/\$textRatioPerPage\$/g, textRatioPerPageFor(theConfig.bookwalkerPageCount, theConfig.physicalPageCount))
     theTemplate = theTemplate.replace(/\$mainVocabURL\$/g, theConfig.mainVocabURL);
     theTemplate = theTemplate.replace(/\$hasProperNouns\$/g, theConfig.properNouns.length > 0);
     theTemplate = theTemplate.replace(/\$properNouns\$/g, properNounsTableFor(theConfig.properNouns));

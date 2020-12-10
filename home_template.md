@@ -21,6 +21,9 @@ We will start reading on $readingFirstDateWithYear$.
 
 $readingSchedule$
 
+::if "$textRatioPerPage$"
+(Note: One physical page contains ~$textRatioPerPage$% of the text of one BookWalker "standard page".)
+
 ::if "$mainVocabURL$"
 ## Vocabulary List
 

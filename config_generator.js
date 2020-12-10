@@ -103,6 +103,8 @@ const dummyConfig = {
     bookImage: "",
     bookHomeThreadURL: "",
     whereToBuy: [],
+    physicalPageCount: "",
+    bookwalkerPageCount: "",
     readingFirstDateWithYear: "",
     readingPageInfoTitle: columns.readingPageInfoTitle,
     readingPageInfo2Title: columns.readingPageInfo2Title,
