@@ -28,6 +28,7 @@
     "readAlongWeekday": "Sunday",
     "readAlongJSTHuman": "9:30pm",
     "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
     "hasProperNounsTable": false,
     "numberOfTheLastWeek": 20,
     "weeks": [
@@ -155,7 +156,7 @@
         {
             "week": 12,
             "weekStartDate": "Dec 5th",
-            "weekURL": "",
+            "weekURL": "47553",
             "vocabURL": "",
             "readingPageInfo": "174",
             "readingEndPercent": 60,
