@@ -1,0 +1,147 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "https://community.wanikani.com/t/x/44685",
+    "bookName": "容疑者Xの献身 - The Devotion of Suspect X 🌹",
+    "bookImage": "![image|252x365](upload://bpKMZC1z7oZmTx1Rjlodpjdxiub.png)",
+    "bookHomeThreadURL": "",
+    "whereToBuy": [
+        {
+            "name": "Amazon JP",
+            "url": "https://www.amazon.co.jp/%E5%AE%B9%E7%96%91%E8%80%85X%E3%81%AE%E7%8C%AE%E8%BA%AB-%E6%96%87%E6%98%A5%E6%96%87%E5%BA%AB-%E6%9D%B1%E9%87%8E-%E5%9C%AD%E5%90%BE/dp/4167110121"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/deeb4cf68c-4a1b-423e-a075-65974ada24d2/"
+        }
+    ],
+    "physicalPageCount": "394",
+    "bookwalkerPageCount": "373",
+    "readingFirstDateWithYear": "January 23rd, 2021",
+    "readingPageInfoTitle": "End Page",
+    "readingEndPercentTitle": "End %",
+    "readingRangeTitle": "End Chapter",
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 10,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "Jan 23rd",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "28",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 1]",
+            "readingPageCount": 23,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 2,
+            "weekStartDate": "Jan 30th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "66",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 3]",
+            "readingPageCount": 38,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 3,
+            "weekStartDate": "Feb 6th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "105",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 5]",
+            "readingPageCount": 39,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 4,
+            "weekStartDate": "Feb 13th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "139",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 7]",
+            "readingPageCount": 34,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 5,
+            "weekStartDate": "Feb 20th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "188",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 9]",
+            "readingPageCount": 49,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 6,
+            "weekStartDate": "Feb 27th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "224",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 11]",
+            "readingPageCount": 36,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 7,
+            "weekStartDate": "Mar 6th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "266",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 13]",
+            "readingPageCount": 42,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 8,
+            "weekStartDate": "Mar 13th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "310",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 15]",
+            "readingPageCount": 44,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 9,
+            "weekStartDate": "Mar 20th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "352",
+            "readingEndPercent": "",
+            "readingRange": "[End Chapter 17]",
+            "readingPageCount": 42,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 10,
+            "weekStartDate": "Mar 27th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingPageInfo": "394",
+            "readingEndPercent": "",
+            "readingRange": "[The End]",
+            "readingPageCount": 42,
+            "readAlongNextDate": ""
+        }
+    ]
+}
