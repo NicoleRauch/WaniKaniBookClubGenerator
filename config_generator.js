@@ -45,6 +45,7 @@ const columnsFor = (header) => {
                     return {...acc, readingPageInfo2: index, readingPageInfo2Title: current};
 
                 case possibleHeaders.end_phrase:
+                case possibleHeaders.end_chapter:
                 case possibleHeaders.chapter:
                     return {...acc, readingRange: index, readingRangeTitle: current};
 
