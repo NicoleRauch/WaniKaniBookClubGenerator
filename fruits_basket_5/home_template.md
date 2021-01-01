@@ -13,7 +13,7 @@ Volume 5 (Original Ed.): $bookName$
 $bookImage$
 
 **Start Date:** $readingFirstDateWithYear$
-**Previous:** [Volume 4](https://community.wanikani.com/t/x/43184)
+**Previous:** [Volume 4](https://community.wanikani.com/t/x/46838)
 ::if false
 **Next:**  [Volume 6]()
 ::endif

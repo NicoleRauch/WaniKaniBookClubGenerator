@@ -14,9 +14,7 @@ $bookImage$
 
 **Start Date:** $readingFirstDateWithYear$
 **Previous:** [Volume 3](https://community.wanikani.com/t/x/46111)
-::if false
-**Next:**  [Volume 5]()
-::endif
+**Next:**  [Volume 5](https://community.wanikani.com/t/x/48036)
 
 ## Reading Schedule
 

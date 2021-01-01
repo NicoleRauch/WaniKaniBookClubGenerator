@@ -21,13 +21,13 @@
     "readAlongWeekday": "Sunday",
     "readAlongJSTHuman": "9:30pm",
     "readAlongJSTComputer": "21:30:00",
-    "showWeekInfo": true,
+    "showWeekInfo": false,
     "numberOfTheLastWeek": 30,
     "weeks": [
         {
             "week": 25,
             "weekStartDate": "Jan 2nd",
-            "weekURL": "",
+            "weekURL": "48036/3",
             "vocabURL": "",
             "readingPageInfo": "4 - 36 (v5)",
             "readingPageInfo2": "(v3)",
