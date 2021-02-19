@@ -20,10 +20,117 @@
     "bookwalkerPageCount": "373",
     "readingFirstDateWithYear": "January 23rd, 2021",
     "readingPageInfoTitle": "End Page",
-    "readingEndPercentTitle": "End %",
     "readingRangeTitle": "End Chapter",
     "mainVocabURL": "",
-    "properNouns": [],
+    "properNouns": [{
+      "name": "石神",
+      "reading": "いしがみ"
+    },
+      {
+        "name": "新大橋",
+        "reading": "しんおおはし"
+      },
+      {
+        "name": "隅田川",
+        "reading": "すみだがわ"
+      },
+      {
+        "name": "清洲橋",
+        "reading": "きよすばし"
+      },
+      {
+        "name": "靖子",
+        "reading": "やすこ"
+      },
+      {
+        "name": "米沢",
+        "reading": "よねざわ"
+      },
+      {
+        "name": "小代子",
+        "reading": "さよこ"
+      },
+      {
+        "name": "金子",
+        "reading": "かねこ"
+      },
+      {
+        "name": "錦糸町",
+        "reading": "きんしちょう"
+      },
+      {
+        "name": "美里",
+        "reading": "みさと"
+      },
+      {
+        "name": "富樫慎二",
+        "reading": "とがししんじ"
+      },
+      {
+        "name": "赤坂",
+        "reading": "あかさか"
+      },
+      {
+        "name": "扇屋",
+        "reading": "おおぎや"
+      },
+      {
+        "name": "湯川 学",
+        "reading": "ゆかわ まなぶ"
+      },
+      {
+        "name": "草薙",
+        "reading": "くさなぎ"
+      },
+      {
+        "name": "帝都大学",
+        "reading": "ていとだいがく"
+      },
+      {
+        "name": "旧江戸川",
+        "reading": "きゅうえどがわ"
+      },
+      {
+        "name": "岸谷",
+        "reading": "きしたに"
+      },
+      {
+        "name": "間宮",
+        "reading": "まみや"
+      },
+      {
+        "name": "篠崎",
+        "reading": "しのざき"
+      },
+      {
+        "name": "山辺 躍子",
+        "reading": "やまべ ようこ"
+      },
+      {
+        "name": "亀戸",
+        "reading": "かめいど"
+      },
+      {
+        "name": "森下駅",
+        "reading": "もりしたえき"
+      },
+      {
+        "name": "荻窪",
+        "reading": "おぎくぼ"
+      },
+      {
+        "name": "江東区",
+        "reading": "こうとうく"
+      },
+      {
+        "name": "錦糸町",
+        "reading": "きんしちょう"
+      },
+      {
+        "name": "哲哉",
+        "reading": "てつや"
+      }
+    ],
     "isOnFloFlo": false,
     "hasReadAlongSession": false,
     "readAlongFirstDate": "",
@@ -69,7 +176,7 @@
         {
             "week": 4,
             "weekStartDate": "Feb 13th",
-            "weekURL": "",
+            "weekURL": "49358",
             "vocabURL": "",
             "readingPageInfo": "139",
             "readingEndPercent": "",
@@ -80,7 +187,7 @@
         {
             "week": 5,
             "weekStartDate": "Feb 20th",
-            "weekURL": "",
+            "weekURL": "49548",
             "vocabURL": "",
             "readingPageInfo": "188",
             "readingEndPercent": "",
