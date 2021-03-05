@@ -64,7 +64,7 @@ const properNounsTableFor = properNouns =>
     "|-|-|-|-|\n" +
     properNouns.map(noun => "|" + [noun.name, noun.reading, noun.notes, noun.proof].join("|") + "|").join("\n");
 
-const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPercentage) => week =>
+const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPercentage) => week => toTableRow(
     (showWeekInfo
         ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
         : [])
@@ -75,12 +75,12 @@ const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPer
         .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
         .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
         .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
-        .concat(insert(week.readingPageCount));
+    .concat(insert(week.readingPageCount))
+);
 
 const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks
         .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
-        .map(toTableRow)
         .join("");
     return headerText(theConfig) + weeksText;
 };
