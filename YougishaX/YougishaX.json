@@ -22,115 +22,7 @@
     "readingPageInfoTitle": "End Page",
     "readingRangeTitle": "End Chapter",
     "mainVocabURL": "",
-    "properNouns": [{
-      "name": "石神",
-      "reading": "いしがみ"
-    },
-      {
-        "name": "新大橋",
-        "reading": "しんおおはし"
-      },
-      {
-        "name": "隅田川",
-        "reading": "すみだがわ"
-      },
-      {
-        "name": "清洲橋",
-        "reading": "きよすばし"
-      },
-      {
-        "name": "靖子",
-        "reading": "やすこ"
-      },
-      {
-        "name": "米沢",
-        "reading": "よねざわ"
-      },
-      {
-        "name": "小代子",
-        "reading": "さよこ"
-      },
-      {
-        "name": "金子",
-        "reading": "かねこ"
-      },
-      {
-        "name": "錦糸町",
-        "reading": "きんしちょう"
-      },
-      {
-        "name": "美里",
-        "reading": "みさと"
-      },
-      {
-        "name": "富樫慎二",
-        "reading": "とがししんじ"
-      },
-      {
-        "name": "赤坂",
-        "reading": "あかさか"
-      },
-      {
-        "name": "扇屋",
-        "reading": "おおぎや"
-      },
-      {
-        "name": "湯川 学",
-        "reading": "ゆかわ まなぶ"
-      },
-      {
-        "name": "草薙",
-        "reading": "くさなぎ"
-      },
-      {
-        "name": "帝都大学",
-        "reading": "ていとだいがく"
-      },
-      {
-        "name": "旧江戸川",
-        "reading": "きゅうえどがわ"
-      },
-      {
-        "name": "岸谷",
-        "reading": "きしたに"
-      },
-      {
-        "name": "間宮",
-        "reading": "まみや"
-      },
-      {
-        "name": "篠崎",
-        "reading": "しのざき"
-      },
-      {
-        "name": "山辺 躍子",
-        "reading": "やまべ ようこ"
-      },
-      {
-        "name": "亀戸",
-        "reading": "かめいど"
-      },
-      {
-        "name": "森下駅",
-        "reading": "もりしたえき"
-      },
-      {
-        "name": "荻窪",
-        "reading": "おぎくぼ"
-      },
-      {
-        "name": "江東区",
-        "reading": "こうとうく"
-      },
-      {
-        "name": "錦糸町",
-        "reading": "きんしちょう"
-      },
-      {
-        "name": "哲哉",
-        "reading": "てつや"
-      }
-    ],
+    "properNouns": [],
     "isOnFloFlo": false,
     "hasReadAlongSession": false,
     "readAlongFirstDate": "",
@@ -149,7 +41,57 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 1]",
             "readingPageCount": 23,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": [
+              {
+                "name": "石神",
+                "reading": "いしがみ"
+              },
+              {
+                "name": "新大橋",
+                "reading": "しんおおはし"
+              },
+              {
+                "name": "隅田川",
+                "reading": "すみだがわ"
+              },
+              {
+                "name": "清洲橋",
+                "reading": "きよすばし"
+              },
+              {
+                "name": "靖子",
+                "reading": "やすこ"
+              },
+              {
+                "name": "米沢",
+                "reading": "よねざわ"
+              },
+              {
+                "name": "小代子",
+                "reading": "さよこ"
+              },
+              {
+                "name": "金子",
+                "reading": "かねこ"
+              },
+              {
+                "name": "錦糸町",
+                "reading": "きんしちょう"
+              },
+              {
+                "name": "美里",
+                "reading": "みさと"
+              },
+              {
+                "name": "富樫 慎二",
+                "reading": "とがし しんじ"
+              },
+              {
+                "name": "赤坂",
+                "reading": "あかさか"
+              }
+            ]
         },
         {
             "week": 2,
@@ -160,7 +102,49 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 3]",
             "readingPageCount": 38,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": [
+              {
+                "name": "扇屋",
+                "reading": "おおぎや"
+              },
+              {
+                "name": "湯川 学",
+                "reading": "ゆかわ まなぶ"
+              },
+              {
+                "name": "草薙",
+                "reading": "くさなぎ"
+              },
+              {
+                "name": "帝都大学",
+                "reading": "ていとだいがく"
+              },
+              {
+                "name": "旧江戸川",
+                "reading": "きゅうえどがわ"
+              },
+              {
+                "name": "岸谷",
+                "reading": "きしたに"
+              },
+              {
+                "name": "間宮",
+                "reading": "まみや"
+              },
+              {
+                "name": "篠崎",
+                "reading": "しのざき"
+              },
+              {
+                "name": "山辺 躍子",
+                "reading": "やまべ ようこ"
+              },
+              {
+                "name": "亀戸",
+                "reading": "かめいど"
+              }
+            ]
         },
         {
             "week": 3,
@@ -171,7 +155,29 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 5]",
             "readingPageCount": 39,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": [
+              {
+                "name": "森下駅",
+                "reading": "もりしたえき"
+              },
+              {
+                "name": "荻窪",
+                "reading": "おぎくぼ"
+              },
+              {
+                "name": "江東区",
+                "reading": "こうとうく"
+              },
+              {
+                "name": "錦糸町",
+                "reading": "きんしちょう"
+              },
+              {
+                "name": "哲哉",
+                "reading": "てつや"
+              }
+            ]
         },
         {
             "week": 4,
@@ -182,7 +188,17 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 7]",
             "readingPageCount": 34,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": [
+              {
+                "name": "工藤",
+                "reading": "くどう"
+              },
+              {
+                "name": "大崎",
+                "reading": "おおさき"
+              }
+            ]
         },
         {
             "week": 5,
@@ -193,7 +209,33 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 9]",
             "readingPageCount": 49,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": [
+              {
+                "name": "上野 実香",
+                "reading": "うえの みか"
+              },
+              {
+                "name": "瑞江駅",
+                "reading": "みずええき"
+              },
+              {
+                "name": "浜町駅",
+                "reading": "はまちょうえき"
+              },
+              {
+                "name": "森岡",
+                "reading": "もりおか"
+              },
+              {
+                "name": "汐留",
+                "reading": "しおどめ"
+              },
+              {
+                "name": "工藤 那明",
+                "reading": "くどう くにあき"
+              }
+            ]
         },
         {
             "week": 6,
@@ -204,18 +246,29 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 11]",
             "readingPageCount": 36,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": [
+              {
+                "name": "都営新宿線",
+                "reading": "とえいしんじゅくせん"
+              },
+              {
+                "name": "品川",
+                "reading": "しながわ"
+              }
+            ]
         },
         {
             "week": 7,
             "weekStartDate": "Mar 6th",
-            "weekURL": "",
+            "weekURL": "49906",
             "vocabURL": "",
             "readingPageInfo": "266",
             "readingEndPercent": "",
             "readingRange": "[End Chapter 13]",
             "readingPageCount": 42,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 8,
@@ -226,7 +279,8 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 15]",
             "readingPageCount": 44,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 9,
@@ -237,7 +291,8 @@
             "readingEndPercent": "",
             "readingRange": "[End Chapter 17]",
             "readingPageCount": 42,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 10,
@@ -248,7 +303,8 @@
             "readingEndPercent": "",
             "readingRange": "[The End]",
             "readingPageCount": 42,
-            "readAlongNextDate": ""
+            "readAlongNextDate": "",
+            "properNouns": []
         }
     ]
 }
