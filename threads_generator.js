@@ -49,8 +49,8 @@ const headerText = theConfig => {
         .concat([
             "Start Date",
             theConfig.readingRangeTitle,
-            theConfig.readingPageInfoTitle
         ])
+        .concat(theConfig.readingPageInfoTitle || [])
         .concat(theConfig.readingPageInfo2Title || [])
         .concat(theConfig.readingEndPercentTitle || [])
         .concat("Page Count");
@@ -64,23 +64,23 @@ const properNounsTableFor = properNouns =>
     "|-|-|-|-|\n" +
     properNouns.map(noun => "|" + [noun.name, noun.reading, noun.notes, noun.proof].join("|") + "|").join("\n");
 
-const weekEntry = (showWeekInfo, withLinks, hasPageInfo2, hasEndPercentage) => week => toTableRow(
+const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPercentage) => week =>
     (showWeekInfo
         ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
         : [])
         .concat([
             insert(week.weekStartDate),
             insert(week.readingRange, x => withLinks ? urlOf(x, week.weekURL) : x),
-            insert(week.readingPageInfo)
         ])
+        .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
         .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
         .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
-        .concat(insert(week.readingPageCount))
-        );
+        .concat(insert(week.readingPageCount));
 
 const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks
-        .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
+        .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
+        .map(toTableRow)
         .join("");
     return headerText(theConfig) + weeksText;
 };
@@ -94,7 +94,7 @@ const textRatioPerPageFor = (bookWalkerPages, physicalPages) => {
     return (Number(bookWalkerPages) / Number(physicalPages) * 100).toFixed(0);
 }
 
-const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
+const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
 
 const hasWeekURL = (theWeeks) => theWeeks === undefined ? false : theWeeks.some(week => week.weekURL);
 
