@@ -89,6 +89,7 @@ The configurations for each week contains the following variables:
 |`readingEndPercent`|Number|The percentage of the last sentence of this week's reading.| 
 |`readingRange`|String|An indicator of what to read, e.g. the chapter or the last phrase of this week's reading.| 
 |`readingPageCount`|Number|The number of pages that this week's reading covers.| 
+|`weeklyProperNouns`|String|The list of proper nouns up to and including the current week.|
 |`readAlongNextDate`|String; optional|The date of the next read-along session, in computer-readable format (e.g. `2019-03-15`). Only required when the read-along session should be shown.|
 |`vocabURL`|String; optional|Link to the weekly section of that spreadsheet.|
 

@@ -73,5 +73,5 @@ Mark your participation status by voting in this poll.
 
 ::if $hasProperNouns$
 ## Proper Noun Readings
-$properNouns$
+$weeklyProperNouns$
 ::endif

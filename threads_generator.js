@@ -59,10 +59,45 @@ const headerText = theConfig => {
 
 const insert = (entry, mod = x => x) => entry ? mod(entry) : "";
 
-const properNounsTableFor = properNouns =>
+const annotate = (properNounsList, note) => properNounsList.map(
+    (entry, index) => index === 0 ? {...entry, notes: [].concat(entry.notes || []).concat(note).join(" ")} : entry);
+
+const allProperNouns = (theConfig) => theConfig.weeks.reduce(
+    (acc, current) => acc.concat(current.properNouns ? annotate(current.properNouns, "(Week " + current.week + ")") : []),
+    theConfig.properNouns || []
+);
+
+const allProperNounsUpTo = (theConfig, theCurrentWeek) => theConfig.weeks.reduce(
+    (acc, current) => current.week < theCurrentWeek
+        ? { ...acc, previous: acc.previous.concat(current.properNouns ? annotate(current.properNouns, "(Week " + current.week + ")") : []) }
+        : current.week === theCurrentWeek
+            ? { ...acc, current: current.properNouns || [] }
+            : acc,
+    { previous: theConfig.properNouns || [], current: [] }
+);
+
+const unhiddenList = (nouns) =>
     "|Name|Reading|Notes|Proof|\n" +
     "|-|-|-|-|\n" +
-    properNouns.map(noun => "|" + [noun.name, noun.reading, noun.notes, noun.proof].join("|") + "|").join("\n");
+    nouns.map(noun => ["", noun.name, noun.reading, noun.notes, noun.proof, ""].join("|")).join("\n") + "\n";
+
+
+const properNounsTableForList = (nouns, hiddenLabel) => {
+    const hideList = nouns.length > 8;
+    return (hideList ? "[details=\"" +hiddenLabel+ "\"]\n" : "") +
+        unhiddenList(nouns) +
+        (hideList ? "[/details]\n" : "");
+}
+
+const properNounsTableFor = (theConfig, hiddenLabel) => properNounsTableForList(allProperNouns(theConfig), hiddenLabel);
+
+
+const weeklyProperNounsTableFor = (theConfig, theCurrentWeek, hiddenLabel) => {
+    const properNounsCollection = allProperNounsUpTo(theConfig, theCurrentWeek);
+    return (properNounsCollection.previous.length > 0 ? properNounsTableForList(properNounsCollection.previous, hiddenLabel) : "")
+    + (properNounsCollection.current.length > 0 ? unhiddenList(properNounsCollection.current) : "");
+}
+
 
 const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPercentage) => week => toTableRow(
     (showWeekInfo
@@ -71,10 +106,11 @@ const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPer
         .concat([
             insert(week.weekStartDate),
             insert(week.readingRange, x => withLinks ? urlOf(x, week.weekURL) : x),
-        ])
-        .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
-        .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
-        .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
+        ]
+    )
+    .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
+    .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
+    .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
     .concat(insert(week.readingPageCount))
 );
 
@@ -94,9 +130,13 @@ const textRatioPerPageFor = (bookWalkerPages, physicalPages) => {
     return (Number(bookWalkerPages) / Number(physicalPages) * 100).toFixed(0);
 }
 
-const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) + weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
+const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) +
+    weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
 
 const hasWeekURL = (theWeeks) => theWeeks === undefined ? false : theWeeks.some(week => week.weekURL);
+
+const hasProperNouns = (theConfig) => theConfig.properNouns && theConfig.properNouns.length > 0 ||
+    !!theConfig.weeks.find(week => week.properNouns && week.properNouns.length > 0);
 
 function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookClubName\$/g, theConfig.bookClubName);
@@ -112,8 +152,8 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readingSchedule\$/g, readingSchedule(theConfig));
     theTemplate = theTemplate.replace(/\$textRatioPerPage\$/g, textRatioPerPageFor(theConfig.bookwalkerPageCount, theConfig.physicalPageCount))
     theTemplate = theTemplate.replace(/\$mainVocabURL\$/g, theConfig.mainVocabURL);
-    theTemplate = theTemplate.replace(/\$hasProperNouns\$/g, theConfig.properNouns.length > 0);
-    theTemplate = theTemplate.replace(/\$properNouns\$/g, properNounsTableFor(theConfig.properNouns));
+    theTemplate = theTemplate.replace(/\$hasProperNouns\$/g, hasProperNouns(theConfig));
+    theTemplate = theTemplate.replace(/\$properNouns\$/g, properNounsTableFor(theConfig, "Proper Nouns"));
     theTemplate = theTemplate.replace(/\$isOnFloFlo\$/g, theConfig.isOnFloFlo);
     theTemplate = theTemplate.replace(/\$hasReadAlongSession\$/g, theConfig.hasReadAlongSession);
     theTemplate = theTemplate.replace(/\$readAlongFirstDate\$/g, theConfig.readAlongFirstDate);
@@ -141,6 +181,7 @@ function replaceWeeklyVariables(theWeekTemplate, theWeekConfig, theConfig) {
     theWeekTemplate = theWeekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week + 1] ? weeks[theWeekConfig.week + 1].weekURL : undefined));
     theWeekTemplate = theWeekTemplate.replace(/\$weeklyReadingSchedule\$/g, weeklyReadingSchedule(theConfig, theWeekConfig));
     theWeekTemplate = theWeekTemplate.replace(/\$vocabURL\$/g, theWeekConfig.vocabURL);
+    theWeekTemplate = theWeekTemplate.replace(/\$weeklyProperNouns\$/g, weeklyProperNounsTableFor(theConfig, theWeekConfig.week, "Previous Proper Nouns"));
     return theWeekTemplate;
 }
 

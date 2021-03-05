@@ -91,7 +91,8 @@ const weeksConfig = tableBody.map(row => {
         readingEndPercent: parseInt(fields[columns.readingEndPercent], 10) || "",
         readingRange: fields[columns.readingRange],
         readingPageCount: parseFloat(fields[columns.readingPageCount]),
-        readAlongNextDate: existingWeeksConfig[week] ? existingWeeksConfig[week].readAlongNextDate || "" : ""
+        readAlongNextDate: existingWeeksConfig[week] ? existingWeeksConfig[week].readAlongNextDate || "" : "",
+        properNouns: existingWeeksConfig[week] ? existingWeeksConfig[week].properNouns || [] : []
     };
 });
 
