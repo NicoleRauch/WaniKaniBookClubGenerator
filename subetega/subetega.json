@@ -1,0 +1,145 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "https://community.wanikani.com/t/x/44685",
+    "bookName": "すべてがFになる - The Perfect Insider",
+    "bookImage": "![image|252x354](upload://9o4yxxU2q9MrnD6EOJaL14Z0x9z.png)",
+    "bookHomeThreadURL": "https://community.wanikani.com/t/x/49806",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/4062639246/ref=as_li_tf_tl"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de8d9a2601-b31b-4be3-89b0-f4d81a027c4e/"
+        }
+    ],
+    "physicalPageCount": "524",
+    "bookwalkerPageCount": "480",
+    "readingFirstDateWithYear": "April 10th, 2021",
+    "readingRangeTitle": "Chapter",
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 11,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "Apr 10th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 1",
+            "readingPageCount": 47,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 2,
+            "weekStartDate": "Apr 17th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 2",
+            "readingPageCount": 55,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 3,
+            "weekStartDate": "Apr 24th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 3",
+            "readingPageCount": 48,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 4,
+            "weekStartDate": "May  1st",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 4",
+            "readingPageCount": 51,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 5,
+            "weekStartDate": "May  8th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 5",
+            "readingPageCount": 50,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 6,
+            "weekStartDate": "May 15th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 6",
+            "readingPageCount": 46,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 7,
+            "weekStartDate": "May 22rd",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 7",
+            "readingPageCount": 48,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 8,
+            "weekStartDate": "May 29th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 8",
+            "readingPageCount": 50,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 9,
+            "weekStartDate": "Jun  5th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 9",
+            "readingPageCount": 37,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 10,
+            "weekStartDate": "Jun 12th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 10",
+            "readingPageCount": 65,
+            "readAlongNextDate": ""
+        },
+        {
+            "week": 11,
+            "weekStartDate": "Jun 19th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 11",
+            "readingPageCount": 37,
+            "readAlongNextDate": ""
+        }
+    ]
+}
