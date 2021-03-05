@@ -38,8 +38,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 1",
-            "readingPageCount": 47,
-            "readAlongNextDate": ""
+            "readingPageCount": 44,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 2,
@@ -48,8 +49,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 2",
-            "readingPageCount": 55,
-            "readAlongNextDate": ""
+            "readingPageCount": 52,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 3,
@@ -58,8 +60,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 3",
-            "readingPageCount": 48,
-            "readAlongNextDate": ""
+            "readingPageCount": 46,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 4,
@@ -68,8 +71,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 4",
-            "readingPageCount": 51,
-            "readAlongNextDate": ""
+            "readingPageCount": 48,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 5,
@@ -78,8 +82,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 5",
-            "readingPageCount": 50,
-            "readAlongNextDate": ""
+            "readingPageCount": 48,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 6,
@@ -88,8 +93,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 6",
-            "readingPageCount": 46,
-            "readAlongNextDate": ""
+            "readingPageCount": 44,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 7,
@@ -98,8 +104,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 7",
-            "readingPageCount": 48,
-            "readAlongNextDate": ""
+            "readingPageCount": 46,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 8,
@@ -108,8 +115,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 8",
-            "readingPageCount": 50,
-            "readAlongNextDate": ""
+            "readingPageCount": 48,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 9,
@@ -118,8 +126,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 9",
-            "readingPageCount": 37,
-            "readAlongNextDate": ""
+            "readingPageCount": 36,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 10,
@@ -128,8 +137,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 10",
-            "readingPageCount": 65,
-            "readAlongNextDate": ""
+            "readingPageCount": 62,
+            "readAlongNextDate": "",
+            "properNouns": []
         },
         {
             "week": 11,
@@ -138,8 +148,9 @@
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 11",
-            "readingPageCount": 37,
-            "readAlongNextDate": ""
+            "readingPageCount": 26,
+            "readAlongNextDate": "",
+            "properNouns": []
         }
     ]
 }
