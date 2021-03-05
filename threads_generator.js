@@ -79,7 +79,7 @@ const weekEntry = (showWeekInfo, withLinks, hasPageInfo2, hasEndPercentage) => w
         );
 
 const readingSchedule = (theConfig) => {
-    const weeksText = theConfig.weeks.sort((a, b) => a.week - b.week)
+    const weeksText = theConfig.weeks
         .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
         .join("");
     return headerText(theConfig) + weeksText;
@@ -177,9 +177,11 @@ function writeFile(fileExtension, theTemplate) {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
+/////////////// Processing the Configuration: /////////////////////////////////////
 
 const configFileName = process.argv[2];
 const config = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
+config.weeks = config.weeks.sort((a, b) => a.week - b.week); // sort the weeks for more straightforward access
 // add default values:
 if(config.showWeekInfo === undefined){
     config.showWeekInfo = true;
