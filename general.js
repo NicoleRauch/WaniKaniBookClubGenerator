@@ -13,6 +13,7 @@ module.exports = {
         pages_ebook: "Pages (ebook)",
         end_percentage: "End Percentage",
         end_phrase: "End Phrase",
+        start_chapter: "Start Chapter",
         end_chapter: "End Chapter",
         chapter: "Chapter",
         page_count: "Page Count"
