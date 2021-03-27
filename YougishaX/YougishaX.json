@@ -268,12 +268,15 @@
             "readingRange": "[End Chapter 13]",
             "readingPageCount": 42,
             "readAlongNextDate": "",
-            "properNouns": []
+            "properNouns": [{
+              "name": "杉村 園子",
+              "reading": "すぎむら そのこ"
+            }]
         },
         {
             "week": 8,
             "weekStartDate": "Mar 13th",
-            "weekURL": "",
+            "weekURL": "50060",
             "vocabURL": "",
             "readingPageInfo": "310",
             "readingEndPercent": "",
@@ -285,19 +288,24 @@
         {
             "week": 9,
             "weekStartDate": "Mar 20th",
-            "weekURL": "",
+            "weekURL": "50209",
             "vocabURL": "",
             "readingPageInfo": "352",
             "readingEndPercent": "",
             "readingRange": "[End Chapter 17]",
             "readingPageCount": 42,
             "readAlongNextDate": "",
-            "properNouns": []
+            "properNouns": [
+              {
+                "name": "常磐",
+                "reading": "ときわ"
+              }
+            ]
         },
         {
             "week": 10,
             "weekStartDate": "Mar 27th",
-            "weekURL": "",
+            "weekURL": "50385",
             "vocabURL": "",
             "readingPageInfo": "394",
             "readingEndPercent": "",
