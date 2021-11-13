@@ -1,5 +1,5 @@
 {
-    "homeTemplate": "../home_template.md",
+    "homeTemplate": "./home_template.md",
     "weekTemplate": "../week_template.md",
     "bookClubName": "Advanced",
     "bookClubURL": "https://community.wanikani.com/t/x/44685",
@@ -34,7 +34,7 @@
         {
             "week": 1,
             "weekStartDate": "Apr 10th",
-            "weekURL": "",
+            "weekURL": "50680",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 1",
@@ -45,7 +45,7 @@
         {
             "week": 2,
             "weekStartDate": "Apr 17th",
-            "weekURL": "",
+            "weekURL": "50836",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 2",
@@ -56,7 +56,7 @@
         {
             "week": 3,
             "weekStartDate": "Apr 24th",
-            "weekURL": "",
+            "weekURL": "50986",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 3",
@@ -67,7 +67,7 @@
         {
             "week": 4,
             "weekStartDate": "May  1st",
-            "weekURL": "",
+            "weekURL": "51147",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 4",
@@ -78,7 +78,7 @@
         {
             "week": 5,
             "weekStartDate": "May  8th",
-            "weekURL": "",
+            "weekURL": "51248",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 5",
@@ -89,7 +89,7 @@
         {
             "week": 6,
             "weekStartDate": "May 15th",
-            "weekURL": "",
+            "weekURL": "51414",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 6",
@@ -100,7 +100,7 @@
         {
             "week": 7,
             "weekStartDate": "May 22rd",
-            "weekURL": "",
+            "weekURL": "51534",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 7",
@@ -111,7 +111,7 @@
         {
             "week": 8,
             "weekStartDate": "May 29th",
-            "weekURL": "",
+            "weekURL": "51652",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 8",
@@ -122,7 +122,7 @@
         {
             "week": 9,
             "weekStartDate": "Jun  5th",
-            "weekURL": "",
+            "weekURL": "51794",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 9",
@@ -133,7 +133,7 @@
         {
             "week": 10,
             "weekStartDate": "Jun 12th",
-            "weekURL": "",
+            "weekURL": "51940",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 10",
@@ -144,7 +144,7 @@
         {
             "week": 11,
             "weekStartDate": "Jun 19th",
-            "weekURL": "",
+            "weekURL": "52062",
             "vocabURL": "",
             "readingEndPercent": "",
             "readingRange": "Chapter 11",

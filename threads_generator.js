@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 const possibleHeaders = require('./general').possibleHeaders;
 
 const NEWLINE = "\n";
@@ -99,13 +98,13 @@ const weeklyProperNounsTableFor = (theConfig, theCurrentWeek, hiddenLabel) => {
 }
 
 
-const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPercentage) => week => toTableRow(
+const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPercentage, withLinkOnReadingRange) => week => toTableRow(
     (showWeekInfo
         ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
         : [])
         .concat([
             insert(week.weekStartDate),
-            insert(week.readingRange, x => withLinks ? urlOf(x, week.weekURL) : x),
+            insert(week.readingRange, x => withLinks && withLinkOnReadingRange ? urlOf(x, week.weekURL) : x),
         ]
     )
     .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
@@ -131,7 +130,7 @@ const textRatioPerPageFor = (bookWalkerPages, physicalPages) => {
 }
 
 const weeklyReadingSchedule = (theConfig, theWeekConfig) => headerText(theConfig) +
-    weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle)(theWeekConfig);
+    weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle, !theConfig.linkOnlyOnWeek)(theWeekConfig);
 
 const hasWeekURL = (theWeeks) => theWeeks === undefined ? false : theWeeks.some(week => week.weekURL);
 
@@ -144,7 +143,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$bookName\$/g, theConfig.bookName);
     theTemplate = theTemplate.replace(/\$bookImage\$/g, theConfig.bookImage);
     theTemplate = theTemplate.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(theConfig.bookHomeThreadURL));
-    theTemplate = theTemplate.replace(/\$whereToBuy\$/g, theConfig.whereToBuy.map(({name, url}) => "[" + name + "](" + url + ")").join(" | ")); // no URL function!
+    theTemplate = theTemplate.replace(/\$whereToBuy\$/g, theConfig.whereToBuy.map(({name, url}) => url ? "[" + name + "](" + url + ")" : name).join(" | ")); // no URL function!
     theTemplate = theTemplate.replace(/\$numberOfTheLastWeek\$/g, theConfig.numberOfTheLastWeek);
     theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle);
     theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title);
@@ -160,7 +159,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
     theTemplate = theTemplate.replace(/\$readAlongWeekday\$/g, theConfig.readAlongWeekday);
     theTemplate = theTemplate.replace(/\$readAlongJSTHuman\$/g, theConfig.readAlongJSTHuman);
     theTemplate = theTemplate.replace(/\$readAlongJSTComputer\$/g, theConfig.readAlongJSTComputer); // TODO
-    theTemplate = theTemplate.replace(/\$readingFirstDateWithYear\$/g, theConfig.readingFirstDateWithYear);
+    theTemplate = theTemplate.replace(/\$readingFirstDateWithYear\$/g, theConfig.readingFirstDateWithYear || "TBA");
     theTemplate = theTemplate.replace(/\$hasStarted\$/g, hasWeekURL(theConfig.weeks));
     return theTemplate;
 }

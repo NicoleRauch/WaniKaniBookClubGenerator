@@ -1,0 +1,91 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "https://community.wanikani.com/t/x/44685",
+    "bookName": "乳と卵",
+    "bookImage": "![image|252x359](upload://aSbwo2TgcpW7SP2FvUVJpbuFZmu.jpeg)",
+    "bookHomeThreadURL": "52956",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/4167791013/"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de14fa660e-d967-4f2e-b5f8-281ab5f96c0a/"
+        }
+    ],
+    "physicalPageCount": "133",
+    "bookwalkerPageCount": "111",
+    "readingFirstDateWithYear": "Sept 18th, 2021",
+    "readingPageInfoTitle": "End Page",
+    "readingPageInfo2Title": "Kindle LOC",
+    "readingEndPercentTitle": "Kindle %",
+    "readingRangeTitle": "Chapter / End Phrase",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 4,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "Sept 18th",
+            "weekURL": "53557",
+            "vocabURL": "",
+            "readingPageInfo": "44",
+            "readingPageInfo2": "",
+            "readingEndPercent": "",
+            "readingRange": "さてしかしこれがさっぱり思い出せない。",
+            "readingPageCount": "36",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 2,
+            "weekStartDate": "Sept 25th",
+            "weekURL": "53670",
+            "vocabURL": "",
+            "readingPageInfo": "77",
+            "readingPageInfo2": "",
+            "readingEndPercent": "",
+            "readingRange": "完全に見えなくなる。",
+            "readingPageCount": "34",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 3,
+            "weekStartDate": "Oct   2nd",
+            "weekURL": "53800",
+            "vocabURL": "",
+            "readingPageInfo": "107",
+            "readingPageInfo2": "",
+            "readingEndPercent": "",
+            "readingRange": "End Story 1.",
+            "readingPageCount": "31",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 4,
+            "weekStartDate": "Oct   9th",
+            "weekURL": "53902",
+            "vocabURL": "",
+            "readingPageInfo": "133",
+            "readingPageInfo2": "",
+            "readingEndPercent": "",
+            "readingRange": "Story 2: あなたたちの恋愛は瀕死",
+            "readingPageCount": "27",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

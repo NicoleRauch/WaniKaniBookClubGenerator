@@ -1,0 +1,112 @@
+{
+    "homeTemplate": "./home_template_spinoff.md",
+    "weekTemplate": "./week_template_spinoff.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "https://community.wanikani.com/t/x/44685",
+    "bookName": "冷たい密室と博士たち - Doctors in Isolated Room (S&M Vol.2)",
+    "bookImage": "![image|252x354](upload://rgSF6rrdWZQ95RvWPrbaTCIkOqP.png)",
+    "bookHomeThreadURL": "https://community.wanikani.com/t/x/51693",
+    "whereToBuy": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.co.jp/dp/product/4062645602/"
+      },
+      {
+        "name": "Bookwalker",
+        "url": "https://bookwalker.jp/de185bfbb3-076d-4610-b0b6-652b9dffbd42/"
+      }
+    ],
+    "physicalPageCount": "422",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "June 26th, 2021",
+    "readingRangeTitle": "Chapter",
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 7,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "June 26th",
+            "weekURL": "52179",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 1",
+            "readingPageCount": "~32",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 2,
+            "weekStartDate": "July 3rd",
+            "weekURL": "52314",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 2 + 3",
+            "readingPageCount": "~36 + ~34",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 3,
+            "weekStartDate": "July 10th",
+            "weekURL": "52426",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 4 + 5",
+            "readingPageCount": "~34 + ~28",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 4,
+            "weekStartDate": "July 17th",
+            "weekURL": "52543",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 6 + 7",
+            "readingPageCount": "~36 + ~42",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 5,
+            "weekStartDate": "July 24th",
+            "weekURL": "52679",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 8 + 9",
+            "readingPageCount": "~39 + ~26",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 6,
+            "weekStartDate": "July 31th",
+            "weekURL": "52777",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 10 + 11",
+            "readingPageCount": "~28 + ~22",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 7,
+            "weekStartDate": "Aug 7th",
+            "weekURL": "52914",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 12 + 13",
+            "readingPageCount": "~47 + ~15",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

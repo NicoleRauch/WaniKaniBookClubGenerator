@@ -1,0 +1,172 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "https://community.wanikani.com/t/x/44685",
+    "bookName": "人間失格",
+    "bookImage": "![image|252x359](upload://thJmMLn0UOp7DNAulfyxTXt7C3d.jpeg)",
+    "bookHomeThreadURL": "https://community.wanikani.com/t/x/51559",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/4101006059/ref=as_li_tf_tl"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de697b8ebc-b359-40ac-91f6-c67433e048ea/"
+        },
+        {
+            "name": "Aozora (free!)",
+            "url": "https://www.aozora.gr.jp/cards/000035/files/301_14912.html"
+        }
+    ],
+    "physicalPageCount": "192",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "July 3rd, 2021",
+    "readingPageInfoTitle": "End Page",
+    "readingPageInfo2Title": "Kindle LOC",
+    "readingEndPercentTitle": "Kindle %",
+    "readingRangeTitle": "Chapter / End Phrase",
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 10,
+    "weeks": [
+        {
+            "week": 1,
+            "weekStartDate": "July 3rd",
+            "weekURL": "52315",
+            "vocabURL": "",
+            "readingPageInfo": "16",
+            "readingPageInfo2": "145",
+            "readingEndPercent": 10,
+            "readingRange": "**はしがき + 第一の手記**: 姉の<ruby>脚絆<rp>(</rp><rt>レギンス</rt><rp>)</rp></ruby>を両腕にはめて、浴衣の袖口から覗かせ、<ruby>以<rp>(</rp><rt>もっ</rt><rp>)</rp></ruby>てセエターを着ているように見せかけていたのです。",
+            "readingPageCount": "12",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 2,
+            "weekStartDate": "July 10th",
+            "weekURL": "52427",
+            "vocabURL": "",
+            "readingPageInfo": "25",
+            "readingPageInfo2": "252",
+            "readingEndPercent": 15,
+            "readingRange": "**第一の手記** End",
+            "readingPageCount": "9",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 3,
+            "weekStartDate": "July 17th",
+            "weekURL": "52544",
+            "vocabURL": "",
+            "readingPageInfo": "43",
+            "readingPageInfo2": "453",
+            "readingEndPercent": 27,
+            "readingRange": "**第二の手記**: 校歌などというものも、いちども覚えようとした事がありません。",
+            "readingPageCount": "18",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 4,
+            "weekStartDate": "July 24th",
+            "weekURL": "52687",
+            "vocabURL": "",
+            "readingPageInfo": "61",
+            "readingPageInfo2": "678",
+            "readingEndPercent": 40,
+            "readingRange": "**第二の手記**: 「お酒だけか？ うちも飲もう」",
+            "readingPageCount": "18",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 5,
+            "weekStartDate": "July 31th",
+            "weekURL": "52776",
+            "vocabURL": "",
+            "readingPageInfo": "77",
+            "readingPageInfo2": "864",
+            "readingEndPercent": 51,
+            "readingRange": "**第二の手記** End",
+            "readingPageCount": "16",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 6,
+            "weekStartDate": "Aug 7th",
+            "weekURL": "52915",
+            "vocabURL": "",
+            "readingPageInfo": "88",
+            "readingPageInfo2": "984",
+            "readingEndPercent": 58,
+            "readingRange": "**第三の手記・一**: どこへも、訪ねて行けない。(just before 堀木。in a separate line)",
+            "readingPageCount": "10",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 7,
+            "weekStartDate": "Aug 14th",
+            "weekURL": "53025",
+            "vocabURL": "",
+            "readingPageInfo": "103",
+            "readingPageInfo2": "1158",
+            "readingEndPercent": 68,
+            "readingRange": "**第三の手記・一**: それが自分の日常でした。(just before the poem)",
+            "readingPageCount": "15",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 8,
+            "weekStartDate": "Aug 21th",
+            "weekURL": "53138",
+            "vocabURL": "",
+            "readingPageInfo": "116",
+            "readingPageInfo2": "1298",
+            "readingEndPercent": 76,
+            "readingRange": "**第三の手記・一** End",
+            "readingPageCount": "13.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 9,
+            "weekStartDate": "Aug 28st",
+            "weekURL": "53235",
+            "vocabURL": "",
+            "readingPageInfo": "137",
+            "readingPageInfo2": "1524",
+            "readingEndPercent": 90,
+            "readingRange": "**第三の手記・二**: […]からだ具合いを一そう悪くして帰京しただけの事でした。",
+            "readingPageCount": "21",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": 10,
+            "weekStartDate": "Sep 4th",
+            "weekURL": "53346",
+            "vocabURL": "",
+            "readingPageInfo": "155",
+            "readingPageInfo2": "1726",
+            "readingEndPercent": 100,
+            "readingRange": "**第三の手記・二 + あとがき**",
+            "readingPageCount": "18",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

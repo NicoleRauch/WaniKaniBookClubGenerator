@@ -1,0 +1,53 @@
+Start: 14
+ 1 Ende:  69 - 56 -> 32
+- 32
+
+ 2 Ende: 131 - 63 -> 36
+ 3 Ende: 190 - 60 -> 34
+- 70
+
+ 4 Ende: 249 - 60 -> 34
+ 5 Ende: 299 - 49 -> 28
+- 72
+
+ 6 Ende: 361 - 63 -> 36
+ 7 Ende: 433 - 73 -> 42
+- 78
+
+ 8 Ende: 500 - 68 -> 39
+ 9 Ende: 544 - 45 -> 26
+- 65
+
+10 Ende: 592 - 49 -> 28
+11 Ende: 629 - 38 -> 22
+- 60
+
+12 Ende: 710 - 82 -> 47
+13 Ende: 735 - 26 -> 15
+- 62
+
+422/735 = 0,574
+
+| Week | Start Date | Chapter | Page Count |
+| - | - | - | - |
+| Week 1 | | Chapter 1 | ~32 |
+| Week 2 | | Chapter 2 + 3 | ~36 + ~34 |
+| Week 3 | | Chapter 4 + 5 | ~34 + ~28 |
+| Week 4 | | Chapter 6 + 7 | ~36 + ~42 |
+| Week 5 | | Chapter 8 + 9 | ~39 + ~26 |
+| Week 6 | | Chapter 10 + 11 | ~28 + ~22 |
+| Week 7 | | Chapter 12 + 13 | ~47 + ~15 |
+
+
+| Week | Start Date | Chapter | Page Count |
+| - | - | - | - |
+| Week 1 | | Chapter 1 | ~32 |
+| Week 2 | | Chapter 2 + 3 | ~36 + ~34 |
+| Week 3 | | Chapter 4 | ~34 |
+| Week 4 | | Chapter 5 + 6 | ~28 + ~36 |
+| Week 5 | | Chapter 7 | ~42 |
+| Week 6 | | Chapter 8 | ~39 |
+| Week 7 | | Chapter 9 + 10 | ~26 + ~28 |
+| Week 8 | | Chapter 11 | ~22 |
+| Week 9 | | Chapter 12 + 13 | ~47 + ~15 |
+

@@ -30,7 +30,11 @@ const columnsFor = (header) => {
             switch (current) {
                 case possibleHeaders.week: return {...acc, week: index};
                 case possibleHeaders.start_date: return {...acc, weekStartDate: index};
-                case possibleHeaders.end_percentage: return {...acc, readingEndPercent: index, readingEndPercentTitle: current};
+
+                case possibleHeaders.end_percentage:
+                case possibleHeaders.kindle_percentage:
+                    return {...acc, readingEndPercent: index, readingEndPercentTitle: current};
+
                 case possibleHeaders.page_count: return {...acc, readingPageCount: index};
 
                 case possibleHeaders.pages:
@@ -38,16 +42,20 @@ const columnsFor = (header) => {
                 case possibleHeaders.pages_old:
                 case possibleHeaders.page_numbers:
                 case possibleHeaders.pages_physical:
+                case possibleHeaders.pages_1951:
                     return {...acc, readingPageInfo: index, readingPageInfoTitle: current};
 
                 case possibleHeaders.pages_collectors:
                 case possibleHeaders.pages_ebook:
+                case possibleHeaders.kindle_loc:
+                case possibleHeaders.pages_2013:
                     return {...acc, readingPageInfo2: index, readingPageInfo2Title: current};
 
                 case possibleHeaders.end_phrase:
                 case possibleHeaders.start_chapter:
                 case possibleHeaders.end_chapter:
                 case possibleHeaders.chapter:
+                case possibleHeaders.chapter_end_phrase:
                     return {...acc, readingRange: index, readingRangeTitle: current};
 
                 default:
@@ -69,6 +77,8 @@ if(!isUnderline(tableRows[1])){
     process.exit(0);
 }
 
+const trim = e => (e || "").trim();
+
 const columns = columnsFor(tableRows[0]);
 
 const tableBody = tableRows.slice(2).filter(x => x.trim()); // only non-empty lines!
@@ -77,7 +87,7 @@ let numberOfTheLastWeek = 0;
 
 const weeksConfig = tableBody.map(row => {
     const fields = splitRow(row);
-    const week = parseInt(fields[columns.week].trim().split(" ").reverse()[0], 10);
+    const week = parseInt(trim(fields[columns.week]).split(" ").reverse()[0], 10);
     if(week > numberOfTheLastWeek){
         numberOfTheLastWeek = week;
     }
@@ -90,7 +100,7 @@ const weeksConfig = tableBody.map(row => {
         readingPageInfo2: fields[columns.readingPageInfo2],
         readingEndPercent: parseInt(fields[columns.readingEndPercent], 10) || "",
         readingRange: fields[columns.readingRange],
-        readingPageCount: parseFloat(fields[columns.readingPageCount]),
+        readingPageCount: fields[columns.readingPageCount],
         readAlongNextDate: existingWeeksConfig[week] ? existingWeeksConfig[week].readAlongNextDate || "" : "",
         properNouns: existingWeeksConfig[week] ? existingWeeksConfig[week].properNouns || [] : []
     };
@@ -112,6 +122,7 @@ const dummyConfig = {
     readingPageInfo2Title: columns.readingPageInfo2Title,
     readingEndPercentTitle: columns.readingEndPercentTitle,
     readingRangeTitle: columns.readingRangeTitle,
+    linkOnlyOnWeek: false,
     mainVocabURL: "",
     properNouns: [],
     isOnFloFlo: false,
