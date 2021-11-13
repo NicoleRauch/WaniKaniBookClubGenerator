@@ -87,7 +87,7 @@ let numberOfTheLastWeek = 0;
 
 const weeksConfig = tableBody.map(row => {
     const fields = splitRow(row);
-    const week = parseInt(trim(fields[columns.week]).split(" ").reverse()[0], 10);
+    const week = trim(fields[columns.week]).split(" ").reverse()[0];
     if(week > numberOfTheLastWeek){
         numberOfTheLastWeek = week;
     }

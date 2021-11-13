@@ -55,10 +55,10 @@
     "readAlongJSTHuman": "9:30pm",
     "readAlongJSTComputer": "21:30:00",
     "showWeekInfo": true,
-    "numberOfTheLastWeek": 152,
+    "numberOfTheLastWeek": "9",
     "weeks": [
         {
-            "week": 1,
+            "week": "1",
             "weekStartDate": "Aug 28th",
             "weekURL": "53234",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1049785111",
@@ -71,7 +71,7 @@
             "properNouns": []
         },
         {
-            "week": 2,
+            "week": "2",
             "weekStartDate": "Sep  4th",
             "weekURL": "53347",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1064328880",
@@ -84,7 +84,7 @@
             "properNouns": []
         },
         {
-            "week": 3,
+            "week": "3",
             "weekStartDate": "Sep 11th",
             "weekURL": "53453",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1555282186",
@@ -97,7 +97,7 @@
             "properNouns": []
         },
         {
-            "week": 4,
+            "week": "4",
             "weekStartDate": "Sep 18th",
             "weekURL": "53558",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=777467281",
@@ -110,7 +110,7 @@
             "properNouns": []
         },
         {
-            "week": 5,
+            "week": "5",
             "weekStartDate": "Sep 25th",
             "weekURL": "53669",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=390613315",
@@ -123,7 +123,7 @@
             "properNouns": []
         },
         {
-            "week": 6,
+            "week": "6",
             "weekStartDate": "Oct  2nd",
             "weekURL": "53798",
             "vocabURL": "金の輪: https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=961065194 <br/> 大きなかに: https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1330135655",
@@ -136,7 +136,7 @@
             "properNouns": []
         },
         {
-            "week": 7,
+            "week": "7",
             "weekStartDate": "Oct  9th",
             "weekURL": "53903",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1330135655",
@@ -149,7 +149,7 @@
             "properNouns": []
         },
         {
-            "week": 8,
+            "week": "8",
             "weekStartDate": "Oct 16th",
             "weekURL": "53993",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=528843101",
@@ -162,7 +162,7 @@
             "properNouns": []
         },
         {
-            "week": 9,
+            "week": "9",
             "weekStartDate": "Oct 23rd",
             "weekURL": "54088",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1830026362",
@@ -175,7 +175,7 @@
             "properNouns": []
         },
         {
-            "week": 10,
+            "week": "10",
             "weekStartDate": "Oct 30th",
             "weekURL": "54183",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=957563613",
@@ -188,7 +188,7 @@
             "properNouns": []
         },
         {
-            "week": 11,
+            "week": "11",
             "weekStartDate": "Nov  6th",
             "weekURL": "54271",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=434155545",
@@ -201,7 +201,7 @@
             "properNouns": []
         },
         {
-            "week": 12,
+            "week": "12",
             "weekStartDate": "Nov 13th",
             "weekURL": "54368",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1206180706",
@@ -214,7 +214,7 @@
             "properNouns": []
         },
         {
-            "week": 13,
+            "week": "13",
             "weekStartDate": "Nov 20th",
             "weekURL": "",
             "vocabURL": "https://docs.google.com/spreadsheets/d/1uwKZgvg5NKN5XFzVArWMp8T7YwSPX0KZooMNnQRv7jU/edit#gid=1012386106",
@@ -227,7 +227,7 @@
             "properNouns": []
         },
         {
-            "week": 141,
+            "week": "14.1",
             "weekStartDate": "Nov 27th",
             "weekURL": "",
             "vocabURL": "",
@@ -240,7 +240,7 @@
             "properNouns": []
         },
         {
-            "week": 142,
+            "week": "14.2",
             "weekStartDate": "Nov 27th",
             "weekURL": "",
             "vocabURL": "",
@@ -253,7 +253,7 @@
             "properNouns": []
         },
         {
-            "week": 151,
+            "week": "15.1",
             "weekStartDate": "Dec 4th",
             "weekURL": "",
             "vocabURL": "",
@@ -266,7 +266,7 @@
             "properNouns": []
         },
         {
-            "week": 152,
+            "week": "15.2",
             "weekStartDate": "Dec 4th",
             "weekURL": "",
             "vocabURL": "",
@@ -279,7 +279,7 @@
             "properNouns": []
         },
         {
-            "week": 16,
+            "week": "16",
             "weekStartDate": "Dec 11th",
             "weekURL": "",
             "vocabURL": "",

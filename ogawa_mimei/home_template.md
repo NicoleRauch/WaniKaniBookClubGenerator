@@ -29,6 +29,18 @@ $readingSchedule$
 
 <sup>3</sup>: [Audio recording available](https://librivox.org/author/2924)
 
+### Bonus Weeks
+
+For those of you who would like to finish the Bookwalker ebook, these are the remaining stories. They are not contained in either of the paperback books, but all but one of them are available on Aozora. I will post screenshots of the missing story in its thread.
+
+| Week | Start Date | Chapter | Pages 1951ed. | Pages 2013ed. | Page Count |
+| :- | :- | :- | -: | -: | -: |
+| Week 14.1 | Nov 27th | 8. [角笛吹く子](https://www.aozora.gr.jp/cards/001475/files/51010_51332.html) |  |  | 7 |
+| Week 14.2 | Nov 27th | 11. [酔っぱらい星](https://www.aozora.gr.jp/cards/001475/files/51039_51769.html) |  |  | 8 |
+| Week 15.1 | Dec 4th | 12. [木に上った子供](https://www.aozora.gr.jp/cards/001475/files/51051_51582.html) |  |  | 8 |
+| Week 15.2 | Dec 4th | 17. 白い馬 |  |  | 4 |
+| Week 16 | Dec 11th | 18. [蠟人形](https://www.aozora.gr.jp/cards/001475/files/53168_73203.html) |  |  | 12 |
+
 ::if "$textRatioPerPage$"
 (Note: One physical page contains ~$textRatioPerPage$% of the text of one BookWalker "standard page".)
 
