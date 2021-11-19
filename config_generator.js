@@ -85,24 +85,26 @@ const tableBody = tableRows.slice(2).filter(x => x.trim()); // only non-empty li
 
 let numberOfTheLastWeek = 0;
 
-const weeksConfig = tableBody.map(row => {
+const weeksConfig = tableBody.map((row, rowIndex) => {
     const fields = splitRow(row);
     const week = trim(fields[columns.week]).split(" ").reverse()[0];
-    if(week > numberOfTheLastWeek){
-        numberOfTheLastWeek = week;
+    const weekNumber = rowIndex + 1;
+    if(weekNumber > numberOfTheLastWeek){
+        numberOfTheLastWeek = weekNumber;
     }
     return {
         week,
+        weekNumber,
         weekStartDate: fields[columns.weekStartDate],
-        weekURL: existingWeeksConfig[week] ? existingWeeksConfig[week].weekURL || "" : "",
-        vocabURL: existingWeeksConfig[week] ? existingWeeksConfig[week].vocabURL || "" : "",
+        weekURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber].weekURL || "" : "",
+        vocabURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber].vocabURL || "" : "",
         readingPageInfo: fields[columns.readingPageInfo],
         readingPageInfo2: fields[columns.readingPageInfo2],
         readingEndPercent: parseInt(fields[columns.readingEndPercent], 10) || "",
         readingRange: fields[columns.readingRange],
         readingPageCount: fields[columns.readingPageCount],
-        readAlongNextDate: existingWeeksConfig[week] ? existingWeeksConfig[week].readAlongNextDate || "" : "",
-        properNouns: existingWeeksConfig[week] ? existingWeeksConfig[week].properNouns || [] : []
+        readAlongNextDate: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber].readAlongNextDate || "" : "",
+        properNouns: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber].properNouns || [] : []
     };
 });
 
