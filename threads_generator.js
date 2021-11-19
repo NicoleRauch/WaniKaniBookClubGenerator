@@ -166,6 +166,7 @@ function replaceGlobalVariables(theTemplate, theConfig) {
 
 function replaceWeeklyVariables(theWeekTemplate, theWeekConfig, theConfig) {
     theWeekTemplate = theWeekTemplate.replace(/\$week\$/g, theWeekConfig.week);
+    theWeekTemplate = theWeekTemplate.replace(/\$weekNumber\$/g, theWeekConfig.weekNumber || parseInt(theWeekConfig.week, 10));
     theWeekTemplate = theWeekTemplate.replace(/\$weekStartDate\$/g, theWeekConfig.weekStartDate || "");
     theWeekTemplate = theWeekTemplate.replace(/\$readingPageInfo\$/g, theWeekConfig.readingPageInfo || "");
     theWeekTemplate = theWeekTemplate.replace(/\$readingPageInfo2\$/g, theWeekConfig.readingPageInfo2 || "");
@@ -174,10 +175,10 @@ function replaceWeeklyVariables(theWeekTemplate, theWeekConfig, theConfig) {
     theWeekTemplate = theWeekTemplate.replace(/\$readingPageCount\$/g, theWeekConfig.readingPageCount || "");
     theWeekTemplate = theWeekTemplate.replace(/\$readAlongNextDate\$/g, theWeekConfig.readAlongNextDate);
     // generated values:
-    theWeekTemplate = theWeekTemplate.replace(/\$previousWeek\$/g, theWeekConfig.week - 1);
-    theWeekTemplate = theWeekTemplate.replace(/\$nextWeek\$/g, theWeekConfig.week + 1);
-    theWeekTemplate = theWeekTemplate.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week - 1] ? weeks[theWeekConfig.week - 1].weekURL : undefined));
-    theWeekTemplate = theWeekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.week + 1] ? weeks[theWeekConfig.week + 1].weekURL : undefined));
+    theWeekTemplate = theWeekTemplate.replace(/\$previousWeek\$/g, weeks[theWeekConfig.weekNumber - 1] ? weeks[theWeekConfig.weekNumber - 1].week : undefined);
+    theWeekTemplate = theWeekTemplate.replace(/\$nextWeek\$/g, weeks[theWeekConfig.weekNumber + 1] ? weeks[theWeekConfig.weekNumber + 1].week : undefined);
+    theWeekTemplate = theWeekTemplate.replace(/\$bookPreviousWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.weekNumber - 1] ? weeks[theWeekConfig.weekNumber - 1].weekURL : undefined));
+    theWeekTemplate = theWeekTemplate.replace(/\$bookNextWeekURL\$/g, urlSnippetOf(weeks[theWeekConfig.weekNumber + 1] ? weeks[theWeekConfig.weekNumber + 1].weekURL : undefined));
     theWeekTemplate = theWeekTemplate.replace(/\$weeklyReadingSchedule\$/g, weeklyReadingSchedule(theConfig, theWeekConfig));
     theWeekTemplate = theWeekTemplate.replace(/\$vocabURL\$/g, theWeekConfig.vocabURL);
     theWeekTemplate = theWeekTemplate.replace(/\$weeklyProperNouns\$/g, weeklyProperNounsTableFor(theConfig, theWeekConfig.week, "Previous Proper Nouns"));

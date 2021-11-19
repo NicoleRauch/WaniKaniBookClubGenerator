@@ -1,5 +1,5 @@
 <!-- 
-::if $week$ < $numberOfTheLastWeek$
+::if $weekNumber$ < $numberOfTheLastWeek$
 Week $week$: $bookName$
 ::else
 Week $week$: $bookName$ [END]
@@ -16,10 +16,10 @@ Week $week$: $bookName$ [END]
 $bookImage$
 
 **Start Date:** $weekStartDate$
-::if $week$ > 1 && "$bookPreviousWeekURL$"
+::if $weekNumber$ > 1 && "$bookPreviousWeekURL$"
 **Previous Part:** [Week $previousWeek$]($bookPreviousWeekURL$)
 ::endif
-::if $week$ < $numberOfTheLastWeek$ && "$bookNextWeekURL$"
+::if $weekNumber$ < $numberOfTheLastWeek$ && "$bookNextWeekURL$"
 **Next Part:**  [Week $nextWeek$]($bookNextWeekURL$)
 ::endif
 
@@ -62,7 +62,7 @@ Mark your participation status by voting in this poll.
 [poll type=regular results=always public=true]
 *  I'm reading along
 *  I have finished this part
-::if $week$ === 1
+::if $weekNumber$ === 1
 *  I'm planning to catch up later
 *  I'm skipping this book
 ::else
