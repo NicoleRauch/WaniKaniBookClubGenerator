@@ -67,9 +67,9 @@ const allProperNouns = (theConfig) => theConfig.weeks.reduce(
 );
 
 const allProperNounsUpTo = (theConfig, theCurrentWeek) => theConfig.weeks.reduce(
-    (acc, current) => current.week < theCurrentWeek
+    (acc, current) => current.weekNumber < theCurrentWeek
         ? { ...acc, previous: acc.previous.concat(current.properNouns ? annotate(current.properNouns, "(Week " + current.week + ")") : []) }
-        : current.week === theCurrentWeek
+        : current.weekNumber === theCurrentWeek
             ? { ...acc, current: current.properNouns || [] }
             : acc,
     { previous: theConfig.properNouns || [], current: [] }
@@ -222,14 +222,14 @@ function writeFile(fileExtension, theTemplate) {
 
 const configFileName = process.argv[2];
 const config = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
-config.weeks = config.weeks.sort((a, b) => a.week - b.week); // sort the weeks for more straightforward access
+config.weeks = config.weeks.sort((a, b) => a.weekNumber - b.weekNumber); // sort the weeks for more straightforward access
 // add default values:
 if(config.showWeekInfo === undefined){
     config.showWeekInfo = true;
 }
 
 const weeks = config.weeks.reduce(
-    (acc, current) => ({...acc, [current.week]: current}),
+    (acc, current) => ({...acc, [current.weekNumber]: current}),
     {}
 );
 
@@ -250,7 +250,7 @@ const nextReadings =
         : [];
 
 if(nextReadings.length) {
-    homeTemplate = replaceWeeklyVariables(homeTemplate, weeks[nextReadings[0].week], config);
+    homeTemplate = replaceWeeklyVariables(homeTemplate, weeks[nextReadings[0].weekNumber], config);
 }
 
 writeFile("_home.md", homeTemplate);
