@@ -21,6 +21,7 @@ module.exports = {
         end_chapter: "End Chapter",
         chapter: "Chapter",
         chapter_end_phrase: "Chapter / End Phrase",
+        chapter_names: "Chapter Names",
         page_count: "Page Count"
     }
 };

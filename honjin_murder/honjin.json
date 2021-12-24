@@ -1,0 +1,127 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "https://community.wanikani.com/t/x/44685",
+    "bookName": "本陣殺人事件",
+    "bookImage": "![image|252x378](upload://b0RQIc9EZ7Mw9LZ7f7TW9cbFjp.jpeg)",
+    "bookHomeThreadURL": "54832",
+    "whereToBuy": [
+        {
+            "name": "Amazon paperback",
+            "url": "https://www.amazon.co.jp/-/en/%E6%A8%AA%E6%BA%9D-%E6%AD%A3%E5%8F%B2/dp/4041304083/ref=tmm_pap_swatch_0"
+        },
+        {
+            "name": "Amazon Kindle",
+            "url": "https://www.amazon.co.jp/dp/product/B009GPM71A/ref=as_li_tf_tl"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/debb4a0dc8-7cb5-492b-ab10-a99ab645c71f/"
+        },
+        {
+            "name": "Note that we will only read the titular story, not the whole book."
+        }
+    ],
+    "physicalPageCount": "",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "Jan 1st, 2022",
+    "readingRangeTitle": "Chapter Names",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 7,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "Jan 1st",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "「三本指の男」、「本陣の末裔」、「琴鳴りぬ」",
+            "readingPageCount": "~28.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "Jan 8th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "「大惨劇」、「琴爪の新用途」、「鎌と琴柱」",
+            "readingPageCount": "~30.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "Jan 15th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "「捜査会議」、「金田一耕助」",
+            "readingPageCount": "~25.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "Jan 22nd",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "「猫の墓」、「探偵小説問答」",
+            "readingPageCount": "~23.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "Jan 29th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "「二通の手紙」、「墓をあばいて」",
+            "readingPageCount": "~25.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "Feb 5th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "「礒川警部警倒す」、「耕助の実験」、「本陣の悲劇」",
+            "readingPageCount": "~31",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "Feb 12th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "「予行演習」、「止むを得ざる密室」、「曼珠沙華」",
+            "readingPageCount": "~32",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

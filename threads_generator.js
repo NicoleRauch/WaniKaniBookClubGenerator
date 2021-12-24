@@ -100,13 +100,13 @@ const weeklyProperNounsTableFor = (theConfig, theCurrentWeek, hiddenLabel) => {
 
 const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPercentage, withLinkOnReadingRange) => week => toTableRow(
     (showWeekInfo
-        ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
-        : [])
-        .concat([
-            insert(week.weekStartDate),
-            insert(week.readingRange, x => withLinks && withLinkOnReadingRange ? urlOf(x, week.weekURL) : x),
-        ]
+            ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
+            : []
     )
+    .concat([
+        insert(week.weekStartDate),
+        insert(week.readingRange, x => (withLinks && withLinkOnReadingRange) ? urlOf(x, week.weekURL) : x),
+    ])
     .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
     .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
     .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
@@ -115,7 +115,7 @@ const weekEntry = (showWeekInfo, withLinks, hasPageInfo, hasPageInfo2, hasEndPer
 
 const readingSchedule = (theConfig) => {
     const weeksText = theConfig.weeks
-        .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle))
+        .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle, !theConfig.linkOnlyOnWeek))
         .join("");
     return headerText(theConfig) + weeksText;
 };

@@ -9,7 +9,7 @@ This is a spinoff of the $bookClubName$ Book Club. [Join the $bookClubName$ Book
 ## Welcome to $bookName$
 $bookImage$
 
-This is Volume 2 in the Saikawa&Moe (S&M) series by MORI Hiroshi.
+This is Volume 2 in the [Saikawa&Moe (S&M) series](https://community.wanikani.com/t/x/52178) by MORI Hiroshi.
 Volume 1 is called [すべてがFになる - The Perfect Insider](https://community.wanikani.com/t/x/49806) and has already been read by the club.
 
 Despite this book being Vol. 2, it shouldn’t be much of a problem to read it without knowing Vol. 1. There seem to be some back references to persons we met in Vol. 1 but it's probably not too involved. In any case, if you are wondering about anything while reading this book, you are of course free to ask and somebody can fill you in.

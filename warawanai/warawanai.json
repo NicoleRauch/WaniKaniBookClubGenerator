@@ -1,0 +1,177 @@
+{
+    "homeTemplate": "./home_template_spinoff.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Saikawa & Moe (S&M) Series",
+    "bookClubURL": "https://community.wanikani.com/t/x/52178",
+    "bookName": "笑わない数学者 - Mathematical Goodbye (S&M Vol.3)",
+    "bookImage": "![image|240x337](upload://puaza5R8uJqjFQX1Jx7g40ekz9U.png)",
+    "bookHomeThreadURL": "54809",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/4062646145"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de812bccac-2cd0-40c9-aa4f-da10eedbe5fb/"
+        }
+    ],
+    "physicalPageCount": "486",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 11,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "Dec 24th",
+            "weekURL": "54897",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 1",
+            "readingPageCount": "~54",
+            "readAlongNextDate": "",
+            "properNouns": [{
+                "name": "犀川 創平",
+                "reading": "さいかわ そうへい"
+            }, {
+                "name": "西之園 萌絵",
+                "reading": "にしのその もえ"
+            }, {
+                "name": "片山 和樹",
+                "reading": "かたやま かずき"
+            }]
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "Jan 1st",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 2",
+            "readingPageCount": "~42",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "Jan 8th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 3",
+            "readingPageCount": "~43",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "Jan 15th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 4",
+            "readingPageCount": "~42",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "Jan 22nd",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 5",
+            "readingPageCount": "~46",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "Jan 29th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 6",
+            "readingPageCount": "~35",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "Feb 5th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 7",
+            "readingPageCount": "~45",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "8",
+            "weekNumber": 8,
+            "weekStartDate": "Feb 12th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 8",
+            "readingPageCount": "~32",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "9",
+            "weekNumber": 9,
+            "weekStartDate": "Feb 19th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 9",
+            "readingPageCount": "~47",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "10",
+            "weekNumber": 10,
+            "weekStartDate": "Feb 26th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 10",
+            "readingPageCount": "~40",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "11",
+            "weekNumber": 11,
+            "weekStartDate": "Mar 5th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingEndPercent": "",
+            "readingRange": "Chapter 11",
+            "readingPageCount": "~23",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}
