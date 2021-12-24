@@ -18,7 +18,7 @@
     ],
     "physicalPageCount": "486",
     "bookwalkerPageCount": "",
-    "readingFirstDateWithYear": "",
+    "readingFirstDateWithYear": "Dec 24th, 2021",
     "readingRangeTitle": "Chapter",
     "linkOnlyOnWeek": false,
     "mainVocabURL": "",
@@ -38,20 +38,23 @@
             "weekStartDate": "Dec 24th",
             "weekURL": "54897",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 1",
             "readingPageCount": "~54",
             "readAlongNextDate": "",
-            "properNouns": [{
-                "name": "犀川 創平",
-                "reading": "さいかわ そうへい"
-            }, {
-                "name": "西之園 萌絵",
-                "reading": "にしのその もえ"
-            }, {
-                "name": "片山 和樹",
-                "reading": "かたやま かずき"
-            }]
+            "properNouns": [
+                {
+                    "name": "犀川 創平",
+                    "reading": "さいかわ そうへい"
+                },
+                {
+                    "name": "西之園 萌絵",
+                    "reading": "にしのその もえ"
+                },
+                {
+                    "name": "片山 和樹",
+                    "reading": "かたやま かずき"
+                }
+            ]
         },
         {
             "week": "2",
@@ -59,7 +62,6 @@
             "weekStartDate": "Jan 1st",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 2",
             "readingPageCount": "~42",
             "readAlongNextDate": "",
@@ -71,7 +73,6 @@
             "weekStartDate": "Jan 8th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 3",
             "readingPageCount": "~43",
             "readAlongNextDate": "",
@@ -83,7 +84,6 @@
             "weekStartDate": "Jan 15th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 4",
             "readingPageCount": "~42",
             "readAlongNextDate": "",
@@ -95,7 +95,6 @@
             "weekStartDate": "Jan 22nd",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 5",
             "readingPageCount": "~46",
             "readAlongNextDate": "",
@@ -107,7 +106,6 @@
             "weekStartDate": "Jan 29th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 6",
             "readingPageCount": "~35",
             "readAlongNextDate": "",
@@ -119,7 +117,6 @@
             "weekStartDate": "Feb 5th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 7",
             "readingPageCount": "~45",
             "readAlongNextDate": "",
@@ -131,7 +128,6 @@
             "weekStartDate": "Feb 12th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 8",
             "readingPageCount": "~32",
             "readAlongNextDate": "",
@@ -143,7 +139,6 @@
             "weekStartDate": "Feb 19th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 9",
             "readingPageCount": "~47",
             "readAlongNextDate": "",
@@ -155,7 +150,6 @@
             "weekStartDate": "Feb 26th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 10",
             "readingPageCount": "~40",
             "readAlongNextDate": "",
@@ -167,7 +161,6 @@
             "weekStartDate": "Mar 5th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "Chapter 11",
             "readingPageCount": "~23",
             "readAlongNextDate": "",

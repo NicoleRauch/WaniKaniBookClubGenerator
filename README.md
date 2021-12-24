@@ -16,6 +16,7 @@ Uses node.js.
 ## Requirements
 
 You need to install node.js (at least version 8) [which can be downloaded here](https://nodejs.org/en/download/).
+Before you can use the generator, you need to run `npm install` in the generator's directory. (This needs to be run only once.)
 
 ## Configuration
 
@@ -24,7 +25,7 @@ In order to get the result you want, you need to create a configuration file. A 
 generated from the WK forum breakdown. Just copy the breakdown table to a `.md` file and run the config generator on it:
 
 ```
-node config_generator <book_name.md>
+npx ts-node config_generator <book_name.md>
 ```
 
 It will generate a `book_name.json` file that contains all information that can be extracted from the breakdown table.
@@ -148,7 +149,7 @@ If `condition` evaluates to `true` after all variables have been replaced with t
 
 In order to generate the initial config file, type
 
-`node config_generator <breakdown.md>`
+`npx ts-node config_generator <breakdown.md>`
 
 in the current directory.
 
@@ -159,7 +160,7 @@ config file is already in place, the generator will merge the information so not
 
 In order to generate the home thread file and the weekly thread files from the edited config file, type
 
-`node threads_generator <config-file.json>`
+`npx ts-node threads_generator <config-file.json>`
 
 in the current directory. It will read the config file and produce a markdown file for the home thread 
 as well as for each week.

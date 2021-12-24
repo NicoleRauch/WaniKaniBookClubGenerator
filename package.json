@@ -1,0 +1,31 @@
+{
+  "name": "wanikanibookclubgenerator",
+  "version": "1.0.0",
+  "description": "Generates Book Club threads for the WaniKani forums.",
+  "main": "config_generator.js",
+  "scripts": {
+    "distribution": "npx ts-node distribution.ts",
+    "config": "npx ts-node config_generator.ts",
+    "threads": "npx ts-node threads_generator.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoleRauch/WaniKaniBookClubGenerator.git"
+  },
+  "author": "Nicole Rauch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NicoleRauch/WaniKaniBookClubGenerator/issues"
+  },
+  "homepage": "https://github.com/NicoleRauch/WaniKaniBookClubGenerator#readme",
+  "dependencies": {
+    "@types/ramda": "0.27.62",
+    "fp-ts": "2.11.5",
+    "io-ts": "2.2.16",
+    "jest": "27.4.5",
+    "ramda": "0.27.1",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.4"
+  }
+}
