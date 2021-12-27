@@ -81,10 +81,13 @@ const allProperNounsUpTo = (theConfig: IConfig, theCurrentWeek: number): ICollec
         { previous: theConfig.properNouns || [], current: [] }
     );
 
+const spoilered = (note: string | undefined): string =>
+    note === undefined || note.length === 0 ? "" : `[spoiler]${note}[/spoiler]`;
+
 const unhiddenList = (nouns: IProperNoun[]): string =>
     "|Name|Reading|Notes|Proof|\n" +
     "|-|-|-|-|\n" +
-    nouns.map((noun: IProperNoun) => ["", noun.name, noun.reading, noun.notes, noun.proof, ""].join("|")).join("\n") + "\n";
+    nouns.map((noun: IProperNoun) => ["", noun.name, noun.reading, spoilered(noun.notes), noun.proof, ""].join("|")).join("\n") + "\n";
 
 
 const properNounsTableForList = (nouns: IProperNoun[], hiddenLabel: string): string => {

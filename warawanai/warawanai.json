@@ -52,7 +52,68 @@
                 },
                 {
                     "name": "片山 和樹",
-                    "reading": "かたやま かずき"
+                    "reading": "かたやま かずき",
+                    "notes": "Moe's classmate"
+                },
+                {
+                    "name": "天王寺 翔蔵",
+                    "reading": "てんのうじ しょうぞう",
+                    "notes": "Professor, grandfather of 片山 和樹"
+                },
+                {
+                    "name": "西之園 恭輔",
+                    "reading": "にしのその きょうすけ",
+                    "notes": "Moe's deceased father"
+                },
+                {
+                    "name": "湯川",
+                    "reading": "ゆかわ",
+                    "notes": "Architecture researcher"
+                },
+                {
+                    "name": "天王寺 律子",
+                    "reading": "てんのうじ りつこ",
+                    "notes": "Wife of 天王寺 宗太郎; actress"
+                },
+                {
+                    "name": "天王寺 俊一",
+                    "reading": "てんのうじ しゅんいち",
+                    "notes": "Son of 天王寺 宗太郎 and 律子; genius mathematician; actor"
+                },
+                {
+                    "name": "鈴木 昇",
+                    "reading": "すずき のぼる",
+                    "notes": "Driver; his mother worked for the professor"
+                },
+                {
+                    "name": "天王寺 宗太郎",
+                    "reading": "てんのうじ そうたろう",
+                    "notes": "Professor's eldest son; mathematician; famous author; deceased"
+                },
+                {
+                    "name": "片山 亮子",
+                    "reading": "かたやま りょうこ",
+                    "notes": "Professor's daughter; 和樹's mother; 俊一's aunt; widow; relationship with 湯川"
+                },
+                {
+                    "name": "片山 基生",
+                    "reading": "かたやま きせい",
+                    "notes": "亮子's deceased husband; 和樹's mother; architect who designed the remodelling of 三ッ星館"
+                },
+                {
+                    "name": "君枝",
+                    "reading": "きみえ",
+                    "notes": "Professor's housemaid"
+                },
+                {
+                    "name": "片山 志保",
+                    "reading": "かたやま しほ",
+                    "notes": "和樹's older sister"
+                },
+                {
+                    "name": "諏訪野",
+                    "reading": "すわの",
+                    "notes": "Moe's butler"
                 }
             ]
         },
