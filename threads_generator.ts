@@ -1,3 +1,5 @@
+import * as R from "ramda";
+
 import {ICollectedProperNouns, IConfig, IProperNoun, IReading, IWeekConfig, IWhereToBuy, POSSIBLE_HEADERS} from "./zz_src/general";
 
 const fs = require('fs');
@@ -84,16 +86,16 @@ const allProperNounsUpTo = (theConfig: IConfig, theCurrentWeek: number): ICollec
 const spoilered = (note: string | undefined): string =>
     note === undefined || note.length === 0 ? "" : `[spoiler]${note}[/spoiler]`;
 
-const unhiddenList = (nouns: IProperNoun[]): string =>
+const unhiddenList = (nouns: IProperNoun[], spoilerFunc: (_:string|undefined) => string|undefined): string =>
     "|Name|Reading|Notes|Proof|\n" +
     "|-|-|-|-|\n" +
-    nouns.map((noun: IProperNoun) => ["", noun.name, noun.reading, spoilered(noun.notes), noun.proof, ""].join("|")).join("\n") + "\n";
+    nouns.map((noun: IProperNoun) => ["", noun.name, noun.reading, spoilerFunc(noun.notes), noun.proof, ""].join("|")).join("\n") + "\n";
 
 
 const properNounsTableForList = (nouns: IProperNoun[], hiddenLabel: string): string => {
     const hideList = nouns.length > 8;
     return (hideList ? "[details=\"" +hiddenLabel+ "\"]\n" : "") +
-        unhiddenList(nouns) +
+        unhiddenList(nouns, R.identity) +
         (hideList ? "[/details]\n" : "");
 }
 
@@ -103,7 +105,7 @@ const properNounsTableFor = (theConfig: IConfig, hiddenLabel: string): string =>
 const weeklyProperNounsTableFor = (theConfig: IConfig, theCurrentWeek: number, hiddenLabel: string): string => {
     const properNounsCollection = allProperNounsUpTo(theConfig, theCurrentWeek);
     return (properNounsCollection.previous.length > 0 ? properNounsTableForList(properNounsCollection.previous, hiddenLabel) : "")
-    + (properNounsCollection.current.length > 0 ? unhiddenList(properNounsCollection.current) : "");
+    + (properNounsCollection.current.length > 0 ? unhiddenList(properNounsCollection.current, spoilered) : "");
 }
 
 
