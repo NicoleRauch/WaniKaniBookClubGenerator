@@ -43,33 +43,102 @@
             "week": "1",
             "weekNumber": 1,
             "weekStartDate": "Jan 1st",
-            "weekURL": "",
+            "weekURL": "55025",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "「三本指の男」、「本陣の末裔」、「琴鳴りぬ」",
             "readingPageCount": "~28.5",
             "readAlongNextDate": "",
-            "properNouns": []
+            "properNouns": [{
+                "name": "井上 英三",
+                "reading": "いのうえ えいぞう",
+                "notes": "Narrator's friend (Chapter 1: 三本指の男)"
+            }, {
+                "name": "一柳 賢蔵",
+                "reading": "いちやなぎ けんぞう",
+                "notes": "Head of the family, eldest son, 40 yo, philosopher, lives with his parents"
+            }, {
+                "name": "一柳 糸子",
+                "reading": "いちやなぎ いとこ",
+                "notes": "Kenzou's mother, widow, 57 yo (Chapter 2: 本陣の末裔)"
+            }, {
+                "name": "一柳 妙子",
+                "reading": "いちやなぎ たえこ",
+                "notes": "Second child, eldest daughter, lives in Shanghai"
+            }, {
+                "name": "一柳 隆二",
+                "reading": "いちやなぎ りゅうじ",
+                "notes": "Third child, second son, 35yo, doctor in Osaka"
+            }, {
+                "name": "一柳 三郎",
+                "reading": "いちやなぎ さぶろう",
+                "notes": "Fourth child, third son, 25yo, lives with his parents"
+            }, {
+                "name": "一柳 鈴子",
+                "reading": "いちやなぎ すずこ",
+                "notes": "Fifth child, second daughter, 17yo, lives with her parents"
+            }, {
+                "name": "一柳 良介",
+                "reading": "いちやなぎ りょうすけ",
+                "notes": "Cousin of the five children, 38yo"
+            }, {
+                "name": "一柳 秋子",
+                "reading": "いちやなぎ あきこ",
+                "notes": "良介's wife"
+            }, {
+                "name": "久保 克子",
+                "reading": "くぼ かつこ",
+                "notes": "賢蔵's fiancé"
+            }, {
+                "name": "久保 林吉",
+                "reading": "くぼ りんきち",
+                "notes": "克子's father, deceased, fruit farmer"
+            }, {
+                "name": "玉",
+                "reading": "",
+                "notes": "鈴子's cat"
+            }]
         },
         {
             "week": "2",
             "weekNumber": 2,
             "weekStartDate": "Jan 8th",
-            "weekURL": "",
+            "weekURL": "55133",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "「大惨劇」、「琴爪の新用途」、「鎌と琴柱」",
             "readingPageCount": "~30.5",
             "readAlongNextDate": "",
-            "properNouns": []
+            "properNouns": [{
+                "name": "久保 銀造",
+                "reading": "くぼ ぎんぞう",
+                "notes": "克子’s uncle and the one who raised her/supports her"
+            }, {
+                "name": "源七",
+                "reading": "げんしち",
+                "notes": "作男"
+            }, {
+                "name": "週吉",
+                "reading": "しゅうきち",
+                "notes": "The miller/小作"
+            }, {
+                "name": "磯川 常次郎",
+                "reading": "いそかわ つねじろう",
+                "notes": "警部"
+            }, {
+                "name": "木村",
+                "reading": "きむら",
+                "notes": "刑事"
+            }, {
+                "name": "川田",
+                "reading": "かわた・かわだ",
+                "notes": "The お主婦, or at least the 飯屋 she runs"
+            }]
         },
         {
             "week": "3",
             "weekNumber": 3,
             "weekStartDate": "Jan 15th",
-            "weekURL": "",
+            "weekURL": "55238",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "「捜査会議」、「金田一耕助」",
             "readingPageCount": "~25.5",
             "readAlongNextDate": "",
@@ -79,9 +148,8 @@
             "week": "4",
             "weekNumber": 4,
             "weekStartDate": "Jan 22nd",
-            "weekURL": "",
+            "weekURL": "55406",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "「猫の墓」、「探偵小説問答」",
             "readingPageCount": "~23.5",
             "readAlongNextDate": "",
@@ -91,9 +159,8 @@
             "week": "5",
             "weekNumber": 5,
             "weekStartDate": "Jan 29th",
-            "weekURL": "",
+            "weekURL": "55528",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "「二通の手紙」、「墓をあばいて」",
             "readingPageCount": "~25.5",
             "readAlongNextDate": "",
@@ -103,9 +170,8 @@
             "week": "6",
             "weekNumber": 6,
             "weekStartDate": "Feb 5th",
-            "weekURL": "",
+            "weekURL": "55640",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "「礒川警部警倒す」、「耕助の実験」、「本陣の悲劇」",
             "readingPageCount": "~31",
             "readAlongNextDate": "",
@@ -117,7 +183,6 @@
             "weekStartDate": "Feb 12th",
             "weekURL": "",
             "vocabURL": "",
-            "readingEndPercent": "",
             "readingRange": "「予行演習」、「止むを得ざる密室」、「曼珠沙華」",
             "readingPageCount": "~32",
             "readAlongNextDate": "",

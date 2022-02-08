@@ -7,14 +7,9 @@ $bookName$
 ## Welcome to $bookName$
 $bookImage$
 
-This book is part of the $bookClubName$ Book Club. [Join the $bookClubName$ Book Club here!]($bookClubURL$)
+This book is Volume 4 of the $bookClubName$ Book Club. [Join the $bookClubName$ Book Club here!]($bookClubURL$)
 
-This is Volume 3 in the Saikawa & Moe (S&M) series by MORI Hiroshi.
-Volume 1: [すべてがFになる - The Perfect Insider](https://community.wanikani.com/t/x/49806)
-Volume 2: [冷たい密室と博士たち - Doctors in Isolated Room](https://community.wanikani.com/t/x/51693)
-These have already been read by the club.
-
-Despite this book being Vol. 3, it shouldn’t be much of a problem to read it without knowing the other volumes. There seem to be some back references to persons we met in the preceding books but it's probably not too involved. In any case, if you are wondering about anything while reading this book, you are of course free to ask and somebody can fill you in.
+Despite this book being Vol. 4, it shouldn’t be much of a problem to read it without knowing the other volumes. There seem to be some back references to persons we met in the preceding books but it's probably not too involved. In any case, if you are wondering about anything while reading this book, you are of course free to ask and somebody can fill you in.
 
  ## Where to buy 
 $whereToBuy$ 

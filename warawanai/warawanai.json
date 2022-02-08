@@ -83,7 +83,7 @@
                 {
                     "name": "鈴木 昇",
                     "reading": "すずき のぼる",
-                    "notes": "Driver; his mother worked for the professor"
+                    "notes": "Driver; his mother works for the professor"
                 },
                 {
                     "name": "天王寺 宗太郎",
@@ -98,11 +98,11 @@
                 {
                     "name": "片山 基生",
                     "reading": "かたやま きせい",
-                    "notes": "亮子's deceased husband; 和樹's mother; architect who designed the remodelling of 三ッ星館"
+                    "notes": "亮子's deceased husband; 和樹's father; architect who designed the remodelling of 三ッ星館; died of cancer"
                 },
                 {
-                    "name": "君枝",
-                    "reading": "きみえ",
+                    "name": "鈴木 君枝",
+                    "reading": "すずき きみえ",
                     "notes": "Professor's housemaid"
                 },
                 {
@@ -121,7 +121,7 @@
             "week": "2",
             "weekNumber": 2,
             "weekStartDate": "Jan 1st",
-            "weekURL": "",
+            "weekURL": "55024",
             "vocabURL": "",
             "readingRange": "Chapter 2",
             "readingPageCount": "~42",
@@ -132,7 +132,7 @@
             "week": "3",
             "weekNumber": 3,
             "weekStartDate": "Jan 8th",
-            "weekURL": "",
+            "weekURL": "55132",
             "vocabURL": "",
             "readingRange": "Chapter 3",
             "readingPageCount": "~43",
@@ -143,18 +143,26 @@
             "week": "4",
             "weekNumber": 4,
             "weekStartDate": "Jan 15th",
-            "weekURL": "",
+            "weekURL": "55239",
             "vocabURL": "",
             "readingRange": "Chapter 4",
             "readingPageCount": "~42",
             "readAlongNextDate": "",
-            "properNouns": []
+            "properNouns": [{
+                "name": "鈴木 彰",
+                "reading": "すずき あきら",
+                "notes": "昇's father"
+            }, {
+                "name": "萩原",
+                "reading": "はぎわら",
+                "notes": "Police officer investigating the case on-premise"
+            }]
         },
         {
             "week": "5",
             "weekNumber": 5,
             "weekStartDate": "Jan 22nd",
-            "weekURL": "",
+            "weekURL": "55403",
             "vocabURL": "",
             "readingRange": "Chapter 5",
             "readingPageCount": "~46",
@@ -165,7 +173,7 @@
             "week": "6",
             "weekNumber": 6,
             "weekStartDate": "Jan 29th",
-            "weekURL": "",
+            "weekURL": "55529",
             "vocabURL": "",
             "readingRange": "Chapter 6",
             "readingPageCount": "~35",
@@ -176,7 +184,7 @@
             "week": "7",
             "weekNumber": 7,
             "weekStartDate": "Feb 5th",
-            "weekURL": "",
+            "weekURL": "55639",
             "vocabURL": "",
             "readingRange": "Chapter 7",
             "readingPageCount": "~45",
