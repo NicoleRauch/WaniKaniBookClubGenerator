@@ -1,6 +1,6 @@
 import * as R from "ramda";
 
-const bewertung =
+const bewertung: Record<number, number> =
     {
         1: 9.5,
         2: 9.5,
@@ -22,8 +22,8 @@ const bewertung =
         18: 8,
     }
 
-const summiereListe = (list: number[]): number =>
-    R.sum(list.map(e => bewertung[e]));
+const summiereListe = (list: number[] | undefined): number =>
+    list === undefined ? 0 : R.sum(list.map(e => bewertung[e] || 0));
 
 const bewerteFitness = (list: number[][]): number =>
     R.reduce(
@@ -135,7 +135,7 @@ logResults(6, resultat6Unter20);
 
 const list7Wochen = [[1], [2], [3], [4], [5], [6], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]];
 const resultat7: number[][][] = [list7Wochen].concat(distribute(list7Wochen));
-const resultat7Unter20 = resultat7.filter(([l,]) => summiereListe(l) < 20)
+const resultat7Unter20 = resultat7.filter(([l,]: number[][]) => summiereListe(l) < 20)
 
 // logResults(7, resultat7);
 logResults(7, resultat7Unter20);
