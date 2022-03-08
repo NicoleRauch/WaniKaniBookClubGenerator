@@ -6,9 +6,11 @@ Do not rely solely on difficulty when making a choice. Please have a look at nom
 
 **Expected reading pace:** We aim to read books at ~15 pages per week (that number might vary a bit throughout, depending on the book’s breaks and chapters). For manga, depending on difficulty and chapter length, we will probably read one to several chapters per week. The pick’s exact reading schedule will be negotiated before the book club kicks off.
 
+**Short book rule:** If the first place ist taken by a book that will take us 6 weeks or less to read, we will read the book in second place directly after it, without running a poll in between. I haven't checked in detail, but I'd assume that this basically applies in case one of the manga wins the poll.
+
 **Start of Book Club**: We will start the next book on XXX (after a one-week break).
 
-**Poll duration**: I will close the poll within a week (and most likely before that), whenever it looks like voting has dried up. You can choose up to 5 options .
+**Poll duration**: I will close the poll within a week (and most likely before that), whenever it looks like voting has dried up. You can choose **up to 5 options**.
 
 === Advanced ===
 

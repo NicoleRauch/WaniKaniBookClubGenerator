@@ -9,7 +9,7 @@ $bookImage$
 
 This book is Volume 4 of the $bookClubName$ Book Club. [Join the $bookClubName$ Book Club here!]($bookClubURL$)
 
-Despite this book being Vol. 4, it shouldn’t be much of a problem to read it without knowing the other volumes. There seem to be some back references to persons we met in the preceding books but it's probably not too involved. In any case, if you are wondering about anything while reading this book, you are of course free to ask and somebody can fill you in.
+Despite of this, it shouldn’t be much of a problem to read it without knowing the other volumes. Of course we learned about the main protagonists' backgrounds in previous books, but usually there is a quick recap in each volume that covers the most important points. Character development is also very slow because each volume's main focus is on a given criminal case and not on the life of the people around it, and the cases have been totally unrelated so far. In any case, if you are wondering about anything while reading this book, you are of course free to ask and somebody can fill you in.
 
  ## Where to buy 
 $whereToBuy$ 
@@ -73,11 +73,6 @@ If so, which version will you be reading?
 [FloFlo Word List](https://floflo.moe/books/) (Requires free account)
 ::endif
 
-## Building Layout
-
-[details="Illustration of the 三ツ星館"]
-![image|600x499](upload://6UvbieKrHUZqYSHYd21l2tEhQYY.jpeg)
-[/details]
 
 ::if $hasProperNouns$
 ## Proper Noun Readings
