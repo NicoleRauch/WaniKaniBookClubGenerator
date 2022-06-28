@@ -1,0 +1,176 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "https://community.wanikani.com/t/x/44685",
+    "bookName": "海辺のカフカ - Kafka on the Shore 🏖",
+    "bookImage": "![image|196x280](upload://eN0rzfN7QltwWisNBRKfpKH0XUN.png)",
+    "bookHomeThreadURL": "56662",
+    "whereToBuy": [
+        {
+            "name": "Amazon JP (上)",
+            "url": "https://www.amazon.co.jp/-/en/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A8%B9-ebook/dp/B08N5RQV7V"
+        },
+        {
+            "name": "Amazon JP (combined volume for 上 and 下)",
+            "url": "https://www.amazon.co.jp/-/en/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A8%B9-ebook/dp/B08N5VGDGR"
+        },
+        {
+            "name": "Bookwalker (separate volumes for 上 and 下)",
+            "url": "https://bookwalker.jp/series/281888/list/"
+        },
+        {
+            "name": "Bookwalker (combined volume for 上 and 下)",
+            "url": "https://bookwalker.jp/de131687ff-3a6d-4045-a82f-d0f3114793f0/"
+        }
+    ],
+    "physicalPageCount": "",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "May 28th, 2022",
+    "readingRangeTitle": "Chapters",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 12,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "May 28th",
+            "weekURL": "57147",
+            "vocabURL": "",
+            "readingRange": "0, 1, 2",
+            "readingPageCount": "33",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "June 4th",
+            "weekURL": "57249",
+            "vocabURL": "",
+            "readingRange": "3, 4",
+            "readingPageCount": "26",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "June 11th",
+            "weekURL": "57324",
+            "vocabURL": "",
+            "readingRange": "5, 6",
+            "readingPageCount": "45",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "June 18th",
+            "weekURL": "57435",
+            "vocabURL": "",
+            "readingRange": "7, 8, 9",
+            "readingPageCount": "46",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "June 25th",
+            "weekURL": "57509",
+            "vocabURL": "",
+            "readingRange": "10, 11",
+            "readingPageCount": "44",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "July 2nd",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "12, 13",
+            "readingPageCount": "47",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "July 9th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "14, 15",
+            "readingPageCount": "50",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "8",
+            "weekNumber": 8,
+            "weekStartDate": "July 16th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "16",
+            "readingPageCount": "26",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "9",
+            "weekNumber": 9,
+            "weekStartDate": "July 23rd",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "17, 18",
+            "readingPageCount": "44",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "10",
+            "weekNumber": 10,
+            "weekStartDate": "July 30th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "19, 20",
+            "readingPageCount": "51",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "11",
+            "weekNumber": 11,
+            "weekStartDate": "Aug 6th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "21, 22",
+            "readingPageCount": "46",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "12",
+            "weekNumber": 12,
+            "weekStartDate": "Aug 13th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "23",
+            "readingPageCount": "28",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

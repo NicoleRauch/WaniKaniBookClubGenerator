@@ -1,0 +1,203 @@
+{
+  "homeTemplate": "./home_template_spinoff.md",
+  "weekTemplate": "../week_template.md",
+  "bookClubName": "Saikawa & Moe (S&M) Series",
+  "bookClubURL": "https://community.wanikani.com/t/x/52178",
+  "bookName": "詩的私的ジャック - JACK THE POETICAL PRIVATE (S&M Vol.4)",
+  "bookImage": "![image|240x337](upload://uxXFLREyvHUvttqXVGDx7ddql3m.png)",
+  "bookHomeThreadURL": "55861",
+  "whereToBuy": [
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.co.jp/dp/product/4062647060"
+    },
+    {
+      "name": "Bookwalker",
+      "url": "https://bookwalker.jp/dee356e228-c425-48ba-9fb6-39e769f64065/"
+    }
+  ],
+  "physicalPageCount": "440",
+  "bookwalkerPageCount": "",
+  "readingFirstDateWithYear": "June 18th, 2022",
+  "readingRangeTitle": "Chapter",
+  "linkOnlyOnWeek": false,
+  "mainVocabURL": "",
+  "properNouns": [],
+  "isOnFloFlo": false,
+  "hasReadAlongSession": false,
+  "readAlongFirstDate": "",
+  "readAlongWeekday": "Sunday",
+  "readAlongJSTHuman": "9:30pm",
+  "readAlongJSTComputer": "21:30:00",
+  "showWeekInfo": true,
+  "numberOfTheLastWeek": 6,
+  "weeks": [
+    {
+      "week": "1",
+      "weekNumber": 1,
+      "weekStartDate": "June 18th",
+      "weekURL": "57433",
+      "vocabURL": "",
+      "readingRange": "Chapter 1 + 2",
+      "readingPageCount": "44 + 32",
+      "readAlongNextDate": "",
+      "properNouns": [
+        {
+          "label": "Chapter 1",
+          "properNouns": [
+            {
+              "name": "犀川 創平",
+              "reading": "さいかわ そうへい",
+              "notes": "Protagonist"
+            },
+            {
+              "name": "西之園 萌絵",
+              "reading": "にしのその もえ",
+              "notes": "Protagonist"
+            },
+            {
+              "name": "西之園 恭輔",
+              "reading": "にしのその きょうすけ",
+              "notes": "Moe’s dad"
+            },
+            {
+              "name": "西之園 捷輔",
+              "reading": "にしのその しょうすけ",
+              "notes": "Moe’s uncle"
+            },
+            {
+              "name": "結城 稔",
+              "reading": "ゆうき みのる",
+              "notes": "Rock star"
+            },
+            {
+              "name": "結城 寛",
+              "reading": "ゆうき ひろし",
+              "notes": "Minoru’s big brother"
+            },
+            {
+              "name": "篠崎 敏治",
+              "reading": "しのざき としはる",
+              "notes": "Student, Minoru’s friend"
+            },
+            {
+              "name": "杉東 千佳",
+              "reading": "すぎとう ちか",
+              "notes": "Teacher, Hiroshi’s wife"
+            },
+            {
+              "name": "藤井 紀子",
+              "reading": "ふじい のりこ",
+              "notes": "Teacher (made the log house)"
+            },
+            {
+              "name": "前川 聡美",
+              "reading": "まえかわ さとみ",
+              "notes": "Victim"
+            },
+            {
+              "name": "三浦",
+              "reading": "みうら",
+              "notes": "Cop"
+            }
+          ]
+        },
+        {
+          "label": "Chapter 2",
+          "properNouns": [
+            {
+              "name": "浜口 悦夫",
+              "reading": "はまぐち えつお",
+              "notes": "Technician from T大"
+            },
+            {
+              "name": "田中",
+              "reading": "たなか",
+              "notes": "Other guy from T大"
+            },
+            {
+              "name": "河原田",
+              "reading": "かわらだ",
+              "notes": "Forensics"
+            },
+            {
+              "name": "岡部",
+              "reading": "おかべ",
+              "notes": "SF club member"
+            },
+            {
+              "name": "鵜飼",
+              "reading": "うかい",
+              "notes": "Young cop"
+            },
+            {
+              "name": "相田 素子",
+              "reading": "あいだ もとこ",
+              "notes": "Victim #2"
+            },
+            {
+              "name": "",
+              "reading": "",
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": "2",
+      "weekNumber": 2,
+      "weekStartDate": "June 25th",
+      "weekURL": "57510",
+      "vocabURL": "",
+      "readingRange": "Chapter 3 + 4",
+      "readingPageCount": "36 + 38",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "3",
+      "weekNumber": 3,
+      "weekStartDate": "July 2nd",
+      "weekURL": "",
+      "vocabURL": "",
+      "readingRange": "Chapter 5 + 6",
+      "readingPageCount": "36 + 45",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "4",
+      "weekNumber": 4,
+      "weekStartDate": "July 9th",
+      "weekURL": "",
+      "vocabURL": "",
+      "readingRange": "Chapter 7 + 8",
+      "readingPageCount": "38 + 32",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "5",
+      "weekNumber": 5,
+      "weekStartDate": "July 16th",
+      "weekURL": "",
+      "vocabURL": "",
+      "readingRange": "Chapter 9 + 10",
+      "readingPageCount": "34 + 35",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "6",
+      "weekNumber": 6,
+      "weekStartDate": "July 23rd",
+      "weekURL": "",
+      "vocabURL": "",
+      "readingRange": "Chapter 11 + 12",
+      "readingPageCount": "38 + 16",
+      "readAlongNextDate": "",
+      "properNouns": []
+    }
+  ]
+}

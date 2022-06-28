@@ -9,6 +9,9 @@ Have you read ...?
 * I never even started it
 [/poll]
 
+あいうえお降りる止まる[ふり]カタカナ
+  [^\u3040-\u30FF]
+
 
 If you read the book, how would you rate it on a 5 point scale? (1: hated it, 5: loved it)
 

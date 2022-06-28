@@ -1,0 +1,146 @@
+{
+    "homeTemplate": "../home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Intermediate",
+    "bookClubURL": "18908",
+    "bookName": "佐賀のがばいばあちゃん 👵🏼",
+    "bookImage": "![image|240x344](upload://3ad34qw7b64JxVimsBxvjtPHVXL.jpeg)",
+    "bookHomeThreadURL": "56155",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/4198920001/"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de818ece2c-3376-49d7-a01d-c911f5bcdef2/"
+        }
+    ],
+    "physicalPageCount": "",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "April 2nd, 2022",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "https://docs.google.com/spreadsheets/d/1y5XW9uMpu63NJcHQK1f_LFHyJJnGhxzHorP7LCIPGGA/edit#gid=870692429",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 10,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "April 2nd",
+            "weekURL": "56432",
+            "vocabURL": "",
+            "readingRange": "Prologue, Chapter 1",
+            "readingPageCount": "15.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "April 9th",
+            "weekURL": "56521",
+            "vocabURL": "",
+            "readingRange": "Chapter 2",
+            "readingPageCount": "19",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "April 16th",
+            "weekURL": "56602",
+            "vocabURL": "",
+            "readingRange": "Chapter 3, 4",
+            "readingPageCount": "21",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "April 23rd",
+            "weekURL": "56708",
+            "vocabURL": "",
+            "readingRange": "Chapter 5, 6",
+            "readingPageCount": "22",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "April 30th",
+            "weekURL": "56793",
+            "vocabURL": "",
+            "readingRange": "Chapter 7, 8",
+            "readingPageCount": "19.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "May 7th",
+            "weekURL": "56875",
+            "vocabURL": "",
+            "readingRange": "Chapter 9",
+            "readingPageCount": "17",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "May 14th",
+            "weekURL": "56977",
+            "vocabURL": "",
+            "readingRange": "Chapter 10, 11",
+            "readingPageCount": "21.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "8",
+            "weekNumber": 8,
+            "weekStartDate": "May 21st",
+            "weekURL": "57054",
+            "vocabURL": "",
+            "readingRange": "Chapter 12, 13",
+            "readingPageCount": "23.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "9",
+            "weekNumber": 9,
+            "weekStartDate": "May 28th",
+            "weekURL": "57148",
+            "vocabURL": "",
+            "readingRange": "Chapter 14, 15",
+            "readingPageCount": "19",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "10",
+            "weekNumber": 10,
+            "weekStartDate": "June 4th",
+            "weekURL": "57248",
+            "vocabURL": "",
+            "readingRange": "Chapter 16, 17, あとがき x 2",
+            "readingPageCount": "23.5",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}
