@@ -4,6 +4,7 @@ export enum POSSIBLE_HEADERS {
     week = "Week",
     start_date = "Start Date",
     end_page = "End Page",
+    start_page = "Start Page",
     page_numbers = "Page Numbers",
     pages = "Pages",
     pages_old = "Pages (old)",
@@ -19,6 +20,7 @@ export enum POSSIBLE_HEADERS {
     start_chapter = "Start Chapter",
     end_chapter = "End Chapter",
     chapter = "Chapter",
+    chapters = "Chapters",
     chapter_end_phrase = "Chapter / End Phrase",
     chapter_names = "Chapter Names",
     page_count = "Page Count"

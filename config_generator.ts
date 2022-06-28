@@ -48,6 +48,7 @@ const columnLayoutFor = (header: string | undefined): Partial<IColumnLayout> => 
 
             case POSSIBLE_HEADERS.pages:
             case POSSIBLE_HEADERS.end_page:
+            case POSSIBLE_HEADERS.start_page:
             case POSSIBLE_HEADERS.pages_old:
             case POSSIBLE_HEADERS.page_numbers:
             case POSSIBLE_HEADERS.pages_physical:
@@ -64,6 +65,7 @@ const columnLayoutFor = (header: string | undefined): Partial<IColumnLayout> => 
             case POSSIBLE_HEADERS.start_chapter:
             case POSSIBLE_HEADERS.end_chapter:
             case POSSIBLE_HEADERS.chapter:
+            case POSSIBLE_HEADERS.chapters:
             case POSSIBLE_HEADERS.chapter_end_phrase:
             case POSSIBLE_HEADERS.chapter_names:
                 return {...acc, readingRange: index, readingRangeTitle: current};
@@ -83,11 +85,8 @@ const columnLayoutFor = (header: string | undefined): Partial<IColumnLayout> => 
     )[0];
 };
 
-const columns: Partial<IColumnLayout> = columnLayoutFor(tableRows[0]);
-
 const tableBody = tableRows.slice(2).filter(x => x.trim()); // only non-empty lines!
 
-let numberOfTheLastWeek: number = 0;
 
 const fieldOfColumn = (fields: string[], column: number | undefined): string | undefined =>
     column === undefined ? undefined : fields[column];
@@ -95,30 +94,36 @@ const fieldOfColumn = (fields: string[], column: number | undefined): string | u
 const parse = (input: string | undefined): number | undefined =>
     input === undefined || input === "" ? undefined : parseInt(input, 10);
 
-const weeksConfig = (existingWeeksConfig: Record<string, IWeekConfig>): IWeekConfig[] => tableBody.map((row: string, rowIndex: number): IWeekConfig => {
-    const fields: string[] = splitRow(row);
-    const week: string = trim(fieldOfColumn(fields, columns.week)).split(" ").reverse()[0] || "";
-    const weekNumber: number = rowIndex + 1;
-    if(weekNumber > numberOfTheLastWeek){
-        numberOfTheLastWeek = weekNumber;
-    }
-    return {
-        week,
-        weekNumber,
-        weekStartDate: fieldOfColumn(fields, columns.weekStartDate),
-        weekURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.weekURL || "" : "",
-        vocabURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.vocabURL || "" : "",
-        readingPageInfo: fieldOfColumn(fields, columns.readingPageInfo),
-        readingPageInfo2: fieldOfColumn(fields, columns.readingPageInfo2),
-        readingEndPercent: parse(fieldOfColumn(fields, columns.readingEndPercent)),
-        readingRange: fieldOfColumn(fields, columns.readingRange) || "", // must not be empty
-        readingPageCount: fieldOfColumn(fields, columns.readingPageCount),
-        readAlongNextDate: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.readAlongNextDate || "" : "",
-        properNouns: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.properNouns || [] : []
-    };
-});
+const weeksConfig = (existingWeeksConfig: Record<string, IWeekConfig>, columns: Partial<IColumnLayout>): [IWeekConfig[], number] => {
 
-const dummyConfig: INonWeeksConfig = {
+    let numberOfTheLastWeek: number = 0;
+    const configs: IWeekConfig[] = tableBody.map((row: string, rowIndex: number): IWeekConfig => {
+        const fields: string[] = splitRow(row);
+        const week: string = trim(fieldOfColumn(fields, columns.week)).split(" ").reverse()[0] || "";
+        const weekNumber: number = rowIndex + 1;
+        if(weekNumber > numberOfTheLastWeek){
+            numberOfTheLastWeek = weekNumber;
+        }
+        return {
+            week,
+            weekNumber,
+            weekStartDate: fieldOfColumn(fields, columns.weekStartDate),
+            weekURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.weekURL || "" : "",
+            vocabURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.vocabURL || "" : "",
+            readingPageInfo: fieldOfColumn(fields, columns.readingPageInfo),
+            readingPageInfo2: fieldOfColumn(fields, columns.readingPageInfo2),
+            readingEndPercent: parse(fieldOfColumn(fields, columns.readingEndPercent)),
+            readingRange: fieldOfColumn(fields, columns.readingRange) || "", // must not be empty
+            readingPageCount: fieldOfColumn(fields, columns.readingPageCount),
+            readAlongNextDate: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.readAlongNextDate || "" : "",
+            properNouns: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.properNouns || [] : []
+        };
+    });
+
+    return [configs, numberOfTheLastWeek];
+}
+
+const dummyConfig = (columns: Partial<IColumnLayout>): INonWeeksConfig => ({
     homeTemplate: "../home_template.md",
     weekTemplate: "../week_template.md",
     bookClubName: "",
@@ -145,12 +150,14 @@ const dummyConfig: INonWeeksConfig = {
     readAlongJSTComputer: "21:30:00",
     showWeekInfo: true,
     numberOfTheLastWeek: 0,
-};
+});
 
 // Laden der vorhandenen Konfiguration oder Verwenden der neuen Dummy-Konfiguration, falls noch keine vorhanden:
 const configFileName: string = weeklyBreakdownFile.replace(".md", ".json");
+const columns: Partial<IColumnLayout> = columnLayoutFor(tableRows[0]);
+const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig({}, columns);
 const geladeneConfig: Record<string, string> = fs.existsSync(configFileName) ? JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"})) :
-    {...dummyConfig, numberOfTheLastWeek, weeks: weeksConfig({})};
+    {...dummyConfig(columns), numberOfTheLastWeek, weeks};
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 validiere<IConfig>(geladeneConfig, IOConfig, "Laden der Konfiguration", fold(
@@ -164,7 +171,8 @@ validiere<IConfig>(geladeneConfig, IOConfig, "Laden der Konfiguration", fold(
             )
             : {};
 
-        const fullConfig: IConfig = {...dummyConfig, ...existingConfig, numberOfTheLastWeek, weeks: weeksConfig(existingWeeksConfig)};
+        const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig(existingWeeksConfig, columns);
+        const fullConfig: IConfig = {...dummyConfig(columns), ...existingConfig, numberOfTheLastWeek, weeks};
 
         fs.writeFileSync("./" + configFileName, JSON.stringify(fullConfig, null, 4) + "\n", {encoding: "utf8"});
 

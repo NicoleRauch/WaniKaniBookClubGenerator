@@ -1,21 +1,25 @@
 import * as R from "ramda";
 
-import {ICollectedProperNouns, IConfig, IProperNoun, IReading, IWeekConfig, IWhereToBuy, POSSIBLE_HEADERS} from "./zz_src/general";
+import {ICollectedProperNouns, IConfig, IOConfig, IProperNoun, IReading, IWeekConfig, IWhereToBuy, POSSIBLE_HEADERS} from "./zz_src/general";
+import {validiere} from "./zz_src/validiere";
+import {fold} from "fp-ts/Option";
 
-const fs = require('fs');
+const fs = require("fs");
 
 const NEWLINE = "\n";
 
 function countOccurrences(url: string): number {
-    if (!url) { return 0; }
-    return url.split("").filter(x => x === '/').length;
+    if (!url) {
+        return 0;
+    }
+    return url.split("").filter(x => x === "/").length;
 }
 
 const urlPrefix = "https://community.wanikani.com/t/x/";
 const urlSuffix = (url: string): string => // we assume the URL is not null
-        countOccurrences(url) < 2
-            ? url // it already is a suffix
-            : url.substring(url.lastIndexOf('/') + 1); // find and use the suffix
+    countOccurrences(url) < 2
+    ? url // it already is a suffix
+    : url.substring(url.lastIndexOf("/") + 1); // find and use the suffix
 
 const urlSnippetOf = (url: string): string =>
     // safety measurement: empty url should be caught in weekTemplate already
@@ -45,22 +49,22 @@ const headerDashesWithAlignment = (theConfig: IConfig) => (heading: string): str
 
 const headerText = (theConfig: IConfig): string => {
     const headings =
-        (theConfig.showWeekInfo ? [ "Week" ] : [])
-        .concat([
-            "Start Date",
-            theConfig.readingRangeTitle,
-        ])
-        .concat(theConfig.readingPageInfoTitle || [])
-        .concat(theConfig.readingPageInfo2Title || [])
-        .concat(theConfig.readingEndPercentTitle || [])
-        .concat("Page Count");
+        (theConfig.showWeekInfo ? ["Week"] : [])
+            .concat([
+                "Start Date",
+                theConfig.readingRangeTitle,
+            ])
+            .concat(theConfig.readingPageInfoTitle || [])
+            .concat(theConfig.readingPageInfo2Title || [])
+            .concat(theConfig.readingEndPercentTitle || [])
+            .concat("Page Count");
     return toTableRow(headings) + toTableRow(headings.map(headerDashesWithAlignment(theConfig)));
 };
 
 const insert = <T extends string | number | undefined>(
-        entry: T,
-        mod: (_: T) => string = x => x === undefined ? "" : x.toString()
-    ): string =>
+    entry: T,
+    mod: (_: T) => string = x => x === undefined ? "" : x.toString()
+): string =>
     entry ? mod(entry) : "";
 
 const box = (x: string | undefined): string[] => x === undefined ? [] : [x];
@@ -76,17 +80,17 @@ const allProperNouns = (theConfig: IConfig): IProperNoun[] => theConfig.weeks.re
 const allProperNounsUpTo = (theConfig: IConfig, theCurrentWeek: number): ICollectedProperNouns =>
     theConfig.weeks.reduce(
         (acc: ICollectedProperNouns, current: IWeekConfig) => current.weekNumber < theCurrentWeek
-            ? { ...acc, previous: acc.previous.concat(current.properNouns ? annotate(current.properNouns, "(Week " + current.week + ")") : []) }
-            : current.weekNumber === theCurrentWeek
-                ? { ...acc, current: current.properNouns || [] }
-                : acc,
-        { previous: theConfig.properNouns || [], current: [] }
+                                                              ? {...acc, previous: acc.previous.concat(current.properNouns ? annotate(current.properNouns, "(Week " + current.week + ")") : [])}
+                                                              : current.weekNumber === theCurrentWeek
+                                                                ? {...acc, current: current.properNouns || []}
+                                                                : acc,
+        {previous: theConfig.properNouns || [], current: []}
     );
 
 const spoilered = (note: string | undefined): string =>
     note === undefined || note.length === 0 ? "" : `[spoiler]${note}[/spoiler]`;
 
-const unhiddenList = (nouns: IProperNoun[], spoilerFunc: (_:string|undefined) => string|undefined): string =>
+const unhiddenList = (nouns: IProperNoun[], spoilerFunc: (_: string | undefined) => string | undefined): string =>
     "|Name|Reading|Notes|Proof|\n" +
     "|-|-|-|-|\n" +
     nouns.map((noun: IProperNoun) => ["", noun.name, noun.reading, spoilerFunc(noun.notes), noun.proof, ""].join("|")).join("\n") + "\n";
@@ -94,10 +98,10 @@ const unhiddenList = (nouns: IProperNoun[], spoilerFunc: (_:string|undefined) =>
 
 const properNounsTableForList = (nouns: IProperNoun[], hiddenLabel: string): string => {
     const hideList = nouns.length > 8;
-    return (hideList ? "[details=\"" +hiddenLabel+ "\"]\n" : "") +
+    return (hideList ? "[details=\"" + hiddenLabel + "\"]\n" : "") +
         unhiddenList(nouns, R.identity) +
         (hideList ? "[/details]\n" : "");
-}
+};
 
 const properNounsTableFor = (theConfig: IConfig, hiddenLabel: string): string => properNounsTableForList(allProperNouns(theConfig), hiddenLabel);
 
@@ -105,42 +109,42 @@ const properNounsTableFor = (theConfig: IConfig, hiddenLabel: string): string =>
 const weeklyProperNounsTableFor = (theConfig: IConfig, theCurrentWeek: number, hiddenLabel: string): string => {
     const properNounsCollection = allProperNounsUpTo(theConfig, theCurrentWeek);
     return (properNounsCollection.previous.length > 0 ? properNounsTableForList(properNounsCollection.previous, hiddenLabel) : "")
-    + (properNounsCollection.current.length > 0 ? unhiddenList(properNounsCollection.current, spoilered) : "");
-}
+        + (properNounsCollection.current.length > 0 ? unhiddenList(properNounsCollection.current, spoilered) : "");
+};
 
 
 const weekEntry = (showWeekInfo: boolean, withLinks: boolean, hasPageInfo: boolean, hasPageInfo2: boolean,
                    hasEndPercentage: boolean, withLinkOnReadingRange: boolean) => (week: IWeekConfig): string =>
     toTableRow(
         (showWeekInfo
-                ? [ withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week ]
-                : []
+         ? [withLinks ? urlOf("Week " + week.week, week.weekURL) : "Week " + week.week]
+         : []
         )
-        .concat([
-            insert(week.weekStartDate),
-            insert(week.readingRange, (x: string) => (withLinks && withLinkOnReadingRange) ? urlOf(x, week.weekURL) : x),
-        ])
-        .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
-        .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
-        .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
-        .concat(insert(week.readingPageCount))
+            .concat([
+                insert(week.weekStartDate),
+                insert(week.readingRange, (x: string) => (withLinks && withLinkOnReadingRange) ? urlOf(x, week.weekURL) : x),
+            ])
+            .concat(hasPageInfo ? insert(week.readingPageInfo) : [])
+            .concat(hasPageInfo2 ? insert(week.readingPageInfo2) : [])
+            .concat(hasEndPercentage ? insert(week.readingEndPercent, x => x + "%") : [])
+            .concat(insert(week.readingPageCount))
     );
 
 const readingSchedule = (theConfig: IConfig): string => {
     const weeksText: string = theConfig.weeks
-        .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle, !theConfig.linkOnlyOnWeek))
-        .join("");
+                                       .map(weekEntry(theConfig.showWeekInfo, true, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle, !theConfig.linkOnlyOnWeek))
+                                       .join("");
     return headerText(theConfig) + weeksText;
 };
 
 const isNumber = (n: unknown): boolean => !isNaN(parseFloat(String(n))) && isFinite(Number(n));
 
 const textRatioPerPageFor = (bookWalkerPages: string, physicalPages: string): string => {
-    if(bookWalkerPages === undefined || physicalPages === undefined || !isNumber(bookWalkerPages) || !isNumber(physicalPages)) {
+    if (bookWalkerPages === undefined || physicalPages === undefined || !isNumber(bookWalkerPages) || !isNumber(physicalPages)) {
         return "";
     }
     return (Number(bookWalkerPages) / Number(physicalPages) * 100).toFixed(0);
-}
+};
 
 const weeklyReadingSchedule = (theConfig: IConfig, theWeekConfig: IWeekConfig): string => headerText(theConfig) +
     weekEntry(theConfig.showWeekInfo, false, !!theConfig.readingPageInfoTitle, !!theConfig.readingPageInfo2Title, !!theConfig.readingEndPercentTitle, !theConfig.linkOnlyOnWeek)(theWeekConfig);
@@ -162,7 +166,7 @@ function replaceGlobalVariables(theTemplate: string, theConfig: IConfig): string
     theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title || "");
     theTemplate = theTemplate.replace(/\$readingRangeTitle\$/g, theConfig.readingRangeTitle || "");
     theTemplate = theTemplate.replace(/\$readingSchedule\$/g, readingSchedule(theConfig));
-    theTemplate = theTemplate.replace(/\$textRatioPerPage\$/g, textRatioPerPageFor(theConfig.bookwalkerPageCount, theConfig.physicalPageCount))
+    theTemplate = theTemplate.replace(/\$textRatioPerPage\$/g, textRatioPerPageFor(theConfig.bookwalkerPageCount, theConfig.physicalPageCount));
     theTemplate = theTemplate.replace(/\$mainVocabURL\$/g, theConfig.mainVocabURL);
     theTemplate = theTemplate.replace(/\$hasProperNouns\$/g, hasProperNouns(theConfig).toString());
     theTemplate = theTemplate.replace(/\$properNouns\$/g, properNounsTableFor(theConfig, "Proper Nouns"));
@@ -178,6 +182,7 @@ function replaceGlobalVariables(theTemplate: string, theConfig: IConfig): string
 }
 
 function replaceWeeklyVariables(theWeekTemplate: string, theWeekConfig: IWeekConfig, theConfig: IConfig): string {
+    const weeks = weeksFor(theConfig);
     theWeekTemplate = theWeekTemplate.replace(/\$week\$/g, theWeekConfig.week);
     theWeekTemplate = theWeekTemplate.replace(/\$weekNumber\$/g, (theWeekConfig.weekNumber || parseInt(theWeekConfig.week, 10)).toString(10));
     theWeekTemplate = theWeekTemplate.replace(/\$weekStartDate\$/g, theWeekConfig.weekStartDate || "");
@@ -234,59 +239,68 @@ function writeFile(fileExtension: string, theTemplate: string): void {
     fs.writeFileSync("./" + resultFileName, theTemplate, {encoding: "utf8"});
 }
 
-///////////////////////////////////////////////////////////////////////////////////
-/////////////// Processing the Configuration: /////////////////////////////////////
-
-const configFileName: string = process.argv[2] || "";
-const config: IConfig = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
-config.weeks = config.weeks.sort((a, b) => a.weekNumber - b.weekNumber); // sort the weeks for more straightforward access
-// add default values:
-if(config.showWeekInfo === undefined){
-    config.showWeekInfo = true;
-}
-
-const weeks: Record<number, IWeekConfig> = config.weeks.reduce(
+const weeksFor = (config: IConfig): Record<number, IWeekConfig> => config.weeks.reduce(
     (acc, current) => ({...acc, [current.weekNumber]: current}),
     {}
 );
 
+///////////////////////////////////////////////////////////////////////////////////
+/////////////// Processing the Configuration: /////////////////////////////////////
+
+const configFileName: string = process.argv[2] || "";
+const config: Record<string, string> = JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"}));
+
+
+validiere<IConfig>(config, IOConfig, "Laden der Konfiguration", fold(
+    () => {
+    },
+    (existingConfig: IConfig) => {
+
+
+        existingConfig.weeks = existingConfig.weeks.sort((a, b) => a.weekNumber - b.weekNumber); // sort the weeks for more straightforward access
+// add default values:
+        if (existingConfig.showWeekInfo === undefined) {
+            existingConfig.showWeekInfo = true;
+        }
+
 /////////// generating the home thread /////////////////////////////////////////
 
-var homeTemplate: string = fs.readFileSync("./" + config.homeTemplate, {encoding: "utf8"});
+        var homeTemplate: string = fs.readFileSync("./" + existingConfig.homeTemplate, {encoding: "utf8"});
 
-homeTemplate = replaceGlobalVariables(homeTemplate, config);
-homeTemplate = replaceConditionals(homeTemplate);
+        homeTemplate = replaceGlobalVariables(homeTemplate, existingConfig);
+        homeTemplate = replaceConditionals(homeTemplate);
 
-// next week for reading session information:
-const nextReadings: IReading[] =
-    config.hasReadAlongSession ?
-        Object.values(weeks)
-            .map((week: IWeekConfig) => ({weekNumber: week.weekNumber, millisInFuture: Date.parse(week.readAlongNextDate) - Date.now()})) // future readings are positive
-            .filter(({millisInFuture}) => millisInFuture >= 0) // remove all past readings
-            .sort(({millisInFuture: a}, {millisInFuture: b}) => b - a) // sort by time
-        : [];
+        // next week for reading session information:
+        const nextReadings: IReading[] =
+            existingConfig.hasReadAlongSession ?
+            Object.values(weeksFor)
+                  .map((week: IWeekConfig) => ({weekNumber: week.weekNumber, millisInFuture: Date.parse(week.readAlongNextDate) - Date.now()})) // future readings are positive
+                  .filter(({millisInFuture}) => millisInFuture >= 0) // remove all past readings
+                  .sort(({millisInFuture: a}, {millisInFuture: b}) => b - a) // sort by time
+                                               : [];
 
-const nextReading: IReading | undefined = nextReadings[0];
-if(nextReading !== undefined) {
-    let theWeekConfig: IWeekConfig | undefined = weeks[nextReading.weekNumber];
-    if(theWeekConfig !== undefined) {
-        homeTemplate = replaceWeeklyVariables(homeTemplate, theWeekConfig, config);
-    }
-}
+        const existingWeeks = weeksFor(existingConfig);
+        const nextReading: IReading | undefined = nextReadings[0];
+        if (nextReading !== undefined) {
+            let theWeekConfig: IWeekConfig | undefined = existingWeeks[nextReading.weekNumber];
+            if (theWeekConfig !== undefined) {
+                homeTemplate = replaceWeeklyVariables(homeTemplate, theWeekConfig, existingConfig);
+            }
+        }
 
-writeFile("_home.md", homeTemplate);
+        writeFile("_home.md", homeTemplate);
 
+        /////////// generating the weekly threads /////////////////////////////////////////
+        existingConfig.weeks.forEach((weekConfig: IWeekConfig): void => {
 
-/////////// generating the weekly threads /////////////////////////////////////////
+            // reload the template for each week to get rid of the already filled values!
+            let weekTemplate = fs.readFileSync("./" + existingConfig.weekTemplate, {encoding: "utf8"});
 
-config.weeks.forEach((weekConfig: IWeekConfig): void => {
+            weekTemplate = replaceGlobalVariables(weekTemplate, existingConfig);
+            weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig, existingConfig);
+            weekTemplate = replaceConditionals(weekTemplate);
 
-    // reload the template for each week to get rid of the already filled values!
-    let weekTemplate = fs.readFileSync("./" + config.weekTemplate, {encoding: "utf8"});
+            writeFile("_" + (existingConfig.showWeekInfo ? "week" : "") + weekConfig.week + ".md", weekTemplate);
+        });
 
-    weekTemplate = replaceGlobalVariables(weekTemplate, config);
-    weekTemplate = replaceWeeklyVariables(weekTemplate, weekConfig, config);
-    weekTemplate = replaceConditionals(weekTemplate);
-
-    writeFile("_" + (config.showWeekInfo ? "week" : "") + weekConfig.week + ".md", weekTemplate);
-});
+    }));
