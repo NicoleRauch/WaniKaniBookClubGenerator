@@ -98,9 +98,9 @@ const weeksConfig = (existingWeeksConfig: Record<string, IWeekConfig>, columns: 
 
     let numberOfTheLastWeek: number = 0;
     const configs: IWeekConfig[] = tableBody.map((row: string, rowIndex: number): IWeekConfig => {
-        const fields: string[] = splitRow(row);
-        const week: string = trim(fieldOfColumn(fields, columns.week)).split(" ").reverse()[0] || "";
         const weekNumber: number = rowIndex + 1;
+        const fields: string[] = splitRow(row);
+        const week: string = trim(fieldOfColumn(fields, columns.week)).split(" ").reverse()[0] || weekNumber.toString(10);
         if(weekNumber > numberOfTheLastWeek){
             numberOfTheLastWeek = weekNumber;
         }
