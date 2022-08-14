@@ -132,7 +132,7 @@ const logResults = (anzahl: number, resultat: number[][][]): void => {
      */
     besteFitnesses.list.forEach((l1, idx1) => {
         l1.forEach((l, idx) => {
-            console.log(`| ${l.toString().replace(/,/g, ", ")} | ${get(seitenzahlens, idx1)[idx]} |`);
+            console.log(`| Week ${idx+1} | ${l.toString().replace(/,/g, ", ")} | ${get(seitenzahlens, idx1)[idx]} |`);
         });
     });
 };
