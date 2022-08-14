@@ -1,5 +1,6 @@
 import * as R from "ramda";
 const fs = require('fs');
+import * as L from "luxon";
 
 import {validiere} from "./zz_src/validiere";
 import {isUnderline, trim} from "./zz_src/generalHelper";
@@ -94,7 +95,7 @@ const fieldOfColumn = (fields: string[], column: number | undefined): string | u
 const parse = (input: string | undefined): number | undefined =>
     input === undefined || input === "" ? undefined : parseInt(input, 10);
 
-const weeksConfig = (existingWeeksConfig: Record<string, IWeekConfig>, columns: Partial<IColumnLayout>): [IWeekConfig[], number] => {
+const weeksConfig = (existingWeeksConfig: Record<string, IWeekConfig>, columns: Partial<IColumnLayout>, firstWeekDate: L.DateTime | null): [IWeekConfig[], number] => {
 
     let numberOfTheLastWeek: number = 0;
     const configs: IWeekConfig[] = tableBody.map((row: string, rowIndex: number): IWeekConfig => {
@@ -107,7 +108,8 @@ const weeksConfig = (existingWeeksConfig: Record<string, IWeekConfig>, columns: 
         return {
             week,
             weekNumber,
-            weekStartDate: fieldOfColumn(fields, columns.weekStartDate),
+            weekStartDate: fieldOfColumn(fields, columns.weekStartDate) ||
+                (firstWeekDate !== null ? firstWeekDate.plus({days: 7 * rowIndex}).toFormat("LLL dd") : ""),
             weekURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.weekURL || "" : "",
             vocabURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.vocabURL || "" : "",
             readingPageInfo: fieldOfColumn(fields, columns.readingPageInfo),
@@ -155,7 +157,7 @@ const dummyConfig = (columns: Partial<IColumnLayout>): INonWeeksConfig => ({
 // Laden der vorhandenen Konfiguration oder Verwenden der neuen Dummy-Konfiguration, falls noch keine vorhanden:
 const configFileName: string = weeklyBreakdownFile.replace(".md", ".json");
 const columns: Partial<IColumnLayout> = columnLayoutFor(tableRows[0]);
-const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig({}, columns);
+const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig({}, columns, null);
 const geladeneConfig: Record<string, string> = fs.existsSync(configFileName) ? JSON.parse(fs.readFileSync("./" + configFileName, {encoding: "utf8"})) :
     {...dummyConfig(columns), numberOfTheLastWeek, weeks};
 
@@ -171,7 +173,8 @@ validiere<IConfig>(geladeneConfig, IOConfig, "Laden der Konfiguration", fold(
             )
             : {};
 
-        const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig(existingWeeksConfig, columns);
+        const firstWeekDate = L.DateTime.fromFormat(existingConfig.readingFirstDateWithYear, "DDD")
+        const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig(existingWeeksConfig, columns, firstWeekDate);
         const fullConfig: IConfig = {...dummyConfig(columns), ...existingConfig, numberOfTheLastWeek, weeks};
 
         fs.writeFileSync("./" + configFileName, JSON.stringify(fullConfig, null, 4) + "\n", {encoding: "utf8"});
