@@ -42,9 +42,6 @@
       "readingPageCount": "44 + 32",
       "readAlongNextDate": "",
       "properNouns": [
-        {
-          "label": "Chapter 1",
-          "properNouns": [
             {
               "name": "犀川 創平",
               "reading": "さいかわ そうへい",
@@ -99,12 +96,7 @@
               "name": "三浦",
               "reading": "みうら",
               "notes": "Cop"
-            }
-          ]
-        },
-        {
-          "label": "Chapter 2",
-          "properNouns": [
+            },
             {
               "name": "浜口 悦夫",
               "reading": "はまぐち えつお",
@@ -123,7 +115,7 @@
             {
               "name": "岡部",
               "reading": "おかべ",
-              "notes": "SF club member"
+              "notes": "SF club member, same grade as Moe"
             },
             {
               "name": "鵜飼",
@@ -134,15 +126,8 @@
               "name": "相田 素子",
               "reading": "あいだ もとこ",
               "notes": "Victim #2"
-            },
-            {
-              "name": "",
-              "reading": "",
-              "notes": ""
             }
           ]
-        }
-      ]
     },
     {
       "week": "2",
@@ -153,24 +138,86 @@
       "readingRange": "Chapter 3 + 4",
       "readingPageCount": "36 + 38",
       "readAlongNextDate": "",
-      "properNouns": []
+      "properNouns": [
+        {
+          "name": "諏訪野",
+          "reading": "すわの",
+          "notes": "Moe’s butler"
+        },
+        {
+          "name": "西之園 都馬",
+          "reading": "にしのその トーマ",
+          "notes": "Moe’s dog :wink:"
+        },
+        {
+          "name": "国枝 桃子",
+          "reading": "くにえだ ももこ",
+          "notes": "Saikawa’s assistant professor"
+        },
+        {
+          "name": "牧野 洋子",
+          "reading": "まきの ようこ",
+          "notes": "Student, Moe’s friend"
+        },
+        {
+          "name": "喜多",
+          "reading": "きた",
+          "notes": "Saikawa’s friend"
+        },
+        {
+          "name": "蔡",
+          "reading": "さい",
+          "notes": "Chinese student"
+        },
+        {
+          "name": "金子",
+          "reading": "かねこ",
+          "notes": "Male student"
+        },
+        {
+          "name": "内田 かおり",
+          "reading": "うちだ かおり",
+          "notes": "Highschool student"
+        }
+      ]
     },
     {
       "week": "3",
       "weekNumber": 3,
       "weekStartDate": "July 2nd",
-      "weekURL": "",
+      "weekURL": "57595",
       "vocabURL": "",
       "readingRange": "Chapter 5 + 6",
       "readingPageCount": "36 + 45",
       "readAlongNextDate": "",
-      "properNouns": []
+      "properNouns": [
+        {
+          "name": "山本",
+          "reading": "やまもと",
+          "notes": "SF club member"
+        },
+        {
+          "name": "浦野",
+          "reading": "うらの",
+          "notes": "SF club member"
+        },
+        {
+          "name": "吉村",
+          "reading": "よしむら",
+          "notes": "Police detective"
+        },
+        {
+          "name": "相良",
+          "reading": "さがら",
+          "notes": "Teacher"
+        }
+      ]
     },
     {
       "week": "4",
       "weekNumber": 4,
       "weekStartDate": "July 9th",
-      "weekURL": "",
+      "weekURL": "57691",
       "vocabURL": "",
       "readingRange": "Chapter 7 + 8",
       "readingPageCount": "38 + 32",
@@ -181,7 +228,7 @@
       "week": "5",
       "weekNumber": 5,
       "weekStartDate": "July 16th",
-      "weekURL": "",
+      "weekURL": "57746",
       "vocabURL": "",
       "readingRange": "Chapter 9 + 10",
       "readingPageCount": "34 + 35",
@@ -192,7 +239,7 @@
       "week": "6",
       "weekNumber": 6,
       "weekStartDate": "July 23rd",
-      "weekURL": "",
+      "weekURL": "57840",
       "vocabURL": "",
       "readingRange": "Chapter 11 + 12",
       "readingPageCount": "38 + 16",
