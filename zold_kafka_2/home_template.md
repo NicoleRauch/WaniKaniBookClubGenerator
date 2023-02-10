@@ -8,6 +8,7 @@
 
 ## Welcome to 海辺のカフカ - Kafka on the Shore 🏖
 ![image|196x280](upload://eN0rzfN7QltwWisNBRKfpKH0XUN.png)
+![image|196x280](upload://p2h4rRNgdDSngkbpktYKAUQQ5r2.png)
 
  ## Where to buy 
 [Amazon JP (上)](https://www.amazon.co.jp/-/en/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A8%B9-ebook/dp/B08N5RQV7V) | [Amazon JP (下)](https://www.amazon.co.jp/-/en/gp/product/B08N5RNWQW) | [Amazon JP (combined volume for 上 and 下)](https://www.amazon.co.jp/-/en/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A8%B9-ebook/dp/B08N5VGDGR) | [Bookwalker (separate volumes for 上 and 下)](https://bookwalker.jp/series/281888/list/) | [Bookwalker (combined volume for 上 and 下)](https://bookwalker.jp/de131687ff-3a6d-4045-a82f-d0f3114793f0/) 

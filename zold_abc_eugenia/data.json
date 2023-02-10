@@ -1,0 +1,233 @@
+{
+  "homeTemplate": "./eugenia_home_template.md",
+  "weekTemplate": "../week_template.md",
+  "bookClubName": "Advanced",
+  "bookClubURL": "https://community.wanikani.com/t/x/44685",
+  "bookName": "ユージニア :rose:",
+  "bookImage": "![image|240x341](upload://x8ZgLX9rh64JAP8N1pzBUjZ4XKG.jpeg)",
+  "bookHomeThreadURL": "58693",
+  "whereToBuy": [
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.co.jp/dp/product/404371002X/ref=as_li_tf_tl"
+    },
+    {
+      "name": "BookWalker",
+      "url": "https://bookwalker.jp/ded0f105d4-9761-417e-b5b4-b1cdd6426f3f/"
+    }
+  ],
+  "physicalPageCount": "",
+  "bookwalkerPageCount": "",
+  "readingFirstDateWithYear": "November 5, 2022",
+  "readingPageInfoTitle": "Start Page",
+  "readingRangeTitle": "Chapter",
+  "linkOnlyOnWeek": false,
+  "mainVocabURL": "",
+  "properNouns": [],
+  "isOnFloFlo": false,
+  "hasReadAlongSession": false,
+  "readAlongFirstDate": "",
+  "readAlongWeekday": "Sunday",
+  "readAlongJSTHuman": "9:30pm",
+  "readAlongJSTComputer": "21:30:00",
+  "showWeekInfo": true,
+  "numberOfTheLastWeek": 12,
+  "weeks": [
+    {
+      "week": "1",
+      "weekNumber": 1,
+      "weekStartDate": "Nov 05",
+      "weekURL": "59173",
+      "vocabURL": "",
+      "readingPageInfo": "",
+      "readingRange": "手紙 + Prologue + Chapter 1",
+      "readingPageCount": "1 + 2 + 35",
+      "readAlongNextDate": "",
+      "properNouns": [
+        {
+          "name": "青澤 緋紗子",
+          "reading": "あおさわ ひさこ",
+          "notes": "the blind girl (ca. 12 yo at the time of the event)"
+        }
+      ]
+    },
+    {
+      "week": "2",
+      "weekNumber": 2,
+      "weekStartDate": "Nov 12",
+      "weekURL": "59249",
+      "vocabURL": "",
+      "readingPageInfo": "45",
+      "readingRange": "Chapter 2",
+      "readingPageCount": "29",
+      "readAlongNextDate": "",
+      "properNouns": [
+        {
+          "name": "雑賀 満喜子",
+          "reading": "さいが まきこ",
+          "notes": "ch. 1 narrator"
+        }
+      ]
+    },
+    {
+      "week": "3",
+      "weekNumber": 3,
+      "weekStartDate": "Nov 19",
+      "weekURL": "59325",
+      "vocabURL": "",
+      "readingPageInfo": "75",
+      "readingRange": "Chapter 3",
+      "readingPageCount": "29",
+      "readAlongNextDate": "",
+      "properNouns": [
+        {
+          "name": "順二",
+          "reading": "じゅんじ",
+          "notes": "ch. 3 narrator's older brother"
+        },
+        {
+          "name": "誠一",
+          "reading": "せいいち",
+          "notes": "ch. 3 narrator's older brother"
+        },
+        {
+          "name": "ヒサ / 久代",
+          "reading": "ひさよ",
+          "notes": "the blind girl from week 1"
+        },
+        {
+          "name": "マキ",
+          "reading": "",
+          "notes": "ch. 3 narrator (young girl)"
+        },
+        {
+          "name": "相澤",
+          "reading": "あいざわ",
+          "notes": "doctor whose birthday is being celebrated"
+        },
+        {
+          "name": "相澤 祐",
+          "reading": "あいざわ たすく",
+          "notes": "blind girl's younger brother, youngest son of the family"
+        },
+        {
+          "name": "キミ",
+          "reading": "",
+          "notes": "ca. 15 year-old maid of the Aizawa family"
+        }
+      ]
+    },
+    {
+      "week": "4",
+      "weekNumber": 4,
+      "weekStartDate": "Nov 26",
+      "weekURL": "59458",
+      "vocabURL": "",
+      "readingPageInfo": "105",
+      "readingRange": "Chapter 4",
+      "readingPageCount": "31",
+      "readAlongNextDate": "",
+      "properNouns": [{
+        "name": "青澤 望",
+        "reading": "あおさわ　のぞむ",
+        "notes": "eldest son of the Aosawa family"
+      }]
+    },
+    {
+      "week": "5",
+      "weekNumber": 5,
+      "weekStartDate": "Dec 03",
+      "weekURL": "59557",
+      "vocabURL": "",
+      "readingPageInfo": "137",
+      "readingRange": "Chapter 5",
+      "readingPageCount": "31",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "6",
+      "weekNumber": 6,
+      "weekStartDate": "Dec 10",
+      "weekURL": "59669",
+      "vocabURL": "",
+      "readingPageInfo": "169",
+      "readingRange": "Chapter 6",
+      "readingPageCount": "29",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "7",
+      "weekNumber": 7,
+      "weekStartDate": "Dec 17",
+      "weekURL": "59756",
+      "vocabURL": "",
+      "readingPageInfo": "199",
+      "readingRange": "Chapter 7",
+      "readingPageCount": "29",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "8",
+      "weekNumber": 8,
+      "weekStartDate": "Dec 24",
+      "weekURL": "59841",
+      "vocabURL": "",
+      "readingPageInfo": "229",
+      "readingRange": "Chapter 8 + 9",
+      "readingPageCount": "29 + 7",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "9",
+      "weekNumber": 9,
+      "weekStartDate": "Dec 31",
+      "weekURL": "59918",
+      "vocabURL": "",
+      "readingPageInfo": "267",
+      "readingRange": "Chapter 10",
+      "readingPageCount": "29",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "10",
+      "weekNumber": 10,
+      "weekStartDate": "Jan 07",
+      "weekURL": "60043",
+      "vocabURL": "",
+      "readingPageInfo": "297",
+      "readingRange": "Chapter 11 + 12",
+      "readingPageCount": "29 + 17",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "11",
+      "weekNumber": 11,
+      "weekStartDate": "Jan 14",
+      "weekURL": "60135",
+      "vocabURL": "",
+      "readingPageInfo": "347",
+      "readingRange": "Chapter 13",
+      "readingPageCount": "31",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "12",
+      "weekNumber": 12,
+      "weekStartDate": "Jan 21",
+      "weekURL": "60233",
+      "vocabURL": "",
+      "readingPageInfo": "379",
+      "readingRange": "Chapter 14 + ユージニアノート",
+      "readingPageCount": "30 + 7",
+      "readAlongNextDate": "",
+      "properNouns": []
+    }
+  ]
+}

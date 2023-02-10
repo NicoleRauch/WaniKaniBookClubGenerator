@@ -1,0 +1,155 @@
+{
+    "homeTemplate": "./home_template_spinoff.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Saikawa & Moe (S&M) Series",
+    "bookClubURL": "https://community.wanikani.com/t/x/52178",
+    "bookName": "封印再度 - Who Inside",
+    "bookImage": "![image|240x337](upload://4a77guG1bMsjkaVhEyPgyPkAGnz.png)",
+    "bookHomeThreadURL": "58922",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/4062647990"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/deab6f12e2-9cb2-44e4-bbd9-1a0cef02e951/"
+        }
+    ],
+    "physicalPageCount": "576",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "December 3, 2022",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 10,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "Dec 03",
+            "weekURL": "59559",
+            "vocabURL": "",
+            "readingRange": "Chapter 1",
+            "readingPageCount": "~57",
+            "readAlongNextDate": "",
+            "properNouns": [{
+                "name": "儀同 世津子",
+                "reading": "ぎどう せつこ",
+                "notes": "friend of Moe"
+            },
+                {
+                    "name": "西之園 萌絵",
+                    "reading": "にしのその もえ"
+                }
+            ]
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "Dec 10",
+            "weekURL": "59670",
+            "vocabURL": "",
+            "readingRange": "Chapter 2",
+            "readingPageCount": "~57",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "Dec 17",
+            "weekURL": "59784",
+            "vocabURL": "",
+            "readingRange": "Chapter 3",
+            "readingPageCount": "~67",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "Dec 24",
+            "weekURL": "59842",
+            "vocabURL": "",
+            "readingRange": "Chapter 4",
+            "readingPageCount": "~57",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "Dec 31",
+            "weekURL": "59917",
+            "vocabURL": "",
+            "readingRange": "Chapter 5",
+            "readingPageCount": "~60",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "Jan 07",
+            "weekURL": "60044",
+            "vocabURL": "",
+            "readingRange": "Chapter 6",
+            "readingPageCount": "~52",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "Jan 14",
+            "weekURL": "60134",
+            "vocabURL": "",
+            "readingRange": "Chapter 7",
+            "readingPageCount": "~72",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "8",
+            "weekNumber": 8,
+            "weekStartDate": "Jan 21",
+            "weekURL": "60234",
+            "vocabURL": "",
+            "readingRange": "Chapter 8",
+            "readingPageCount": "~37",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "9",
+            "weekNumber": 9,
+            "weekStartDate": "Jan 28",
+            "weekURL": "60335",
+            "vocabURL": "",
+            "readingRange": "Chapter 9",
+            "readingPageCount": "~72",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "10",
+            "weekNumber": 10,
+            "weekStartDate": "Feb 04",
+            "weekURL": "60421",
+            "vocabURL": "",
+            "readingRange": "Chapter 10",
+            "readingPageCount": "~42",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}
