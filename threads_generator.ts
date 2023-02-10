@@ -97,7 +97,7 @@ const unhiddenList = (nouns: IProperNoun[], spoilerFunc: (_: string | undefined)
 
 
 const properNounsTableForList = (nouns: IProperNoun[], hiddenLabel: string): string => {
-    const hideList = nouns.length > 8;
+    const hideList = nouns.length > 0;
     return (hideList ? "[details=\"" + hiddenLabel + "\"]\n" : "") +
         unhiddenList(nouns, R.identity) +
         (hideList ? "[/details]\n" : "");

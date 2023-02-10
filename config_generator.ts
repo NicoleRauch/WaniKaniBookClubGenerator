@@ -109,7 +109,7 @@ const weeksConfig = (existingWeeksConfig: Record<string, IWeekConfig>, columns: 
             week,
             weekNumber,
             weekStartDate: fieldOfColumn(fields, columns.weekStartDate) ||
-                (firstWeekDate !== null ? firstWeekDate.plus({days: 7 * rowIndex}).toFormat("LLL dd") : ""),
+                (firstWeekDate !== null ? firstWeekDate.plus({days: 7 * rowIndex}).toFormat("LLL dd") : "TBA"),
             weekURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.weekURL || "" : "",
             vocabURL: existingWeeksConfig[weekNumber] ? existingWeeksConfig[weekNumber]?.vocabURL || "" : "",
             readingPageInfo: fieldOfColumn(fields, columns.readingPageInfo),
@@ -173,8 +173,8 @@ validiere<IConfig>(geladeneConfig, IOConfig, "Laden der Konfiguration", fold(
             )
             : {};
 
-        const firstWeekDate = L.DateTime.fromFormat(existingConfig.readingFirstDateWithYear, "DDD")
-        const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig(existingWeeksConfig, columns, firstWeekDate);
+        const firstWeekDate = L.DateTime.fromFormat(existingConfig.readingFirstDateWithYear, "DDD") // localized date with full month
+        const [weeks, numberOfTheLastWeek]: [IWeekConfig[], number] = weeksConfig(existingWeeksConfig, columns, firstWeekDate.isValid ? firstWeekDate : null);
         const fullConfig: IConfig = {...dummyConfig(columns), ...existingConfig, numberOfTheLastWeek, weeks};
 
         fs.writeFileSync("./" + configFileName, JSON.stringify(fullConfig, null, 4) + "\n", {encoding: "utf8"});
