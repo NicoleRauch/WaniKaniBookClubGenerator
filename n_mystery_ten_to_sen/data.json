@@ -1,0 +1,83 @@
+{
+    "homeTemplate": "../natively_home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Natively Mystery",
+    "bookClubURL": "https://forums.learnnatively.com/t/x/804",
+    "bookName": "点と線",
+    "bookImage": "<img src='https://d349jbwe3uaj05.cloudfront.net/68c11509-6951-4176-be7a-ba1f664dd9f9.jpg?width=240&height=320.2247191011236'/>",
+    "bookHomeThreadURL": "https://forums.learnnatively.com/t/x/10909",
+    "whereToBuy": [],
+    "nativelyPage": "https://learnnatively.com/book/3e8f9b51a2/",
+    "physicalPageCount": "",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "September 2nd, 2024",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 5,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "Sept 2nd",
+            "weekURL": "https://forums.learnnatively.com/t/x/11161",
+            "vocabURL": "",
+            "readingRange": "一 to 二",
+            "readingPageCount": "30",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "Sept 9th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "三 to 四",
+            "readingPageCount": "35",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "Sept 16th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "五 to 八",
+            "readingPageCount": "53",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "Sept 23rd",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "九 to 十一",
+            "readingPageCount": "57",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "Sept 30th",
+            "weekURL": "",
+            "vocabURL": "",
+            "readingRange": "十二 to 十三",
+            "readingPageCount": "47",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

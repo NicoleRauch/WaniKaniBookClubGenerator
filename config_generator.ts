@@ -134,6 +134,7 @@ const dummyConfig = (columns: Partial<IColumnLayout>): INonWeeksConfig => ({
     bookImage: "",
     bookHomeThreadURL: "",
     whereToBuy: [],
+    nativelyPage: "",
     physicalPageCount: "",
     bookwalkerPageCount: "",
     readingFirstDateWithYear: "",

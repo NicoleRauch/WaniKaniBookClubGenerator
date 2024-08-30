@@ -23,7 +23,9 @@ const urlSuffix = (url: string): string => // we assume the URL is not null
 
 const urlSnippetOf = (url: string): string =>
     // safety measurement: empty url should be caught in weekTemplate already
-    url ? urlPrefix + urlSuffix(url) : "";
+    url
+        ? url.startsWith("http") ? url : urlPrefix + urlSuffix(url)
+        : "";
 
 const urlOf = (name: string, url: string): string => url ? "[" + name + "](" + urlSnippetOf(url) + ")" : name;
 
@@ -161,6 +163,7 @@ function replaceGlobalVariables(theTemplate: string, theConfig: IConfig): string
     theTemplate = theTemplate.replace(/\$bookImage\$/g, theConfig.bookImage);
     theTemplate = theTemplate.replace(/\$bookHomeThreadURL\$/g, urlSnippetOf(theConfig.bookHomeThreadURL));
     theTemplate = theTemplate.replace(/\$whereToBuy\$/g, theConfig.whereToBuy.map(({name, url}: IWhereToBuy) => url ? "[" + name + "](" + url + ")" : name).join(" | ")); // no URL function!
+    theTemplate = theTemplate.replace(/\$nativelyPage\$/g, theConfig.nativelyPage.toString());
     theTemplate = theTemplate.replace(/\$numberOfTheLastWeek\$/g, theConfig.numberOfTheLastWeek.toString());
     theTemplate = theTemplate.replace(/\$readingPageInfoTitle\$/g, theConfig.readingPageInfoTitle || "");
     theTemplate = theTemplate.replace(/\$readingPageInfo2Title\$/g, theConfig.readingPageInfo2Title || "");

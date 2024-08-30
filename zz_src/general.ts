@@ -84,6 +84,7 @@ const IONonWeeksConfig = t.type({
     bookImage: t.string,
     bookHomeThreadURL: t.string,
     whereToBuy: t.array(IOWhereToBuy),
+    nativelyPage: t.string,
     physicalPageCount: t.string,
     bookwalkerPageCount: t.string,
     readingFirstDateWithYear: t.string,
