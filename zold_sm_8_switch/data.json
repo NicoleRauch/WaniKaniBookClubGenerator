@@ -1,0 +1,124 @@
+{
+    "homeTemplate": "./home_template_spinoff.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Saikawa & Moe (S&M) Series",
+    "bookClubURL": "https://community.wanikani.com/t/x/52178",
+    "bookName": "今はもうない - Switch Back",
+    "bookImage": "![image|240x337](upload://ve8qPFpu4AOq5JgDeqY3pjkojKi.png)",
+    "bookHomeThreadURL": "64155",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/4062730979/"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de1c2d5280-0ab9-4f2d-8224-56eaefd1ebb8/?acode=nQqAxuMt"
+        }
+    ],
+    "physicalPageCount": "544",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "March 16, 2024",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 8,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "Mar 16",
+            "weekURL": "65253",
+            "vocabURL": "",
+            "readingRange": "意味のない - Ch. 1.4",
+            "readingPageCount": "~70",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "Mar 23",
+            "weekURL": "65322",
+            "vocabURL": "",
+            "readingRange": "Ch. 1.5 - Ch. 1.10",
+            "readingPageCount": "~68",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "Mar 30",
+            "weekURL": "65402",
+            "vocabURL": "",
+            "readingRange": "Ch. 1.11 - Ch. 1 end",
+            "readingPageCount": "~76",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "Apr 06",
+            "weekURL": "65443",
+            "vocabURL": "",
+            "readingRange": "必要のない - Ch. 2.4",
+            "readingPageCount": "~63",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "Apr 13",
+            "weekURL": "65515",
+            "vocabURL": "",
+            "readingRange": "Ch. 2.5 - Ch. 2.11",
+            "readingPageCount": "~72",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "Apr 20",
+            "weekURL": "65590",
+            "vocabURL": "",
+            "readingRange": "Ch. 2.12 - Ch. 2 end",
+            "readingPageCount": "~67",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "Apr 27",
+            "weekURL": "65668",
+            "vocabURL": "",
+            "readingRange": "重要でない - Ch. 3 end",
+            "readingPageCount": "~67",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "8",
+            "weekNumber": 8,
+            "weekStartDate": "May 04",
+            "weekURL": "65667",
+            "vocabURL": "",
+            "readingRange": "なくてもいい・最終幕・まったく余分な (- end of book)",
+            "readingPageCount": "~56",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

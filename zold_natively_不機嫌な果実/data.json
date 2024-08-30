@@ -1,0 +1,35 @@
+{
+    "homeTemplate": "../home_template_informal_natively.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "N/A",
+    "bookClubURL": "N/A",
+    "bookName": "不機嫌な果実",
+    "bookImage": "![image|180x261](upload://AgGE24oIWsjl6ayVeIoCCaeqRIo.png)",
+    "bookHomeThreadURL": "",
+    "whereToBuy": [{
+        "name": "Amazon",
+        "url": "https://www.amazon.co.jp/dp/4163165401/ref=nosim?tag=natively0d-22"
+    },
+    {
+        "name": "BookWalker",
+        "url": "https://bookwalker.jp/de5a033fa7-8580-4b18-b49b-a49fe2e71bfb/?acode=nQqAxuMt"
+    }],
+    "physicalPageCount": "",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "mid-to-end May 2024",
+    "readingPageInfoTitle": "Start Page",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 0,
+    "weeks": [
+    ]
+}

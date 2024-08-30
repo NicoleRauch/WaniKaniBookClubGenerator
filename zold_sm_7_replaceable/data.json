@@ -1,0 +1,129 @@
+{
+    "homeTemplate": "./home_template_spinoff.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Saikawa & Moe (S&M) Series",
+    "bookClubURL": "https://community.wanikani.com/t/x/52178",
+    "bookName": "夏のレプリカ - Replaceable Summer",
+    "bookImage": "![image|240x337](upload://tBGgpfB3M52VFoqk5NkMPZ3EYHy.png)",
+    "bookHomeThreadURL": "62073",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/product/406273012X/"
+        },
+        {
+            "name": "Bookwalker",
+            "url": "https://bookwalker.jp/de94beb52a-de8e-4eef-9151-899100cad74c/?acode=nQqAxuMt"
+        }
+    ],
+    "physicalPageCount": "520",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "August 5, 2023",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 8,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "Aug 05",
+            "weekURL": "62855",
+            "vocabURL": "",
+            "readingRange": "Chapter 2",
+            "readingPageCount": "~74",
+            "readAlongNextDate": "",
+            "properNouns": [
+                {
+                    "name": "西之園 萌絵",
+                    "reading": "にしのその もえ"
+                }
+            ]
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "Aug 12",
+            "weekURL": "62909",
+            "vocabURL": "",
+            "readingRange": "Chapter 4",
+            "readingPageCount": "~68",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "Aug 19",
+            "weekURL": "62982",
+            "vocabURL": "",
+            "readingRange": "Chapter 6",
+            "readingPageCount": "~67",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "Aug 26",
+            "weekURL": "63076",
+            "vocabURL": "",
+            "readingRange": "Chapter 8",
+            "readingPageCount": "~45",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "Sep 02",
+            "weekURL": "63146",
+            "vocabURL": "",
+            "readingRange": "Chapter 10",
+            "readingPageCount": "~62",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "Sep 09",
+            "weekURL": "63203",
+            "vocabURL": "",
+            "readingRange": "Chapter 12",
+            "readingPageCount": "~50",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "Sep 16",
+            "weekURL": "63278",
+            "vocabURL": "",
+            "readingRange": "Chapter 14 + 16",
+            "readingPageCount": "~47 + ~18",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "8",
+            "weekNumber": 8,
+            "weekStartDate": "Sep 23",
+            "weekURL": "63343",
+            "vocabURL": "",
+            "readingRange": "Chapter 18",
+            "readingPageCount": "~85",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

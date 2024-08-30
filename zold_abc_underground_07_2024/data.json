@@ -1,0 +1,169 @@
+{
+    "homeTemplate": "./home_template.md",
+    "weekTemplate": "../week_template.md",
+    "bookClubName": "Advanced",
+    "bookClubURL": "44685",
+    "bookName": "アンダーグラウンド",
+    "bookImage": "![image|240x338](upload://xwGUIYALppnF5jaFDW8gUBsQj4j.jpeg)",
+    "bookHomeThreadURL": "65324",
+    "whereToBuy": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/dp/B01BM7SCMM/ref=nosim?tag=natively0d-22"
+        },
+        {
+            "name": "BookWalker",
+            "url": "https://bookwalker.jp/dee481eebb-5f1f-408f-9d4d-bbc6c4600c67/?acode=nQqAxuMt"
+        }
+    ],
+    "physicalPageCount": "780",
+    "bookwalkerPageCount": "",
+    "readingFirstDateWithYear": "May 25, 2024",
+    "readingPageInfoTitle": "Start Page",
+    "readingRangeTitle": "Chapter",
+    "linkOnlyOnWeek": false,
+    "mainVocabURL": "https://jpdb.io/non-fiction/15694/underground",
+    "properNouns": [],
+    "isOnFloFlo": false,
+    "hasReadAlongSession": false,
+    "readAlongFirstDate": "",
+    "readAlongWeekday": "Sunday",
+    "readAlongJSTHuman": "9:30pm",
+    "readAlongJSTComputer": "21:30:00",
+    "showWeekInfo": true,
+    "numberOfTheLastWeek": 11,
+    "weeks": [
+        {
+            "week": "1",
+            "weekNumber": 1,
+            "weekStartDate": "May 25",
+            "weekURL": "66024",
+            "vocabURL": "",
+            "readingPageInfo": "6",
+            "readingRange": "はじめに to 千代田線 Intro",
+            "readingPageCount": "20",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "2",
+            "weekNumber": 2,
+            "weekStartDate": "Jun 01",
+            "weekURL": "66116",
+            "vocabURL": "",
+            "readingPageInfo": "26",
+            "readingRange": "千代田線 Interviews 1-2",
+            "readingPageCount": "29",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "3",
+            "weekNumber": 3,
+            "weekStartDate": "Jun 08",
+            "weekURL": "66190",
+            "vocabURL": "",
+            "readingPageInfo": "56",
+            "readingRange": "千代田線 Interviews 3-5",
+            "readingPageCount": "37",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "4",
+            "weekNumber": 4,
+            "weekStartDate": "Jun 15",
+            "weekURL": "66257",
+            "vocabURL": "",
+            "readingPageInfo": "92",
+            "readingRange": "千代田線 Interviews 6-9",
+            "readingPageCount": "41",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "5",
+            "weekNumber": 5,
+            "weekStartDate": "Jun 22",
+            "weekURL": "66359",
+            "vocabURL": "",
+            "readingPageInfo": "133",
+            "readingRange": "丸ノ内線 - 荻窪行き Intro - Interview 3",
+            "readingPageCount": "32",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "6",
+            "weekNumber": 6,
+            "weekStartDate": "Jun 29",
+            "weekURL": "66403",
+            "vocabURL": "",
+            "readingPageInfo": "165",
+            "readingRange": "丸ノ内線 - 荻窪行き Interviews 4-6",
+            "readingPageCount": "26",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "7",
+            "weekNumber": 7,
+            "weekStartDate": "Jul 06",
+            "weekURL": "66483",
+            "vocabURL": "",
+            "readingPageInfo": "192",
+            "readingRange": "丸ノ内線 - 荻窪行き Interviews 7-8",
+            "readingPageCount": "40",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "8",
+            "weekNumber": 8,
+            "weekStartDate": "Jul 13",
+            "weekURL": "66571",
+            "vocabURL": "",
+            "readingPageInfo": "232",
+            "readingRange": "丸ノ内線 - 荻窪行き Interview 9 to 丸ノ内線 - 池袋行き／折り返し Interview 2",
+            "readingPageCount": "37",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "9",
+            "weekNumber": 9,
+            "weekStartDate": "Jul 20",
+            "weekURL": "66628",
+            "vocabURL": "",
+            "readingPageInfo": "269",
+            "readingRange": "丸ノ内線 - 池袋行き／折り返し Interviews 3 to 日比谷線 - 中目黒発 Interview 1",
+            "readingPageCount": "30",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "10",
+            "weekNumber": 10,
+            "weekStartDate": "Jul 27",
+            "weekURL": "66707",
+            "vocabURL": "",
+            "readingPageInfo": "299",
+            "readingRange": "日比谷線 - 中目黒発 Interviews 2-4",
+            "readingPageCount": "37",
+            "readAlongNextDate": "",
+            "properNouns": []
+        },
+        {
+            "week": "11",
+            "weekNumber": 11,
+            "weekStartDate": "Aug 03",
+            "weekURL": "66770",
+            "vocabURL": "",
+            "readingPageInfo": "336",
+            "readingRange": "日比谷線 - 中目黒発 Interviews 5-8",
+            "readingPageCount": "40",
+            "readAlongNextDate": "",
+            "properNouns": []
+        }
+    ]
+}

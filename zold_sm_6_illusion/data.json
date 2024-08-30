@@ -1,0 +1,183 @@
+{
+  "homeTemplate": "./home_template_spinoff.md",
+  "weekTemplate": "../week_template.md",
+  "bookClubName": "Saikawa & Moe (S&M) Series",
+  "bookClubURL": "https://community.wanikani.com/t/x/52178",
+  "bookName": "幻惑の死と使途 - Illusion acts like Magic",
+  "bookImage": "![image|240x337](upload://lErL28mR916MouHMvmskWL6DeMj.png)",
+  "bookHomeThreadURL": "62072",
+  "whereToBuy": [
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.co.jp/dp/product/4062730111/"
+    },
+    {
+      "name": "Bookwalker",
+      "url": "https://bookwalker.jp/de174f4287-35bd-4845-85f0-5b1c2d71c65a/?acode=nQqAxuMt"
+    }
+  ],
+  "physicalPageCount": "584",
+  "bookwalkerPageCount": "",
+  "readingFirstDateWithYear": "June 3, 2023",
+  "readingRangeTitle": "Chapter",
+  "linkOnlyOnWeek": false,
+  "mainVocabURL": "",
+  "properNouns": [],
+  "isOnFloFlo": false,
+  "hasReadAlongSession": false,
+  "readAlongFirstDate": "",
+  "readAlongWeekday": "Sunday",
+  "readAlongJSTHuman": "9:30pm",
+  "readAlongJSTComputer": "21:30:00",
+  "showWeekInfo": true,
+  "numberOfTheLastWeek": 8,
+  "weeks": [
+    {
+      "week": "1",
+      "weekNumber": 1,
+      "weekStartDate": "Jun 03",
+      "weekURL": "62107",
+      "vocabURL": "",
+      "readingRange": "Chapter  1",
+      "readingPageCount": "71",
+      "readAlongNextDate": "",
+      "properNouns": [
+        {
+          "name": "有里 匠幻",
+          "reading": "ありさと しょうげん",
+          "notes": "Elderly magician"
+        },
+        {
+          "name": "簔沢 杜萌",
+          "reading": "みのさわ ともえ",
+          "notes": "Moe's friend"
+        },
+        {
+          "name": "浜中 深志",
+          "reading": "はまなか ふかし",
+          "notes": "Saikawa's student"
+        },
+        {
+          "name": "犀川 創平",
+          "reading": "さいかわ そうへい"
+        },
+        {
+          "name": "西之園 萌絵",
+          "reading": "にしのその もえ"
+        },
+        {
+          "name": "蒲郡",
+          "reading": "がまごおり",
+          "notes": "place name"
+        },
+        {
+          "name": "吉川",
+          "reading": "よしかわ",
+          "notes": "member of the magicians' show"
+        },
+        {
+          "name": "有里タケル",
+          "reading": "ありさと",
+          "notes": "performing magician"
+        },
+        {
+          "name": "有里ナガル",
+          "reading": "ありさと",
+          "notes": "performing magician"
+        },
+        {
+          "name": "ミカル",
+          "reading": "",
+          "notes": "girl involved with the magicians"
+        },
+        {
+          "name": "滝野ヶ池緑地公園",
+          "reading": "",
+          "notes": "park in Nagono"
+        }
+      ]
+    },
+    {
+      "week": "2",
+      "weekNumber": 2,
+      "weekStartDate": "Jun 10",
+      "weekURL": "62184",
+      "vocabURL": "",
+      "readingRange": "Chapter  3",
+      "readingPageCount": "70",
+      "readAlongNextDate": "",
+      "properNouns": [
+        {
+          "name": "",
+          "reading": ""
+        }
+      ]
+    },
+    {
+      "week": "3",
+      "weekNumber": 3,
+      "weekStartDate": "Jun 17",
+      "weekURL": "62281",
+      "vocabURL": "",
+      "readingRange": "Chapter  5",
+      "readingPageCount": "68",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "4",
+      "weekNumber": 4,
+      "weekStartDate": "Jun 24",
+      "weekURL": "62336",
+      "vocabURL": "",
+      "readingRange": "Chapter  7",
+      "readingPageCount": "85",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "5",
+      "weekNumber": 5,
+      "weekStartDate": "Jul 01",
+      "weekURL": "62430",
+      "vocabURL": "",
+      "readingRange": "Chapter  9 + 11",
+      "readingPageCount": "53 + 23",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "6",
+      "weekNumber": 6,
+      "weekStartDate": "Jul 08",
+      "weekURL": "62507",
+      "vocabURL": "",
+      "readingRange": "Chapter  13",
+      "readingPageCount": "60",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "7",
+      "weekNumber": 7,
+      "weekStartDate": "Jul 15",
+      "weekURL": "62618",
+      "vocabURL": "",
+      "readingRange": "Chapter  15",
+      "readingPageCount": "31",
+      "readAlongNextDate": "",
+      "properNouns": []
+    },
+    {
+      "week": "8",
+      "weekNumber": 8,
+      "weekStartDate": "Jul 22",
+      "weekURL": "62712",
+      "vocabURL": "",
+      "readingRange": "Chapter  17",
+      "readingPageCount": "120",
+      "readAlongNextDate": "",
+      "properNouns": []
+    }
+  ]
+}
