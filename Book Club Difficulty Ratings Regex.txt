@@ -1,8 +1,0 @@
-Leerzeilen entfernen:
-
-^$\n -> <nichts>
-
-Komma zu Punkt:
-
-, -> .
-
